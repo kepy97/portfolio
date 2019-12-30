@@ -8932,6 +8932,7 @@ h1, h2, h3, h4, h5,
     color: rgba(255, 255, 255, 0.9); }
 
 .project {
+  cursor: pointer;
   width: 100%;
   height: 350px;
   margin-bottom: 0;
