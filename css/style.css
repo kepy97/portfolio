@@ -9676,7 +9676,7 @@ textarea.form-control {
 
 
 /* new slide option  */
-.slide-menu-open{    width: 450px;position: fixed;right: 0;top: 0;    box-shadow: 0 0 10px rgba(53, 53, 53, 0.28);right: -450px;transition: 0.4s ease all;-moz-transition: 0.4s ease all;background-color: #fff;}
+.slide-menu-open{    z-index: 999;width: 450px;position: fixed;right: 0;top: 0;    box-shadow: 0 0 10px rgba(53, 53, 53, 0.28);right: -450px;transition: 0.4s ease all;-moz-transition: 0.4s ease all;background-color: #fff;}
 .slide-menu-open.active{right: 0;}
 .slide-menu-top{width: 100%;display: flex;padding: 15px 20px;background-color: #333;}
 .title-slide-menu{width: 100%;}
