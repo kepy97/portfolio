@@ -9672,11 +9672,11 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
-	
+  
 
 
 /* new slide option  */
-.slide-menu-open{    z-index: 999;width: 450px;position: fixed;right: 0;top: 0;    box-shadow: 0 0 10px rgba(53, 53, 53, 0.28);right: -450px;transition: 0.4s ease all;-moz-transition: 0.4s ease all;background-color: #fff;}
+.slide-menu-open{    width: 450px;position: fixed;right: 0;top: 0;    box-shadow: 0 0 10px rgba(53, 53, 53, 0.28);right: -450px;transition: 0.4s ease all;-moz-transition: 0.4s ease all;background-color: #fff;z-index:999}
 .slide-menu-open.active{right: 0;}
 .slide-menu-top{width: 100%;display: flex;padding: 15px 20px;background-color: #333;}
 .title-slide-menu{width: 100%;}
@@ -9685,7 +9685,7 @@ textarea.form-control {
 .slide-menu-middle{background-color: #fff;width: 100%;height:calc(100vh - 120px);overflow-y: auto;}
 .list-view{margin: 0;padding: 0;list-style: none;}
 .slide-menu-footter{    padding: 15px 20px;
-    border-top: 1px solid #efefef;}
+    border-top: 1px solid #efefef;background-color:#fff}
 .cancel_btn{display: inline-block;text-decoration: none;padding: 5px 15px;border:1px solid #d7dce5;background-color: #fff;font-size: 14px;color: #000;text-decoration: none;transition: 0.4s ease all;}
 .cancel_btn:hover {text-decoration: none;;background-color: #333333;color: #ffffff;}
 .slide-menu-middle .inner-slide-menu{padding: 0;}
@@ -9708,9 +9708,10 @@ textarea.form-control {
     background-color: #333;
     outline: 1px solid #333;
   }
+  .slide-menu-open.active:after{position:fixed;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.45);left:0;top:0;z-index:1;content:'';z-index:-1}
 /* end new slide option  */
 @media (max-width: 576px) {
-	.slide-menu-open{width:100%}
-	.project {margin-bottom:30px;}
-	.m-dis-non{display:none}
+  .slide-menu-open{width:100%}
+  .project {margin-bottom:30px;}
+  .m-dis-non{display:none}
 }
