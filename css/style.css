@@ -9738,3 +9738,21 @@ textarea.form-control {
 {
 	color: #000;
 }
+
+
+.mobprofile
+{
+display:none;
+}
+
+@media (max-width: 767px) {
+ .mobprofile
+ {
+ display:block;
+ }
+ .mobprofile img
+ {
+ width: 100%;
+   margin-top: 30px;
+ }
+}
