@@ -9745,6 +9745,24 @@ textarea.form-control {
 display:none;
 }
 
+.moreinfobtn 
+{
+background: white;
+padding: 4px 20px;
+margin-top: 15px;
+border-radius: 50px;
+color: #3E64FF;
+font-weight: 600;
+border: 2px solid #FFFFFF;
+transition: width 2s;
+}
+
+.moreinfobtn:hover
+{
+background: transparent;
+color: #FFFFFF
+}
+
 @media (max-width: 767px) {
  .mobprofile
  {
