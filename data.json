@@ -1,0 +1,24 @@
+{
+   "post":[
+      {
+         "id":1,
+         "title":"first post",
+         "url":"first-post",
+         "tags":["internship","job-offer"],
+         "body":"<h2 class=\"mb-3\">\n              Finally, Got an Internship in Fortune 500 Company!!\n            </h2>\n            <p>As an international student, it is very hard to secure the internship in USA. In fact, international student even can't get phone interview so getting a video or in-person interview is a big achievement. In this post, I will write whole internship hunting experience.</p>\n            <p>\n              <img src=\"../images/image_3.jpg\" alt=\"\" class=\"img-fluid\">\n            </p>\n            <p>I'm a graduate student at University of Wisconsin-Milwaukee. I enrolled in fall 2019. In starting of November 2019, I started to apply for the internship application. Big companies already started to hire interns. I show many student post about they got the offer for Summer 2020 internship. I was feeling nervous because I'm getting only online coding challenges. It was bad time for me..</p>\n            <h2 class=\"mb-3 mt-5\">Created Personal Website</h2>\n            <p>I started wondering about what is wrong in my application. And I figured out it's because I'm on F-1 visa. Companies are looking for long-term players only and they have to pay extra money for sponserships. That's the main problem.</p>\n            <p>\n              <img src=\"../images/image_4.jpg\" alt=\"\" class=\"img-fluid\">\n            </p>\n            <p>I need to do something different than other applications so HR can find that.</p>\n            <p>Odit voluptatibus, eveniet vel nihil cum ullam dolores laborum, quo velit commodi rerum eum quidem pariatur! Quia fuga iste tenetur, ipsa vel nisi in dolorum consequatur, veritatis porro explicabo soluta commodi libero voluptatem similique id quidem? Blanditiis voluptates aperiam non magni. Reprehenderit nobis odit inventore, quia laboriosam harum excepturi ea.</p>\n            <p>Adipisci vero culpa, eius nobis soluta. Dolore, maxime ullam ipsam quidem, dolor distinctio similique asperiores voluptas enim, exercitationem ratione aut adipisci modi quod quibusdam iusto, voluptates beatae iure nemo itaque laborum. Consequuntur et pariatur totam fuga eligendi vero dolorum provident. Voluptatibus, veritatis. Beatae numquam nam ab voluptatibus culpa, tenetur recusandae!</p>\n            <p>Voluptas dolores dignissimos dolorum temporibus, autem aliquam ducimus at officia adipisci quasi nemo a perspiciatis provident magni laboriosam repudiandae iure iusto commodi debitis est blanditiis alias laborum sint dolore. Dolores, iure, reprehenderit. Error provident, pariatur cupiditate soluta doloremque aut ratione. Harum voluptates mollitia illo minus praesentium, rerum ipsa debitis, inventore?</p>",
+         "published":true,
+         "created":"",
+         "updated":""
+      },
+      {
+         "id":2,
+         "title":"second post",
+         "url":"second-post",
+         "tags":["css","html"],
+         "body":"second post only",
+         "published":true,
+         "created":"",
+         "updated":""
+      }
+   ]
+}
