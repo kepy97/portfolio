@@ -1,0 +1,46 @@
+{
+   "projects":[
+      {
+         "id":1,
+         "name":"Result Notifier",
+         "url":"Result-Notifier-2016",
+         "languages":["python"],
+         "image":"resultNotifier.jpg"
+      },
+      {
+         "id":2,
+         "name":"HealthMate",
+         "url":"HealthMate-2017",
+         "languages":["java","android"],
+         "image":"healthmate.jpg"
+      },
+      {
+         "id":3,
+         "name":"Data Analysis Projects",
+         "url":"Data-Analysis-2018",
+         "languages":["tableau", "powerBI", "D3.js"],
+         "image":"dataAnalysis.jpg"
+      },
+      {
+         "id":4,
+         "name":"Chat-Bot Project",
+         "url":"Chat-Bot-2019",
+         "languages":["node.js"],
+         "image":"nodejs.jpg"
+      },
+      {
+         "id":5,
+         "name":"PHP Project",
+         "url":"PHP-2019",
+         "languages":["PHP"],
+         "image":"php.jpg"
+      },
+      {
+         "id":6,
+         "name":"Game Bot",
+         "url":"Game-Bot-2019",
+         "languages":["python"],
+         "image":"gameBot.jpg"
+      }
+   ]
+}
