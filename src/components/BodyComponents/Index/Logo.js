@@ -7,19 +7,19 @@ export default class Logo extends React.Component {
 			   <div className="container">
 			      <div className="row">
 			         <div className="col-sm ftco-animate">
-			            <a href="#" className="partner"><img src="images/logo/python.jpg" className="img-fluid" alt="Python" /></a>
+			            <div className="partner"><img src="/images/logo/python.jpg" className="img-fluid" alt="Python" /></div>
 			         </div>
 			         <div className="col-sm ftco-animate">
-			            <a href="#" className="partner"><img src="images/logo/php.jpg" className="img-fluid" alt="Php" /></a>
+			            <div className="partner"><img src="/images/logo/php.jpg" className="img-fluid" alt="Php" /></div>
 			         </div>
 			         <div className="col-sm ftco-animate">
-			            <a href="#" className="partner"><img src="images/logo/java.jpg" className="img-fluid" alt="Java" /></a>
+			            <div className="partner"><img src="/images/logo/java.jpg" className="img-fluid" alt="Java" /></div>
 			         </div>
 			         <div className="col-sm ftco-animate">
-			            <a href="#" className="partner"><img src="images/logo/js.jpg" className="img-fluid" alt="JavaScript" /></a>
+			            <div className="partner"><img src="/images/logo/js.jpg" className="img-fluid" alt="JavaScript" /></div>
 			         </div>
 			         <div className="col-sm ftco-animate">
-			            <a href="#" className="partner"><img src="images/logo/android.jpg" className="img-fluid" alt="Android" /></a>
+			            <div className="partner"><img src="/images/logo/android.jpg" className="img-fluid" alt="Android" /></div>
 			         </div>
 			      </div>
 			   </div>

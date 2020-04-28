@@ -1,10 +1,9 @@
 import React from 'react';
-import projectDetailsData from "../../data/project_details_data.json";
+import projectDetailsData from "../../../data/project_details_data.json";
 
 const projectDetails = projectDetailsData.details;
 
 const ProjectDetails = (props) => {
-	console.log(props)
 	const projectDetail = projectDetails.filter(data => {
 		  return data.url.match( props.projectDetailsURL );
 	});

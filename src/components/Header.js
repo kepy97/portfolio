@@ -11,12 +11,12 @@ export default class Header extends React.Component {
               </button>
               <div className="collapse navbar-collapse" id="ftco-nav">
                 <ul className="navbar-nav nav ml-auto">
-                  <li className="nav-item"><a href="#home-section" className="nav-link"><span>Home</span></a></li>
-                  <li className="nav-item"><a href="#about-section" className="nav-link"><span>About</span></a></li>
-                  <li className="nav-item"><a href="#resume-section" className="nav-link"><span>Resume</span></a></li>
-                  <li className="nav-item"><a href="#projects-section" className="nav-link"><span>Projects</span></a></li>
-                  <li className="nav-item"><a href="#blog-section" className="nav-link"><span>My Blog</span></a></li>
-                  <li className="nav-item"><a href="#contact-section" className="nav-link"><span>Contact</span></a></li>
+                  <li className="nav-item"><a href="/index.html#home-section" className="nav-link"><span>Home</span></a></li>
+                  <li className="nav-item"><a href="/index.html#about-section" className="nav-link"><span>About</span></a></li>
+                  <li className="nav-item"><a href="/index.html#resume-section" className="nav-link"><span>Resume</span></a></li>
+                  <li className="nav-item"><a href="/index.html#projects-section" className="nav-link"><span>Projects</span></a></li>
+                  <li className="nav-item"><a href="/index.html#blog-section" className="nav-link"><span>My Blog</span></a></li>
+                  <li className="nav-item"><a href="/index.html#contact-section" className="nav-link"><span>Contact</span></a></li>
                 </ul>
               </div>
             </div>

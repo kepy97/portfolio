@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectDetails from "./ProjectDetails";
-import projectData from "../../data/project_data.json";
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import projectData from "../../../data/project_data.json";
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 const projects = projectData.projects;
 
@@ -42,7 +42,7 @@ export default class Projects extends React.Component {
                     projects.map((project, i) => {
                       return (
                         <div className="col-md-4" key={i} id={project.url} onClick={() => this.handleClick(project.url)}>
-                          <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{backgroundImage: `url(images/${project.image})`}}>
+                          <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{backgroundImage: `url(/images/${project.image})`}}>
                             <div className="overlay m-dis-non" />
                             <div className="text m-dis-non text-center p-4">
                               <h3><a id="section-projects-name" href="#section-projects-name">{project.name}</a></h3>

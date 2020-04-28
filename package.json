@@ -1,4 +1,5 @@
 {
+  "homepage": "https://kepy97.github.io/react-portfolio23",
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +11,7 @@
     "moment": "^2.24.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1"
   },
   "scripts": {
@@ -37,6 +39,5 @@
   },
   "devDependencies": {
     "gh-pages": "^2.2.0"
-  },
-  "homepage": "http://kepy97.github.io/react-portfolio"
+  }
 }

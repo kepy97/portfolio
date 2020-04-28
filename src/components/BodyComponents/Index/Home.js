@@ -13,14 +13,13 @@ export default class Home extends React.Component {
 			               <h1>Keyul Patel</h1>
 			               <h2>I'm a <span className="txt-rotate" data-period="2000" data-rotate='[ "Programmer.", "Student.", "Blogger." ]'></span>
 			               </h2>
+			               <br /><br />
+			                <a href="#" className="mouse-icon">
+					   			<div className="mouse-wheel"><span className="ion-ios-arrow-round-down"></span></div>
+					   		</a>
 			            </div>
 			         </div>
 			      </div>
-			   </div>
-			   <div className="mouse">
-			   		<a href="#" className="mouse-icon">
-			   			<div className="mouse-wheel"><span className="ion-ios-arrow-round-down"></span></div>
-			   		</a>
 			   </div>
 			</section>
         );

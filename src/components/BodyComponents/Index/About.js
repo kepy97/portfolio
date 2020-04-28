@@ -10,12 +10,9 @@ export default class About extends React.Component {
 			            <div className="img-about img d-flex align-items-stretch">
 			               <div className="overlay"></div>
 			               <div>
-			               		<img className="img d-flex align-self-stretch align-items-center" src="images/profile.jpg"/>
+			               		<img alt="profile pic" className="img d-flex align-self-stretch align-items-center" src='/images/profile.jpg'/>
 			               </div>
 			            </div>
-			         </div>
-			         <div className="mobprofile">
-			            <img src="images/profile.jpg" />
 			         </div>
 			         <div className="col-md-6 col-lg-6 pl-md-5 py-5">
 			            <div className="row justify-content-start pb-3">

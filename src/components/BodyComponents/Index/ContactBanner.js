@@ -3,7 +3,7 @@ import React from 'react';
 export default class ContactBanner extends React.Component {
     render() {
         return (
-            <section className="ftco-section ftco-hireme img" style={{backgroundImage: 'url(images/bg_1.jpg)'}}>
+            <section className="ftco-section ftco-hireme img" style={{backgroundImage: 'url(/images/bg_1.jpg)'}}>
               <div className="overlay" />
               <div className="container">
                 <div className="row justify-content-center">
