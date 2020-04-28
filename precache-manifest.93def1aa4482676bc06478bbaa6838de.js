@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c7bdd18055ab19c97509ac2e13992ea9",
+    "revision": "7ff9a58956e19883aafa3634830f15ef",
     "url": "/react-portfolio23/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-portfolio23/static/js/2.62ddaeb5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0655cc71a77b791392dd",
-    "url": "/react-portfolio23/static/js/main.c93413fd.chunk.js"
+    "revision": "4de7c7178c666e9c374b",
+    "url": "/react-portfolio23/static/js/main.fa553f16.chunk.js"
   },
   {
     "revision": "b7dd78ecff4c56a2e8ce",
