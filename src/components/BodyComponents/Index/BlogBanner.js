@@ -24,7 +24,7 @@ export default class BlogBanner extends React.Component {
                       <div className="col-md-4 d-flex ftco-animate" key={i}>
                         <div className="blog-entry justify-content-end">
                           <Link to={`/blog/${post.url}`}>
-                            <div className="block-20" style={{backgroundImage: `url(/images/${post.image})`}}></div>
+                            <div className="block-20" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/${post.image})`}}></div>
                           </Link>
                           <div className="text mt-3 float-right d-block">
                             <h3 className="heading">{post.title}</h3>

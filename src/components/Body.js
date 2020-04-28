@@ -8,9 +8,8 @@ export default class Body extends React.Component {
     render() {
         return (
             <Switch>
-                <Route path="/" exact component={IndexBody} />
                 <Route path="/blog/:url" component={BlogBody} />
-                <Route path="*" exact component={IndexBody} />
+                <Route path="/" component={IndexBody} />
             </Switch>
         );
     }

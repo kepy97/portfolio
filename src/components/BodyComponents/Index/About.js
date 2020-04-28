@@ -10,7 +10,7 @@ export default class About extends React.Component {
 			            <div className="img-about img d-flex align-items-stretch">
 			               <div className="overlay"></div>
 			               <div>
-			               		<img alt="profile pic" className="img d-flex align-self-stretch align-items-center" src='/images/profile.jpg'/>
+			               		<img alt="profile pic" className="img d-flex align-self-stretch align-items-center" src={process.env.PUBLIC_URL + '/images/profile.jpg'}/>
 			               </div>
 			            </div>
 			         </div>
@@ -32,7 +32,7 @@ export default class About extends React.Component {
 			               <div className="text">
 			                  <p className="mb-4">
 			                  </p>
-			                  <p><a href="resume/resume.pdf" target="_blank" className="btn btn-primary py-3 px-3">Download Resume</a></p>
+			                  <p><a href={process.env.PUBLIC_URL+"resume/resume.pdf"} target="_blank" className="btn btn-primary py-3 px-3">Download Resume</a></p>
 			               </div>
 			            </div>
 			         </div>

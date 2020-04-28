@@ -22,11 +22,11 @@ export default class Footer extends React.Component {
                     <div className="ftco-footer-widget mb-4 ml-md-4" id="ftco-nav">
                       <h2 className="ftco-heading-2">Links</h2>
                       <ul className="list-unstyled">
-                        <li><a href="/index.html#home-section"><span className="icon-long-arrow-right mr-2" />Home</a></li>
-                        <li><a href="/index.html#about-section"><span className="icon-long-arrow-right mr-2" />About</a></li>
-                        <li><a href="/index.html#resume-section"><span className="icon-long-arrow-right mr-2" />Resume</a></li>
-                        <li><a href="/index.html#projects-section"><span className="icon-long-arrow-right mr-2" />Projects</a></li>
-                        <li><a href="/index.html#contact-section"><span className="icon-long-arrow-right mr-2" />Contact</a></li>
+                        <li><a href="#home-section"><span className="icon-long-arrow-right mr-2" />Home</a></li>
+                        <li><a href="#about-section"><span className="icon-long-arrow-right mr-2" />About</a></li>
+                        <li><a href="#resume-section"><span className="icon-long-arrow-right mr-2" />Resume</a></li>
+                        <li><a href="#projects-section"><span className="icon-long-arrow-right mr-2" />Projects</a></li>
+                        <li><a href="#contact-section"><span className="icon-long-arrow-right mr-2" />Contact</a></li>
                       </ul>
                     </div>
                   </div>
