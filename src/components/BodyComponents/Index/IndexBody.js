@@ -8,7 +8,7 @@ import BlogBanner from "./BlogBanner";
 import ContactBanner from "./ContactBanner";
 import Contact from "./Contact";
 
-export default class Body extends React.Component {
+export default class IndexBody extends React.Component {
     render() {
         return (
           <div>

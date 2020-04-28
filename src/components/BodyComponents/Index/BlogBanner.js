@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-import {Link} from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import blogData from "../../../data/blog_data.json";
 
 const posts = blogData.posts;
@@ -23,11 +23,13 @@ export default class BlogBanner extends React.Component {
                     return (
                       <div className="col-md-4 d-flex ftco-animate" key={i}>
                         <div className="blog-entry justify-content-end">
-                          <Link to={`/blog/${post.url}`}>
+                          <Link to={`/blog/${post.url}#blogPostID`}>
                             <div className="block-20" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/${post.image})`}}></div>
                           </Link>
                           <div className="text mt-3 float-right d-block">
-                            <h3 className="heading">{post.title}</h3>
+                            <Link to={`/blog/${post.url}#blogPostID`}>
+                              <h3 className="heading">{post.title}</h3>
+                            </Link>
                             <div className="d-flex align-items-center mb-3 meta">
                               <p className="mb-0">
                                 <span className="mr-2">{moment(post.created).format('LLLL')}</span>
@@ -41,7 +43,7 @@ export default class BlogBanner extends React.Component {
                   }
                 })
               }
-                <a href="resume/resume.pdf" className="btn btn-primary py-3 px-3">View More</a>
+                <a href="/resume/resume.pdf" className="btn btn-primary py-3 px-3">View More</a>
               </div>
             </div>
           </section>
