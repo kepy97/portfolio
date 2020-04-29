@@ -64,7 +64,7 @@ AOS.init({
 
     var onePageClick = function() {
 
-        // KePy changed #ftco-nav a[href^="#"] to #ftco-nav a[href^="/index.html#"] 
+        // KePy changed: from #ftco-nav a[href^="#"] to #ftco-nav a[href^="/index.html#"] 
         $(document).on('click', '#ftco-nav a[href^="/index.html#"]', function(event) {
             //KePy changed: commented below code
             // event.preventDefault();
