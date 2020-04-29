@@ -64,14 +64,17 @@ AOS.init({
 
     var onePageClick = function() {
 
-
-        $(document).on('click', '#ftco-nav a[href^="#"]', function(event) {
-            event.preventDefault();
-
+        // KePy changed: from #ftco-nav a[href^="#"] to #ftco-nav a[href^="/index.html#"] 
+        $(document).on('click', '#ftco-nav a[href^="/index.html#"]', function(event) {
+            //KePy changed: commented below code
+            // event.preventDefault();
             var href = $.attr(this, 'href');
+            var href_hash = '#'+href.split("#").pop();
 
             $('html, body').animate({
-                scrollTop: $($.attr(this, 'href')).offset().top - 70
+                //KePy changed: updated below code
+                scrollTop: $(href_hash).offset().top - 70
+                // scrollTop: $($.attr(this, 'href')).offset().top - 70
             }, 500, function() {
                 // window.location.hash = href;
             });

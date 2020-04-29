@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 
 export default class Footer extends React.Component {
     render() {
@@ -22,11 +23,12 @@ export default class Footer extends React.Component {
                     <div className="ftco-footer-widget mb-4 ml-md-4" id="ftco-nav">
                       <h2 className="ftco-heading-2">Links</h2>
                       <ul className="list-unstyled">
-                        <li><a href="#home-section"><span className="icon-long-arrow-right mr-2" />Home</a></li>
-                        <li><a href="#about-section"><span className="icon-long-arrow-right mr-2" />About</a></li>
-                        <li><a href="#resume-section"><span className="icon-long-arrow-right mr-2" />Resume</a></li>
-                        <li><a href="#projects-section"><span className="icon-long-arrow-right mr-2" />Projects</a></li>
-                        <li><a href="#contact-section"><span className="icon-long-arrow-right mr-2" />Contact</a></li>
+                        <li><Link to={{pathname: `${process.env.PUBLIC_URL}/index.html`, hash: "#home-section"}} ><span className="icon-long-arrow-right mr-2" />Home</Link></li>
+                        <li><Link to={{pathname: `${process.env.PUBLIC_URL}/index.html`, hash: "#about-section"}} ><span className="icon-long-arrow-right mr-2" />About</Link></li>
+                        <li><Link to={{pathname: `${process.env.PUBLIC_URL}/index.html`, hash: "#resume-section"}}><span className="icon-long-arrow-right mr-2" />Resume</Link></li>
+                        <li><Link to={{pathname: `${process.env.PUBLIC_URL}/index.html`, hash: "#projects-section"}}><span className="icon-long-arrow-right mr-2" />Projects</Link></li>
+                        <li><Link to={{pathname: `${process.env.PUBLIC_URL}/index.html`, hash: "#blog-section"}}><span className="icon-long-arrow-right mr-2" />My Blog</Link></li>
+                        <li><Link to={{pathname: `${process.env.PUBLIC_URL}/index.html`, hash: "#contact-section"}}><span className="icon-long-arrow-right mr-2" />Contact</Link></li>
                       </ul>
                     </div>
                   </div>

@@ -17,7 +17,7 @@ export default class IndexBody extends React.Component {
             <Logo />
             <Resume />
             <Projects />
-            <BlogBanner />
+            <BlogBanner postsData={this.props.postsData}/>
             <ContactBanner />
             <Contact />
           </div>

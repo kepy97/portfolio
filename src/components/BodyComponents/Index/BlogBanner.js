@@ -1,12 +1,10 @@
 import React from 'react';
 import moment from 'moment';
 import { HashLink as Link } from 'react-router-hash-link';
-import blogData from "../../../data/blog_data.json";
-
-const posts = blogData.posts;
 
 export default class BlogBanner extends React.Component {
     render() {
+      const posts = this.props.postsData;
         return (
           <section className="ftco-section" id="blog-section">
             <div className="container">
@@ -23,11 +21,11 @@ export default class BlogBanner extends React.Component {
                     return (
                       <div className="col-md-4 d-flex ftco-animate" key={i}>
                         <div className="blog-entry justify-content-end">
-                          <Link to={`/blog/${post.url}#blogPostID`}>
+                          <Link to={{pathname: `${process.env.PUBLIC_URL}/blog/${post.url}`, hash: "#post-section"}}>
                             <div className="block-20" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/${post.image})`}}></div>
                           </Link>
                           <div className="text mt-3 float-right d-block">
-                            <Link to={`/blog/${post.url}#blogPostID`}>
+                            <Link to={{pathname: `${process.env.PUBLIC_URL}/blog/${post.url}`, hash: "#post-section"}}>
                               <h3 className="heading">{post.title}</h3>
                             </Link>
                             <div className="d-flex align-items-center mb-3 meta">
