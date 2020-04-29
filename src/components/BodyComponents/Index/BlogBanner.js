@@ -21,11 +21,11 @@ export default class BlogBanner extends React.Component {
                     return (
                       <div className="col-md-4 d-flex ftco-animate" key={i}>
                         <div className="blog-entry justify-content-end">
-                          <Link to={{pathname: `${process.env.PUBLIC_URL}/blog/${post.url}`, hash: "#post-section"}}>
+                          <Link to={{pathname: `/blog/${post.url}`, hash: "#post-section"}}>
                             <div className="block-20" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/${post.image})`}}></div>
                           </Link>
                           <div className="text mt-3 float-right d-block">
-                            <Link to={{pathname: `${process.env.PUBLIC_URL}/blog/${post.url}`, hash: "#post-section"}}>
+                            <Link to={{pathname: `/blog/${post.url}`, hash: "#post-section"}}>
                               <h3 className="heading">{post.title}</h3>
                             </Link>
                             <div className="d-flex align-items-center mb-3 meta">

@@ -23,12 +23,12 @@ export default class Footer extends React.Component {
                     <div className="ftco-footer-widget mb-4 ml-md-4" id="ftco-nav">
                       <h2 className="ftco-heading-2">Links</h2>
                       <ul className="list-unstyled">
-                        <li><Link to={{pathname: `${process.env.PUBLIC_URL}/index.html`, hash: "#home-section"}} ><span className="icon-long-arrow-right mr-2" />Home</Link></li>
-                        <li><Link to={{pathname: `${process.env.PUBLIC_URL}/index.html`, hash: "#about-section"}} ><span className="icon-long-arrow-right mr-2" />About</Link></li>
-                        <li><Link to={{pathname: `${process.env.PUBLIC_URL}/index.html`, hash: "#resume-section"}}><span className="icon-long-arrow-right mr-2" />Resume</Link></li>
-                        <li><Link to={{pathname: `${process.env.PUBLIC_URL}/index.html`, hash: "#projects-section"}}><span className="icon-long-arrow-right mr-2" />Projects</Link></li>
-                        <li><Link to={{pathname: `${process.env.PUBLIC_URL}/index.html`, hash: "#blog-section"}}><span className="icon-long-arrow-right mr-2" />My Blog</Link></li>
-                        <li><Link to={{pathname: `${process.env.PUBLIC_URL}/index.html`, hash: "#contact-section"}}><span className="icon-long-arrow-right mr-2" />Contact</Link></li>
+                        <li><Link to={{pathname: `/index.html`, hash: "#home-section"}} ><span className="icon-long-arrow-right mr-2" />Home</Link></li>
+                        <li><Link to={{pathname: `/index.html`, hash: "#about-section"}} ><span className="icon-long-arrow-right mr-2" />About</Link></li>
+                        <li><Link to={{pathname: `/index.html`, hash: "#resume-section"}}><span className="icon-long-arrow-right mr-2" />Resume</Link></li>
+                        <li><Link to={{pathname: `/index.html`, hash: "#projects-section"}}><span className="icon-long-arrow-right mr-2" />Projects</Link></li>
+                        <li><Link to={{pathname: `/index.html`, hash: "#blog-section"}}><span className="icon-long-arrow-right mr-2" />My Blog</Link></li>
+                        <li><Link to={{pathname: `/index.html`, hash: "#contact-section"}}><span className="icon-long-arrow-right mr-2" />Contact</Link></li>
                       </ul>
                     </div>
                   </div>

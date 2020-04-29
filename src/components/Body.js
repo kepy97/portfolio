@@ -15,8 +15,8 @@ export default class Body extends React.Component {
     render() {
         return (
             <Switch>
-                <Route path="*/blog/:url" render={(props) => <BlogBody {...props} postsData={postsDataSorted} />} />
-                <Route path="*/" render={(props) => <IndexBody {...props} postsData={postsDataSorted} />} />
+                <Route path="/blog/:url" render={(props) => <BlogBody {...props} postsData={postsDataSorted} />} />
+                <Route path="/" render={(props) => <IndexBody {...props} postsData={postsDataSorted} />} />
             </Switch>
         );
     }
