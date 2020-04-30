@@ -2,11 +2,14 @@ import React from 'react';
 import Sidebar from './Sidebar';
 
 export default class BlogBody extends React.Component {
+    componentDidMount() {
+        window.globalFunction();
+    }
     render() {
         const posts = this.props.postsData;
         const { params } = this.props.match
         const postData = posts.filter(post => post.url === params.url)
-        console.log(postData)
+
         return (
             <div>
                 <div className="hero-wrap js-fullheight">

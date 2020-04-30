@@ -9,6 +9,9 @@ import ContactBanner from "./ContactBanner";
 import Contact from "./Contact";
 
 export default class IndexBody extends React.Component {
+    componentDidMount() {
+        window.globalFunction();
+    }
     render() {
         return (
           <div>
