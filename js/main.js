@@ -1,4 +1,5 @@
 function globalFunction() {
+    console.log("hellllllll gloabl");
     AOS.init({
         duration: 800,
         easing: 'slide'
@@ -444,5 +445,3 @@ function globalFunction() {
     });
 
 }
-
-globalFunction();
