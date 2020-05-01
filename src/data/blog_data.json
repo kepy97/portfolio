@@ -4,7 +4,7 @@
          "id":1,
          "title":"React Github Blog Test",
          "url":"React-Github-Blog-Test",
-         "tags":["react","github","github-pages"],
+         "tags":["react","github","github-pages","programming", "self-improvement"],
          "image":"blog/React-Blog-Github-Test-logo.png",
          "description":"First post of my blogging!!",
          "body":"<h2 className=\"mb-3\"> First post of my blogging!! </h2> <p>I want to include blogs in my personal website so I decided to use react for dynamic site. As everyone knows, currently react is boomming the market.</p> <p>This is my first post of the blogging. Currently, there is a COVID-19 pandemic situation in every country. My university classes converted to online so I have free time to improve my programming. So, I will convert my html site to react by own. Also, I will use github pages to host my website. Currently, github pages allows to host free without any backend language. So, I will not use any backend programming and database.</p> <p>This is it for the first blog. Thank you. Current motto is Stay Home Stay Safe.</p>",
@@ -28,13 +28,25 @@
          "id":3,
          "title":"How to call external Javascript file function from react component",
          "url":"How-to-call-external-Javascript-file-function-from-react-component",
-         "tags":["react","javascript"],
+         "tags":["react","javascript","programming", "self-improvement"],
          "image":"blog/How-to-call-external-Javascript-file-function-from-react-component-logo.png",
          "description":"Is there any way to call external js file function from inside react component?",
          "body":"<h1 className=\"mb-3\"> Is there any way to call external js file function from inside react component? </h1> <h4>The answer is <b>Yes</b>.</h4> <p><img src=\"/images/blog/ABB-Internship-Offer-logo.png\" alt className=\"img-fluid\" /></p> <h2 className=\"mb-3 mt-5\">Problem Scenario</h2> <p>Case 1: Suppose, you have an index.html file that includes some javascript. Now on your react component, you have a condition that will render only if the condition is true. This means that initially when the page loaded the component has not been rendered yet. When button toggled this is where that component gets rendered. That child component needs to call a javascript method that was included on your external javascript file or inside index.html javascript code. So, how can you do this?</p> <p>Case 2: Your external javascript function calls when the first time you open the website but when react router changes the component it's not calling that function. I have faced this situation to convert my static website to dynamically. The problem was: there is a jquery function that runs on div tags, class, id events. But, in react the page is never refreshed so jquery runs smoothly first time. After routes change it is not execute the function again. So, data was not displayed on my second page due to jquery animation code.</p> <h2 className=\"mb-3 mt-5\">Solution</h2> <p>Currently, I'm learning the react by own so I have spent many time to find the solution.</p> <p>Here is the solution. For exaple, you have function inside the index.html file. In that case, you can use componentDidMount function and call that function using window.functionName(). You can check more details about componentDidMount <a href=\"https://reactjs.org/docs/react-component.html#componentdidmount\">here.</a></p> <figure> <figcaption>In index.html</figcaption> <pre><code>&lt;script type=\"text/javascript\"&gt; function test(){ alert('Function from index.html'); } &lt;/script&gt; </code></pre> </figure>\n\n<figure> <figcaption>In your component</figcaption> <pre><code>componentDidMount: function(){ window.test(); } </code></pre> </figure> <p> Suppose, you have external javascript file and want to rerun whole code then you have to wrap whole code in one function. Add first and last line from below in your external js file. </p> <pre><code>function globalFunction() { //....your whole javascript file code } </code></pre> <figure> <figcaption>Now in your component</figcaption> <pre><code>componentDidMount: function(){ window.globalFunction(); } </code></pre> </figure> <p> Overall, componentDidMount function execute the code everytime after it rendered, that's the meaning of the function. There are many soluction you can find about onUpdate event in Router tag or onEnter event in route tag. But, these all are the deprected in the react new version. So, follow this to save your precious time. <b>Please check this post date to verify componentDidMount is not deprecated.</b> </p>",
          "published":true,
          "created":"2020-04-30T03:25:50.844Z",
          "updated":"2020-04-30T03:25:50.844Z"
+      },
+      {
+         "id":4,
+         "title":"On my way to build mobile application development",
+         "url":"On-my-way-to-build-mobile-application-development",
+         "tags":["react-native","javascript","programming", "self-improvement"],
+         "image":"blog/On-my-way-to-build-mobile-application-development.png",
+         "description":"Stepping into mobile application development",
+         "body":"<h1 className=\"mb-3\"> Stepping into mobile application development </h1> <p>I always wanted to create the mobile application but I didn't get much time to learn new programming language and create some really cool app.</p> <p><img src=\"/images/blog/On-my-way-to-build-mobile-application-development.png\" alt className=\"img-fluid\" /></p> <p>Today, my two classes all submission completed. So, I don't have to worry about those classes and left with one class. In that class, one paper and project submission remaining, and my final submission due is May 15th. After that, my internship will start from June 1st.</p> <h2 className=\"mb-3 mt-5\">Time availability</h2> <p>Overall, I have one month to learn mobile application development. I'm gonna learn react native as I transferred my static website to react so it will be easy to lear react native now(I already prepared for this).</p> <p>I also want to know how chrome push notification work so I will spend some time on that.</p> <p>Happy coding!!!!!</p> ",
+         "published":true,
+         "created":"2020-05-01T00:52:58.364Z",
+         "updated":"2020-05-01T00:52:58.364Z"
       }
    ]
 }
