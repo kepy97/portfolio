@@ -38,12 +38,12 @@
       },
       {
          "id":4,
-         "title":"On my way to build mobile application development",
-         "url":"On-my-way-to-build-mobile-application-development",
+         "title":"On my way to build mobile application",
+         "url":"On-my-way-to-build-mobile-application",
          "tags":["react-native","javascript","programming", "self-improvement"],
-         "image":"blog/On-my-way-to-build-mobile-application-development.png",
+         "image":"blog/On-my-way-to-build-mobile-application.png",
          "description":"Stepping into mobile application development",
-         "body":"<h1 className=\"mb-3\"> Stepping into mobile application development </h1> <p>I always wanted to create the mobile application but I didn't get much time to learn new programming language and create some really cool app.</p> <p><img src=\"/images/blog/On-my-way-to-build-mobile-application-development.png\" alt className=\"img-fluid\" /></p> <p>Today, my two classes all submission completed. So, I don't have to worry about those classes and left with one class. In that class, one paper and project submission remaining, and my final submission due is May 15th. After that, my internship will start from June 1st.</p> <h2 className=\"mb-3 mt-5\">Time availability</h2> <p>Overall, I have one month to learn mobile application development. I'm gonna learn react native as I transferred my static website to react so it will be easy to lear react native now(I already prepared for this).</p> <p>I also want to know how chrome push notification work so I will spend some time on that.</p> <p>Happy coding!!!!!</p> ",
+         "body":"<h1 className=\"mb-3\"> Stepping into mobile application development </h1> <p>I always wanted to create the mobile application but I didn't get much time to learn new programming language and create some really cool app.</p> <p><img src=\"/images/blog/On-my-way-to-build-mobile-application-development.png\" alt className=\"img-fluid\" /></p> <p>Today, my two classes all submission completed. So, I don't have to worry about those classes and left with one class. In that class, one paper and project submission remaining, and my final submission due is May 15th. After that, my internship will start from June 1st.</p> <h2 className=\"mb-3 mt-5\">Time availability</h2> <p>Overall, I have one month to learn mobile application development. I'm gonna learn react native as I transferred my static website to react so it will be easy to lear react native now(I already prepared for this). I have couple of ideas to create cool application. Wish me luck :)</p> <p>I also want to know how chrome push notification work so I will spend some time on that as well.</p> <p>Happy coding!!!!!</p> ",
          "published":true,
          "created":"2020-05-01T00:52:58.364Z",
          "updated":"2020-05-01T00:52:58.364Z"
