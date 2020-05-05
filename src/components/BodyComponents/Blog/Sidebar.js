@@ -19,7 +19,7 @@ export default class Sidebar extends React.Component {
                                     <div className="text">
                                         <h3 className="heading"><Link to={`/blog/${post.url}`}>{post.title}</Link></h3>
                                         <div className="meta">
-                                            <div><span className="icon-calendar" />{moment(post.created).format('LLLL')}</div>
+                                            <div><span className="icon-calendar" /> {" " + moment(post.created).format('LLLL')}</div>
                                         </div>
                                     </div>
                                 </div>
