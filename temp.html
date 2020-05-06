@@ -1,10 +1,12 @@
-<h1 className="mb-3"> Here's the common problems that you might face in react-native</h1>
+<h1 class="mb-3">
+    Here's the common problems that you might face in react-native
+</h1>
 <p>
     I hope you have just started to learning mobile app development using react native. There are lots of challenges to
     adopting the new technology. I will write about which issue took my much time to solve.
 </p>
-<p><img src="/images/blog/problems-for-react-native-beginners-logo.png" alt className="img-fluid" /></p>
-<h2 className="mb-3 mt-5">Synchronisation Problem</h2>
+<p><img src="/images/blog/problems-for-react-native-beginners-logo.png" alt class="img-fluid" /></p>
+<h2 class="mb-3 mt-5">Synchronisation Problem</h2>
 <p>
     It's not easier to complete the installation of new technology. As you know, developers are keep trying to solve
     this problem. However, each solution creates the new problem. In react native, you can simply install any new
@@ -16,7 +18,7 @@
     when you update only one library then it directly affects the other libraries that depended on it. You will find
     lots of issues about it in the Github.
 </p>
-<h2 className="mb-3 mt-5">Multiple commands produce</h2>
+<h2 class="mb-3 mt-5">Multiple commands produce</h2>
 <p>
     The common problem that everyone faces in the react native is <b>Multiple commands produce</b>. As I was working on
     <a href="/blog/react-native-tutorial-for-beginners-part-2">mobile onboarding</a> feature. So, I have to use
@@ -27,20 +29,18 @@
     libraies (ex: react-native-base, galio-framework etc). So, when you build your project it clashes with other libray
     and leads to <b>build fail</b>.
 </p>
-<h2 className="mb-3 mt-5">Full Error</h2>
+<h2 class="mb-3 mt-5">Full Error</h2>
 <p>
-    &lt;figure&gt;
-    &lt;pre&gt;&lt;code&gt;
-    error: Multiple commands produce
-    '/Users/salih/Desktop/Github/Kopgitv1/ios/build/Build/Products/Debug-iphonesimulator/Kopgitv1.app/Entypo.ttf':
-    1) Target 'Kopgitv1' (project 'Kopgitv1') has copy command from
+    <figure>
+        <pre><code> error: Multiple commands produce
+    '/Users/salih/Desktop/Github/Kopgitv1/ios/build/Build/Products/Debug-iphonesimulator/Kopgitv1.app/Entypo.ttf': 1)
+    Target 'Kopgitv1' (project 'Kopgitv1') has copy command from
     '/Users/salih/Desktop/Github/Kopgitv1/node_modules/native-base/Fonts/Entypo.ttf' to
-    '/Users/salih/Desktop/Github/Kopgitv1/ios/build/Build/Products/Debug-iphonesimulator/Kopgitv1.app/Entypo.ttf'
-    2) Target 'Kopgitv1' (project 'Kopgitv1') has copy command from
+    '/Users/salih/Desktop/Github/Kopgitv1/ios/build/Build/Products/Debug-iphonesimulator/Kopgitv1.app/Entypo.ttf' 2)
+    Target 'Kopgitv1' (project 'Kopgitv1') has copy command from
     '/Users/salih/Desktop/Github/Kopgitv1/node_modules/react-native-vector-icons/Fonts/Entypo.ttf' to
-    '/Users/salih/Desktop/Github/Kopgitv1/ios/build/Build/Products/Debug-iphonesimulator/Kopgitv1.app/Entypo.ttf'
-    &lt;/code&gt;&lt;/pre&gt;
-    &lt;/figure&gt;
+    '/Users/salih/Desktop/Github/Kopgitv1/ios/build/Build/Products/Debug-iphonesimulator/Kopgitv1.app/Entypo.ttf'</code></pre>
+    </figure>
 </p>
 <p>
     I almost spent one day to solve this problem. I have reinstalled all the libraries many times to catch the original
@@ -54,15 +54,10 @@
     solution if you can't read the post.
 </p>
 <p>
-
-    &lt;figure&gt;
-    &lt;pre&gt;&lt;code&gt;
-    For newbies like me: you need to edit the file
-    &amp;lt;PROJECT_FOLDER&amp;gt;/ios/&amp;lt;PROJECT_NAME&amp;gt;.xcodeproj/project.pbxproj
-
-    Then comment out the font lines (files ending in .ttf) like this:
-
-    inputPaths = ( "${PODS_ROOT}/Target Support Files/Pods-drawer2/Pods-drawer2-resources.sh", //
+    <figure><pre><code> For newbies like me: you need to edit the file
+    &amp;lt;PROJECT_FOLDER&amp;gt;/ios/&amp;lt;PROJECT_NAME&amp;gt;.xcodeproj/project.pbxproj Then comment out the font
+    lines (files ending in .ttf) like this: inputPaths = ( "${PODS_ROOT}/Target Support
+    Files/Pods-drawer2/Pods-drawer2-resources.sh", //
     "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf", //
     "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf", //
     "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf", //
@@ -79,22 +74,23 @@
     "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf", //
     "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf", //
     "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf", ); name = "[CP] Copy Pods Resources";
-    outputPaths = ( //
-
-    &lt;/code&gt;&lt;/pre&gt;
-    &lt;/figure&gt;
+    outputPaths = ( // </code></pre>
+</figure>
 </p>
 <p>
-    If this still don't work for you, you can check following tutorials that have best solution that worked for the most.
+    If this still don't work for you, you can check following tutorials that have best solution that worked for the
+    most.
 </p>
 <p>
-    <a href = "https://github.com/oblador/react-native-vector-icons/issues/1074">1) [Xcode 11] 'Multiple commands produce' error when building with new Xcode build system</a>
+    <a href="https://github.com/oblador/react-native-vector-icons/issues/1074">1) [Xcode 11] 'Multiple commands produce'
+        error when building with new Xcode build system</a>
 </p>
 <p>
-    <a href = "https://stackoverflow.com/questions/50718018/xcode-10-error-multiple-commands-produce">2) Xcode 10 Error: Multiple commands produce
-    </a>
+    <a href="https://stackoverflow.com/questions/50718018/xcode-10-error-multiple-commands-produce">2) Xcode 10 Error:
+        Multiple commands produce </a>
 </p>
 <p>
-    <a href="https://github.com/facebook/react-native/issues/20492">3) 'Multiple commands produce' error when building with new Xcode build system</a>
+    <a href="https://github.com/facebook/react-native/issues/20492">3) 'Multiple commands produce' error when building
+        with new Xcode build system</a>
 </p>
 <p>Hope this article helped you. Best wishes to you from KePy :). </p>
