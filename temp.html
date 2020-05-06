@@ -1,35 +1,100 @@
-<h1 className="mb-3"> Best React Native Tutorial without Expo </h1>
-<p><img src="/images/blog/the-secret-of-100-commitment-and-success-is-10-behaviors-logo.png" alt className="img-fluid" /></p>
+<h1 className="mb-3"> Here's the common problems that you might face in react-native</h1>
 <p>
-     I wanted to learn mobile application. I went through many tutorials to find perfect programming language to create mobile application. In the end, I was in dilemma between react and flutter. Finally I decided to move on to start learning react native because recently I converted my HTML site to react. 
+    I hope you have just started to learning mobile app development using react native. There are lots of challenges to
+    adopting the new technology. I will write about which issue took my much time to solve.
+</p>
+<p><img src="/images/blog/problems-for-react-native-beginners-logo.png" alt className="img-fluid" /></p>
+<h2 className="mb-3 mt-5">Synchronisation Problem</h2>
+<p>
+    It's not easier to complete the installation of new technology. As you know, developers are keep trying to solve
+    this problem. However, each solution creates the new problem. In react native, you can simply install any new
+    libraries using the npm but there are lots of problem behind this. Developers keep introduces the new features,
+    solve previous bugs, improving architecture etc.
 </p>
 <p>
-    Now, it's time to find right tutorial to learn flow, architecture and basics. I looked into youtube, many blogs, official document as well. But, I didn't find any right tutorial.
+    In result, they keep update the versions of the libraries and we have to use latest version of the library. But,
+    when you update only one library then it directly affects the other libraries that depended on it. You will find
+    lots of issues about it in the Github.
+</p>
+<h2 className="mb-3 mt-5">Multiple commands produce</h2>
+<p>
+    The common problem that everyone faces in the react native is <b>Multiple commands produce</b>. As I was working on
+    <a href="/blog/react-native-tutorial-for-beginners-part-2">mobile onboarding</a> feature. So, I have to use
+    react-native-vector-icons library to include icons in my project.
 </p>
 <p>
-    Many tutorials are using the Expo that I don't want to include in my application. Basically, there are two ways to build native application in react. 1) Expo CLI 2) Native CLI 
+    But, this libary includes fonts library that already comes with react native original libary as well as with other
+    libraies (ex: react-native-base, galio-framework etc). So, when you build your project it clashes with other libray
+    and leads to <b>build fail</b>.
 </p>
-<h2 className="mb-3 mt-5">Expo vs Native</h2>
+<h2 className="mb-3 mt-5">Full Error</h2>
 <p>
-    If you are new to mobile development, the easiest way to get started is with Expo CLI. Expo is a set of tools built around React Native and, while it has many features, the most relevant feature for us right now is that it can get you writing a React Native app within minutes. You will only need a recent version of Node.js and a phone or emulator.
+    &lt;figure&gt;
+    &lt;pre&gt;&lt;code&gt;
+    error: Multiple commands produce
+    '/Users/salih/Desktop/Github/Kopgitv1/ios/build/Build/Products/Debug-iphonesimulator/Kopgitv1.app/Entypo.ttf':
+    1) Target 'Kopgitv1' (project 'Kopgitv1') has copy command from
+    '/Users/salih/Desktop/Github/Kopgitv1/node_modules/native-base/Fonts/Entypo.ttf' to
+    '/Users/salih/Desktop/Github/Kopgitv1/ios/build/Build/Products/Debug-iphonesimulator/Kopgitv1.app/Entypo.ttf'
+    2) Target 'Kopgitv1' (project 'Kopgitv1') has copy command from
+    '/Users/salih/Desktop/Github/Kopgitv1/node_modules/react-native-vector-icons/Fonts/Entypo.ttf' to
+    '/Users/salih/Desktop/Github/Kopgitv1/ios/build/Build/Products/Debug-iphonesimulator/Kopgitv1.app/Entypo.ttf'
+    &lt;/code&gt;&lt;/pre&gt;
+    &lt;/figure&gt;
 </p>
+<p>
+    I almost spent one day to solve this problem. I have reinstalled all the libraries many times to catch the original
+    problem. For that, I have created whole new project from the scratch and caught the issue. After that, I was looking
+    for the solution. Many tutorials are said to unlink react-native-vector-icons library but still it's only a quick
+    fix. I got many github and stackoverflow issue links but still no solution worked.
+</p>
+<p>
+    Finally, one article from gitmemory saved me. There solution worked for me. You can check whole post <a
+        href="https://gitmemory.com/issue/facebook/react-native/20492/557944837">here.</a> However, I'm attaching
+    solution if you can't read the post.
+</p>
+<p>
 
-<p>
-    If you are already familiar with mobile development, you may want to use React Native CLI. It requires Xcode or Android Studio to get started. If you already have one of these tools installed, you should be able to get up and running within a few minutes. If they are not installed, you should expect to spend about an hour installing and configuring them.
-</p>
+    &lt;figure&gt;
+    &lt;pre&gt;&lt;code&gt;
+    For newbies like me: you need to edit the file
+    &amp;lt;PROJECT_FOLDER&amp;gt;/ios/&amp;lt;PROJECT_NAME&amp;gt;.xcodeproj/project.pbxproj
 
-<p>
-    Overall, your final application size will be at least 20 mb using Expo CLI. So, I don't want that.
+    Then comment out the font lines (files ending in .ttf) like this:
+
+    inputPaths = ( "${PODS_ROOT}/Target Support Files/Pods-drawer2/Pods-drawer2-resources.sh", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf", ); name = "[CP] Copy Pods Resources";
+    outputPaths = ( //
+
+    &lt;/code&gt;&lt;/pre&gt;
+    &lt;/figure&gt;
 </p>
 <p>
-    As I have searched many tutorials to create application using Native-CLI but I can't find easily. Because, everyone suggests beginner to start learning using Expo CLI.
+    If this still don't work for you, you can check following tutorials that have best solution that worked for the most.
 </p>
 <p>
-    However, I decided to learn directly Native CLI. Hence, I dig into it more. In the end, I found really good tutorial to create the calculator app. You can start it from <a href="https://kylewbanks.com/blog/react-native-tutorial-part-1-hello-react">here.</a>
+    <a href = "https://github.com/oblador/react-native-vector-icons/issues/1074">1) [Xcode 11] 'Multiple commands produce' error when building with new Xcode build system</a>
 </p>
 <p>
-    Also, there is many more tutorials shared by <a href="https://github.com/jondot">Jondot</a> (github user). Here is the repository <a href="https://github.com/jondot/awesome-react-native">Awesome React Native</a>
+    <a href = "https://stackoverflow.com/questions/50718018/xcode-10-error-multiple-commands-produce">2) Xcode 10 Error: Multiple commands produce
+    </a>
 </p>
 <p>
-    Best wishes to you by KePy :).
+    <a href="https://github.com/facebook/react-native/issues/20492">3) 'Multiple commands produce' error when building with new Xcode build system</a>
 </p>
+<p>Hope this article helped you. Best wishes to you from KePy :). </p>
