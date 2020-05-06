@@ -1,18 +1,96 @@
-<h1 className="mb-3"> Mobile App Onboarding with React Native</h1>
-<p><img src="/images/blog/react-native-tutorial-for-beginners-part-2-logo.png" alt className="img-fluid" /></p>
+<h1 class="mb-3">
+    Here's the common problems that you might face in react-native
+</h1>
 <p>
-    After creating calculator app in react native. One can understand basic architecture, classes, libraries, intallation of react native by creating calculator app. Now, it's time to work on real application.
+    I hope you have just started to learning mobile app development using react native. There are lots of challenges to
+    adopting the new technology. I will write about which issue took my much time to solve.
 </p>
-<h2 className="mb-3 mt-5">Application Onboarding</h2>
+<p><img src="/images/blog/problems-for-react-native-beginners-logo.png" alt class="img-fluid" /></p>
+<h2 class="mb-3 mt-5">Synchronisation Problem</h2>
 <p>
-    First rule of mobile application is user can understand your application features. App onboarding is key for one core reason: if users don’t understand your app, they won’t use it. The onboarding process is a user’s first impression of your app, and when designed correctly, increases the likelihood of successful adoption. When a user launches your app for the first time, the onboarding process reinforces your app’s value and provides instructions that highlight key benefits and features. A strong onboarding process is essential to your app’s success.
+    It's not easier to complete the installation of new technology. As you know, developers are keep trying to solve
+    this problem. However, each solution creates the new problem. In react native, you can simply install any new
+    libraries using the npm but there are lots of problem behind this. Developers keep introduces the new features,
+    solve previous bugs, improving architecture etc.
 </p>
 <p>
-    I found good tutorial for creating mobile application onboarding. You can find whole tutorial <a href="https://rationalappdev.com/complete-guide-to-mobile-app-onboarding-with-react-native/#what-are-we-building">here</a>. Tutorial is written by Konstantin Shkut. The final app will look like below.
+    In result, they keep update the versions of the libraries and we have to use latest version of the library. But,
+    when you update only one library then it directly affects the other libraries that depended on it. You will find
+    lots of issues about it in the Github.
 </p>
-<p><img src="/images/blog/react-native-tutorial-for-beginners-part-2-1.gif" alt className="img-fluid" /></p>
-<h2 className="mb-3 mt-5">Expo vs Native</h2>
+<h2 class="mb-3 mt-5">Multiple commands produce</h2>
 <p>
-    You can get the source code of the app using git or directly on github. Github repo link: <a href="https://github.com/rationalappdev/onboarding.git">https://github.com/rationalappdev/onboarding.git</a> By following this tutorial, you will learn how to build an on boarding flow for your app. And you’re not limited to screens with some copy, icons or images. You can also have instructions on how to use your app, input fields, and some other sorts of customization controls. There are various ways of doing onboarding. It’d be a good idea to look at the apps with great onboarding to see what they do and find out what would work the best for your app.
+    The common problem that everyone faces in the react native is <b>Multiple commands produce</b>. As I was working on
+    <a href="/blog/react-native-tutorial-for-beginners-part-2">mobile onboarding</a> feature. So, I have to use
+    react-native-vector-icons library to include icons in my project.
 </p>
-<p> Best wishes to you from KePy :). </p>
+<p>
+    But, this libary includes fonts library that already comes with react native original libary as well as with other
+    libraies (ex: react-native-base, galio-framework etc). So, when you build your project it clashes with other libray
+    and leads to <b>build fail</b>.
+</p>
+<h2 class="mb-3 mt-5">Full Error</h2>
+<p>
+    <figure>
+        <pre><code> error: Multiple commands produce
+    '/Users/salih/Desktop/Github/Kopgitv1/ios/build/Build/Products/Debug-iphonesimulator/Kopgitv1.app/Entypo.ttf': 1)
+    Target 'Kopgitv1' (project 'Kopgitv1') has copy command from
+    '/Users/salih/Desktop/Github/Kopgitv1/node_modules/native-base/Fonts/Entypo.ttf' to
+    '/Users/salih/Desktop/Github/Kopgitv1/ios/build/Build/Products/Debug-iphonesimulator/Kopgitv1.app/Entypo.ttf' 2)
+    Target 'Kopgitv1' (project 'Kopgitv1') has copy command from
+    '/Users/salih/Desktop/Github/Kopgitv1/node_modules/react-native-vector-icons/Fonts/Entypo.ttf' to
+    '/Users/salih/Desktop/Github/Kopgitv1/ios/build/Build/Products/Debug-iphonesimulator/Kopgitv1.app/Entypo.ttf'</code></pre>
+    </figure>
+</p>
+<p>
+    I almost spent one day to solve this problem. I have reinstalled all the libraries many times to catch the original
+    problem. For that, I have created whole new project from the scratch and caught the issue. After that, I was looking
+    for the solution. Many tutorials are said to unlink react-native-vector-icons library but still it's only a quick
+    fix. I got many github and stackoverflow issue links but still no solution worked.
+</p>
+<p>
+    Finally, one article from gitmemory saved me. There solution worked for me. You can check whole post <a
+        href="https://gitmemory.com/issue/facebook/react-native/20492/557944837">here.</a> However, I'm attaching
+    solution if you can't read the post.
+</p>
+<p>
+    <figure><pre><code> For newbies like me: you need to edit the file
+    &amp;lt;PROJECT_FOLDER&amp;gt;/ios/&amp;lt;PROJECT_NAME&amp;gt;.xcodeproj/project.pbxproj Then comment out the font
+    lines (files ending in .ttf) like this: inputPaths = ( "${PODS_ROOT}/Target Support
+    Files/Pods-drawer2/Pods-drawer2-resources.sh", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf", //
+    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf", ); name = "[CP] Copy Pods Resources";
+    outputPaths = ( // </code></pre>
+</figure>
+</p>
+<p>
+    If this still don't work for you, you can check following tutorials that have best solution that worked for the
+    most.
+</p>
+<p>
+    <a href="https://github.com/oblador/react-native-vector-icons/issues/1074">1) [Xcode 11] 'Multiple commands produce'
+        error when building with new Xcode build system</a>
+</p>
+<p>
+    <a href="https://stackoverflow.com/questions/50718018/xcode-10-error-multiple-commands-produce">2) Xcode 10 Error:
+        Multiple commands produce </a>
+</p>
+<p>
+    <a href="https://github.com/facebook/react-native/issues/20492">3) 'Multiple commands produce' error when building
+        with new Xcode build system</a>
+</p>
+<p>Hope this article helped you. Best wishes to you from KePy :). </p>
