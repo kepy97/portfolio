@@ -1,96 +1,35 @@
-<h1 class="mb-3">
-    Here's the common problems that you might face in react-native
-</h1>
-<p>
-    I hope you have just started to learning mobile app development using react native. There are lots of challenges to
-    adopting the new technology. I will write about which issue took my much time to solve.
+<h1 class="mb-3"> Understanding AsyncStorage, Redux: Why and How it can be used in React-Native? </h1>
+<h2 class="mb-3 mt-5">Why Redux?</h2>
+<p> 
+    First, we have to understand why redux is needed in our application. Recently, I completed mobile onboarding application. After that, user moved to the homepage. However, when user refreshed the application; mobile onboarding screens again shown to the user. The purpose of mobile onboarding screen to show main features of the application to the user---This should be one time only--.
 </p>
-<p><img src="/images/blog/problems-for-react-native-beginners-logo.png" alt class="img-fluid" /></p>
-<h2 class="mb-3 mt-5">Synchronisation Problem</h2>
+<p><img src="/images/blog/react-redux-guide-for-beginners-logo.png" alt class="img-fluid" /></p>
+<h2 class="mb-3 mt-5">AsyncStorage</h2>
 <p>
-    It's not easier to complete the installation of new technology. As you know, developers are keep trying to solve
-    this problem. However, each solution creates the new problem. In react native, you can simply install any new
-    libraries using the npm but there are lots of problem behind this. Developers keep introduces the new features,
-    solve previous bugs, improving architecture etc.
+    As you know, react native manages state data component wise and you need to store boolean flag (ex. userOnboardingCompleted?) to create condition on mobile onboarding screens. So, I looked for the local storage and found well known library "AsyncStorage" for react-native. This thing worked for me. <b>Do not use react-native core component for that as it is deprecated in new versions.</b> Follow this tutorial to start with <a href="https://github.com/react-native-community/async-storage">AsyncStorage</a> and trust me it is very easy part.
 </p>
+<h2 class="mb-3 mt-5">Redux</h2>
 <p>
-    In result, they keep update the versions of the libraries and we have to use latest version of the library. But,
-    when you update only one library then it directly affects the other libraries that depended on it. You will find
-    lots of issues about it in the Github.
-</p>
-<h2 class="mb-3 mt-5">Multiple commands produce</h2>
-<p>
-    The common problem that everyone faces in the react native is <b>Multiple commands produce</b>. As I was working on
-    <a href="/blog/react-native-tutorial-for-beginners-part-2">mobile onboarding</a> feature. So, I have to use
-    react-native-vector-icons library to include icons in my project.
+    Now, I want to use apiToken in every component. You might be thinking: it is easy to get values from the local storage using AsyncStorage getItem function. But, it is bad designing because everytime your application fetch value from the storage so it takes much time to render new pages.
 </p>
 <p>
-    But, this libary includes fonts library that already comes with react native original libary as well as with other
-    libraies (ex: react-native-base, galio-framework etc). So, when you build your project it clashes with other libray
-    and leads to <b>build fail</b>.
+    This time redux come into the picture. Redux is a state manager. In other way, it is state management libraries beautifully keep logic and behaviours abstracted away from the UI. So, your application reads local storage data one time and stores it into the memory using state. Now, redux passes this data to every component so it will save lot of time.
 </p>
-<h2 class="mb-3 mt-5">Full Error</h2>
+<h2 class="mb-3 mt-5">Challenges</h2>
 <p>
-    <figure>
-        <pre><code> error: Multiple commands produce
-    '/Users/salih/Desktop/Github/Kopgitv1/ios/build/Build/Products/Debug-iphonesimulator/Kopgitv1.app/Entypo.ttf': 1)
-    Target 'Kopgitv1' (project 'Kopgitv1') has copy command from
-    '/Users/salih/Desktop/Github/Kopgitv1/node_modules/native-base/Fonts/Entypo.ttf' to
-    '/Users/salih/Desktop/Github/Kopgitv1/ios/build/Build/Products/Debug-iphonesimulator/Kopgitv1.app/Entypo.ttf' 2)
-    Target 'Kopgitv1' (project 'Kopgitv1') has copy command from
-    '/Users/salih/Desktop/Github/Kopgitv1/node_modules/react-native-vector-icons/Fonts/Entypo.ttf' to
-    '/Users/salih/Desktop/Github/Kopgitv1/ios/build/Build/Products/Debug-iphonesimulator/Kopgitv1.app/Entypo.ttf'</code></pre>
-    </figure>
+    Learning redux is quite difficult as you have to learn many new things. When I approached Redux for the first time today I was confused. There is too much terminology: action, reducer, middleware. But on top of that it wasn't clear to me how were all the moving parts glued together? There were some minions or what? In Redux there are no minions (unfortunately).
+</p>
+<h2 class="mb-3 mt-5">Solution</h2>
+<p>
+    However, it is not that hard if you follow this tutorial completely. 
 </p>
 <p>
-    I almost spent one day to solve this problem. I have reinstalled all the libraries many times to catch the original
-    problem. For that, I have created whole new project from the scratch and caught the issue. After that, I was looking
-    for the solution. Many tutorials are said to unlink react-native-vector-icons library but still it's only a quick
-    fix. I got many github and stackoverflow issue links but still no solution worked.
+    <a href="https://css-tricks.com/understanding-how-reducers-are-used-in-redux/">1) https://css-tricks.com/understanding-how-reducers-are-used-in-redux/</a>
 </p>
 <p>
-    Finally, one article from gitmemory saved me. There solution worked for me. You can check whole post <a
-        href="https://gitmemory.com/issue/facebook/react-native/20492/557944837">here.</a> However, I'm attaching
-    solution if you can't read the post.
+    <a href="https://www.youtube.com/watch?v=KcC8KZ_Ga2M">#1 WTF is Redux? | React Native App | Redux Tutorial</a>
 </p>
 <p>
-    <figure><pre><code> For newbies like me: you need to edit the file
-    &amp;lt;PROJECT_FOLDER&amp;gt;/ios/&amp;lt;PROJECT_NAME&amp;gt;.xcodeproj/project.pbxproj Then comment out the font
-    lines (files ending in .ttf) like this: inputPaths = ( "${PODS_ROOT}/Target Support
-    Files/Pods-drawer2/Pods-drawer2-resources.sh", //
-    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf", //
-    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf", //
-    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf", //
-    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf", //
-    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf", //
-    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf", //
-    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf", //
-    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf", //
-    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf", //
-    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf", //
-    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf", //
-    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf", //
-    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf", //
-    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf", //
-    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf", //
-    "${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf", ); name = "[CP] Copy Pods Resources";
-    outputPaths = ( // </code></pre>
-</figure>
+    Above two tutorials are enough to understand the react redux but you have to do practice together and understand concept thouroughly. 
 </p>
-<p>
-    If this still don't work for you, you can check following tutorials that have best solution that worked for the
-    most.
-</p>
-<p>
-    <a href="https://github.com/oblador/react-native-vector-icons/issues/1074">1) [Xcode 11] 'Multiple commands produce'
-        error when building with new Xcode build system</a>
-</p>
-<p>
-    <a href="https://stackoverflow.com/questions/50718018/xcode-10-error-multiple-commands-produce">2) Xcode 10 Error:
-        Multiple commands produce </a>
-</p>
-<p>
-    <a href="https://github.com/facebook/react-native/issues/20492">3) 'Multiple commands produce' error when building
-        with new Xcode build system</a>
-</p>
-<p>Hope this article helped you. Best wishes to you from KePy :). </p>
+<p>Thanks for reading and stay tuned on this blog! Happy coding!!!!!</p>
