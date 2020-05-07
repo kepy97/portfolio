@@ -1,35 +1,30 @@
-<h1 class="mb-3"> Understanding AsyncStorage, Redux: Why and How it can be used in React-Native? </h1>
-<h2 class="mb-3 mt-5">Why Redux?</h2>
+<h1 class="mb-3"> Time saver library to manage redux state data locally. </h1>
 <p> 
-    First, we have to understand why redux is needed in our application. Recently, I completed mobile onboarding application. After that, user moved to the homepage. However, when user refreshed the application; mobile onboarding screens again shown to the user. The purpose of mobile onboarding screen to show main features of the application to the user---This should be one time only--.
+    Redux is a great library which solves many issues related to keeping a state of an application. Thanks to it, we no longer have to worry about the hierarchy of components. The central store can be accessed from every component to get the current state of any aspect of an application.
 </p>
 <p><img src="/images/blog/react-redux-guide-for-beginners-logo.png" alt class="img-fluid" /></p>
-<h2 class="mb-3 mt-5">AsyncStorage</h2>
+<h2 class="mb-3 mt-5">Local Storage</h2>
 <p>
-    As you know, react native manages state data component wise and you need to store boolean flag (ex. userOnboardingCompleted?) to create condition on mobile onboarding screens. So, I looked for the local storage and found well known library "AsyncStorage" for react-native. This thing worked for me. <b>Do not use react-native core component for that as it is deprecated in new versions.</b> Follow this tutorial to start with <a href="https://github.com/react-native-community/async-storage">AsyncStorage</a> and trust me it is very easy part.
+    However, sometimes you may need to store redux state data locally. For ex, storing user profile name, user name can be used multiple components. As per current understanding, you will read and write profile name from local storage--AsyncStorage--.
 </p>
-<h2 class="mb-3 mt-5">Redux</h2>
+<h2 class="mb-3 mt-5">Redux-Persist</h2>
 <p>
-    Now, I want to use apiToken in every component. You might be thinking: it is easy to get values from the local storage using AsyncStorage getItem function. But, it is bad designing because everytime your application fetch value from the storage so it takes much time to render new pages.
-</p>
-<p>
-    This time redux come into the picture. Redux is a state manager. In other way, it is state management libraries beautifully keep logic and behaviours abstracted away from the UI. So, your application reads local storage data one time and stores it into the memory using state. Now, redux passes this data to every component so it will save lot of time.
-</p>
-<h2 class="mb-3 mt-5">Challenges</h2>
-<p>
-    Learning redux is quite difficult as you have to learn many new things. When I approached Redux for the first time today I was confused. There is too much terminology: action, reducer, middleware. But on top of that it wasn't clear to me how were all the moving parts glued together? There were some minions or what? In Redux there are no minions (unfortunately).
-</p>
-<h2 class="mb-3 mt-5">Solution</h2>
-<p>
-    However, it is not that hard if you follow this tutorial completely. 
+    But, you can do this using redux persist library. Redux-persist is a simple library; it’s a wrapper for a store that automatically saves a redux state to the storage. Also, you can define where it should save data, and available options depend on a platform; you can choose localStorage, sessionStorage, localForage, AsyncStorage or we can even integrate it with the custom storage. In future, if you want to change local storage then you have to <b>change in only one file.</b>
 </p>
 <p>
-    <a href="https://css-tricks.com/understanding-how-reducers-are-used-in-redux/">1) https://css-tricks.com/understanding-how-reducers-are-used-in-redux/</a>
+    There are many configuration you can give to the library and it makes your life very easy. Suppose, you don't want to store every data in the local storage. So, there is a option to provide <b>whitelist</b> and <b>blacklist</b> components. Blacklist components navigation will not be persisted--oppose to whitelist--.
+</p>
+<h2 class="mb-3 mt-5">Tutorial</h2>
+<p>
+    If you think, it is useful in your application. You can follow below tutorials to get complete understanding about redux persist.
 </p>
 <p>
-    <a href="https://www.youtube.com/watch?v=KcC8KZ_Ga2M">#1 WTF is Redux? | React Native App | Redux Tutorial</a>
+    <a href="https://www.youtube.com/watch?v=J3aJNTqeXMw">React Native Redux Persist [ How to use redux persist ]</a>
 </p>
 <p>
-    Above two tutorials are enough to understand the react redux but you have to do practice together and understand concept thouroughly. 
+    <a href="https://blog.reactnativecoach.com/the-definitive-guide-to-redux-persist-84738167975">The Definitive Guide to Redux Persist</a>
+</p>
+<p>
+    I followed above two tutorials first time to get started with redux persist library. Now, you don't have to communicate to local storage directly.
 </p>
 <p>Thanks for reading and stay tuned on this blog! Happy coding!!!!!</p>
