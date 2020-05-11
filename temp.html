@@ -1,105 +1,54 @@
-<h1 class="mb-3"> How to deploy React App to GitHub Pages? </h1>
+<h1 class="mb-3"> Start the emulator from the command line in MAC OS </h1>
 <p>
-    Recently, I have converted my static website to dynamic using react. Now, it's time to host it on Github Pages. You
-    might know what is Github Pages but for novice.
-</p>
-<p><img src="/images/blog/hosting-react-blog-to-github-pages-logo.png" alt class="img-fluid" /></p>
-<h2 class="mb-3 mt-5">Github Pages</h2>
-<p>
-    Github is a company that hosts "code repositories", collections of code for projects. Many of the code repositories
-    are "open source", which means they're publicly available for the whole world to browse. Well, Github has a feature
-    called Github Pages, which makes it easy and free for you to create a multi-file website hosted at
-    yourusername.github.io.
+    I'm developing mobile application in react-native. Manytimes I want to test my application in android device. It's very hard to test application by building apk and run on physical device. If you are developing application in react-native or any cross platform, you might want to run application on iOS as well android device. 
 </p>
 <p>
-    I already hosted my static website on the Github pages so I just have to change the repository. If you want to host
-    your react app from the scratch you can follow this latest <a
-        href="https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f">tutorial.</a>
+    It's easy to test application in ios emulator because react-native run-ios can directly opens the emulator in MAC OS. However, react-native run-android command can't open android emulator. You have to open android studio to start the emulator.
 </p>
-<h2 class="mb-3 mt-5">Copying branch from one repository to another, preserving git history</h2>
+<p><img src="/images/blog/how-to-run-android-emulator-without-opening-android-studio-logo.png" alt class="img-fluid" /></p>
+<h2 class="mb-3 mt-5">Solution</h2>
 <p>
-    In the multi-repository project structure, its only a matter of time when you’ll want to refactor some files from
-    one project to another. I was maintaining my static website on one repository and created new react app in new
-    repository. Now, I have to copy all previous branches to new branches as it doesn't worth to leave old repository.
-    However, it can be useful in future so it's good idea to take backup.
+    You can start the emulator using command line. Firsly, your system have installed android studio. Then, go to the android sdk folder. Default installation path in MAC os is:
 </p>
-<p>
-    Copying branches from another repository is quite easy task. You just have to follow below steps.
-</p>
-<h3 class="mb-3 mt-5">Repository url</h3>
-<p>
-<pre>
-        <code>
-            origin: https://github.com/kepy97/portfolio.git #::Your original repository
-            remote: https://github.com/kepy97/old_portfolio.git #::Repository that you want to copy branches
-        </code>
-    </pre>
-</p>
-<h3 class="mb-3 mt-5">Copy all branch from another repository</h3>
-<p>
-<pre>
-        <code>
-            $ git clone https://github.com/kepy97/portfolio.git #::clone origin repo
-            $ cd git-test
-            $ git remote add old_repo https://github.com/kepy97/old_portfolio.git #::add as a remote branch
-        </code>
-    </pre>
-</p>
-<h3 class="mb-3 mt-5">show all remote repo</h3>
-<p>
-<pre>
-        <code>
-            $ git remote -v
-            html5   https://github.com/kepy97/old_portfolio.git (fetch)
-            html5   https://github.com/kepy97/old_portfolio.git (push)
-            origin  https://github.com/kepy97/portfolio.git (fetch)
-            origin  https://github.com/kepy97/portfolio.git (push)
-        </code>
-    </pre>
-</p>
-<h3 class="mb-3 mt-5">fetch remote repo data and show branches</h3>
-<p>
-<pre>
-        <code>
-            $ git fetch html5
-            $ git branch -a
-            * master                       
-            remotes/old_repo/master      
-            remotes/old_repo/blog        
-            remotes/origin/HEAD          
-            remotes/origin/master        
-        </code>
-    </pre>
-</p>
-<h3 class="mb-3 mt-5">Copy old_repo/blog branch to origin repository</h3>
 <p>
     <pre>
         <code>
-            $ git checkout -b old_site_blog old_repo/blog
+            /Users/yoursystemname/Library/Android/sdk/emulator
         </code>
     </pre>
-    old_site_blog = "New branch name in original repo"
-    old_repo/blog = "the branch name that you want to copy"
 </p>
-<h3 class="mb-3 mt-5">push old_site_blog to origin server</h3>
 <p>
+    Change your system name in above path. After that,
     <pre>
         <code>
-            $ git push origin old_site_blog
+            emulator -list-avds
+        </code>
+    </pre>
+    OR
+    <pre>
+        <code>
+            ./emulator -list-avds
         </code>
     </pre>
 </p>
 <p>
-    Now, you can see all your <b>old_repo_blog</b> copied into origin branch online. If you want to copy another branch then follow last two steps again.
+    Then copy the <b>avd_name</b> that you want to start. After that run following command:
+    <pre>
+        <code>
+            emulator @avd_name
+        </code>
+    </pre>
+    OR
+    <pre>
+        <code>
+            ./emulator @avd_name
+        </code>
+    </pre>
 </p>
-<h2 class="mb-3 mt-5">Many of you might want to use Custom Domain in react app</h2>
+<p><img src="/images/blog/how-to-run-android-emulator-without-opening-android-studio-1.png" alt class="img-fluid" /></p>
 <p>
-    To use custom domain, you have to setup github repository and change your DNS to github servers. You can follow this pretty forward tutorial <a href="https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site">here.</a> 
+    Now, your emulator will start. Many people find this problem:<a href="https://stackoverflow.com/questions/26483370/android-emulator-error-message-panic-missing-emulator-engine-program-for-x86">"PANIC: Missing emulator engine program for 'x86' CPUS."</a> In that case, you just have to go to the emulator directory instead of toools. If you face any problem then check above screenshot for more details.
 </p>
 <p>
-    However, when you setup for react application you have to provide CNAME in github repository. But, when you run <b>npm run deploy</b> command, it overrides/delete the CNAME file. So, everytime you have to update the CNAME online. There's a open issue on github <a href="https://github.com/tschaub/gh-pages/issues/127">gh-pages -d dist overwrites custom domain</a>
+    Hope this article helped you. Best wishes to you from KePy :). 
 </p>
-<p>
-    There's a solution for automatic CNAME changes. You just have to add CNAME file in /public directory. create-react-app will include all /public directory files in the build output.
-</p>
-<p>Hope this tutorial helped you! Happy coding!!!!!</p>
