@@ -195,6 +195,39 @@
          "published": true,
          "created": "2020-05-10T21:25:49.984Z",
          "updated": "2020-05-10T21:25:49.984Z"
+      },
+      {
+         "id": 12,
+         "title": "How to run android emulator without opening Android Studio?",
+         "url": "how-to-run-android-emulator-without-opening-android-studio",
+         "tags": [
+            "react-native",
+            "android",
+            "android-studio",
+            "kepy's-word"
+         ],
+         "image": "blog/how-to-run-android-emulator-without-opening-android-studio-logo.png",
+         "description": "Start the emulator from the command line",
+         "body": "<h1 class=\"mb-3\"> Start the emulator from the command line in MAC OS </h1> <p> I'm developing mobile application in react-native. Manytimes I want to test my application in android device. It's very hard to test application by building apk and run on physical device. If you are developing application in react-native or any cross platform, you might want to run application on iOS as well android device. </p> <p> It's easy to test application in ios emulator because react-native run-ios can directly opens the emulator in MAC OS. However, react-native run-android command can't open android emulator. You have to open android studio to start the emulator. </p> <p><img src=\"/images/blog/how-to-run-android-emulator-without-opening-android-studio-logo.png\" alt class=\"img-fluid\" /></p> <h2 class=\"mb-3 mt-5\">Solution</h2> <p> You can start the emulator using command line. Firsly, your system have installed android studio. Then, go to the android sdk folder. Default installation path in MAC os is: </p> <p> <pre> <code> /Users/yoursystemname/Library/Android/sdk/emulator </code> </pre> </p> <p> Change your system name in above path. After that, <pre> <code> emulator -list-avds </code> </pre> OR <pre> <code> ./emulator -list-avds </code> </pre> </p> <p> Then copy the <b>avd_name</b> that you want to start. After that run following command: <pre> <code> emulator @avd_name </code> </pre> OR <pre> <code> ./emulator @avd_name </code> </pre> </p> <p><img src=\"/images/blog/how-to-run-android-emulator-without-opening-android-studio-1.png\" alt class=\"img-fluid\" /></p> <p> Now, your emulator will start. Many people find this problem:<a href=\"https://stackoverflow.com/questions/26483370/android-emulator-error-message-panic-missing-emulator-engine-program-for-x86\">\"PANIC: Missing emulator engine program for 'x86' CPUS.\"</a> In that case, you just have to go to the emulator directory instead of toools. If you face any problem then check above screenshot for more details. </p> <p> Hope this article helped you. Best wishes to you from KePy :). </p> ",
+         "published": true,
+         "created": "2020-05-10T23:18:48.095Z",
+         "updated": "2020-05-10T23:18:48.095Z"
+      },
+      {
+         "id": 13,
+         "title": "Surviving Finals Week",
+         "url": "surviving-finals-week",
+         "tags": [
+            "masters",
+            "study",
+            "kepy's-word"
+         ],
+         "image": "blog/surviving-finals-week-logo.png",
+         "description": "Final Week of semester Spring 2020",
+         "body": "<h1 class=\"mb-3\"> Final Week of semester Spring 2020 </h1> <p> This is second semester of my masters at <a href=\"https://uwm.edu/\">University of Wisconsin-Milwaukee</a>. After getting down a routine during the first couple weeks of college, semester will start to move quickly. Weeks go fast because there is a lot of work assigned in class on top of tests and activities. </p> <p> In addition, this is the end of the most unusual spring semester in memory. Half semester education shifted to online. There were many challenges but time spent very quickly. During this stressful week, there are exams in many courses. And the exam percentages are high in final grades. </p> <p><img src=\"/images/blog/surviving-finals-week-logo.png\" alt class=\"img-fluid\" /></p> <h2 class=\"mb-3 mt-5\">Solution</h2> <p> Time management is extremely important during finals week. All exams gonna be online this semester. Also, there is project submission in my course that will due after the exam. So, I wish all of my friends to All the very best for the exam. </p> <p> Best wishes to you from KePy :). </p> ",
+         "published": true,
+         "created": "2020-05-12T16:51:50.541Z",
+         "updated": "2020-05-12T16:51:50.541Z"
       }
    ]
 }

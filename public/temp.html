@@ -1,105 +1,15 @@
-<h1 class="mb-3"> How to deploy React App to GitHub Pages? </h1>
+<h1 class="mb-3"> Final Week of semester Spring 2020 </h1>
 <p>
-    Recently, I have converted my static website to dynamic using react. Now, it's time to host it on Github Pages. You
-    might know what is Github Pages but for novice.
-</p>
-<p><img src="/images/blog/hosting-react-blog-to-github-pages-logo.png" alt class="img-fluid" /></p>
-<h2 class="mb-3 mt-5">Github Pages</h2>
-<p>
-    Github is a company that hosts "code repositories", collections of code for projects. Many of the code repositories
-    are "open source", which means they're publicly available for the whole world to browse. Well, Github has a feature
-    called Github Pages, which makes it easy and free for you to create a multi-file website hosted at
-    yourusername.github.io.
+    This is second semester of my masters at <a href="https://uwm.edu/">University of Wisconsin-Milwaukee</a>. After getting down a routine during the first couple weeks of college, semester will start to move quickly. Weeks go fast because there is a lot of work assigned in class on top of tests and activities. 
 </p>
 <p>
-    I already hosted my static website on the Github pages so I just have to change the repository. If you want to host
-    your react app from the scratch you can follow this latest <a
-        href="https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f">tutorial.</a>
+    In addition, this is the end of the most unusual spring semester in memory. Half semester education shifted to online. There were many challenges but time spent very quickly. During this stressful week, there are exams in many courses. And the exam percentages are high in final grades.
 </p>
-<h2 class="mb-3 mt-5">Copying branch from one repository to another, preserving git history</h2>
+<p><img src="/images/blog/surviving-finals-week-logo.png" alt class="img-fluid" /></p>
+<h2 class="mb-3 mt-5">Solution</h2>
 <p>
-    In the multi-repository project structure, its only a matter of time when you’ll want to refactor some files from
-    one project to another. I was maintaining my static website on one repository and created new react app in new
-    repository. Now, I have to copy all previous branches to new branches as it doesn't worth to leave old repository.
-    However, it can be useful in future so it's good idea to take backup.
+    Time management is extremely important during finals week. All exams gonna be online this semester. Also, there is project submission in my course that will due after the exam. So, I wish all of my friends to All the very best for the exam.
 </p>
 <p>
-    Copying branches from another repository is quite easy task. You just have to follow below steps.
+    Best wishes to you from KePy :). 
 </p>
-<h3 class="mb-3 mt-5">Repository url</h3>
-<p>
-<pre>
-        <code>
-            origin: https://github.com/kepy97/portfolio.git #::Your original repository
-            remote: https://github.com/kepy97/old_portfolio.git #::Repository that you want to copy branches
-        </code>
-    </pre>
-</p>
-<h3 class="mb-3 mt-5">Copy all branch from another repository</h3>
-<p>
-<pre>
-        <code>
-            $ git clone https://github.com/kepy97/portfolio.git #::clone origin repo
-            $ cd git-test
-            $ git remote add old_repo https://github.com/kepy97/old_portfolio.git #::add as a remote branch
-        </code>
-    </pre>
-</p>
-<h3 class="mb-3 mt-5">show all remote repo</h3>
-<p>
-<pre>
-        <code>
-            $ git remote -v
-            html5   https://github.com/kepy97/old_portfolio.git (fetch)
-            html5   https://github.com/kepy97/old_portfolio.git (push)
-            origin  https://github.com/kepy97/portfolio.git (fetch)
-            origin  https://github.com/kepy97/portfolio.git (push)
-        </code>
-    </pre>
-</p>
-<h3 class="mb-3 mt-5">fetch remote repo data and show branches</h3>
-<p>
-<pre>
-        <code>
-            $ git fetch html5
-            $ git branch -a
-            * master                       
-            remotes/old_repo/master      
-            remotes/old_repo/blog        
-            remotes/origin/HEAD          
-            remotes/origin/master        
-        </code>
-    </pre>
-</p>
-<h3 class="mb-3 mt-5">Copy old_repo/blog branch to origin repository</h3>
-<p>
-    <pre>
-        <code>
-            $ git checkout -b old_site_blog old_repo/blog
-        </code>
-    </pre>
-    old_site_blog = "New branch name in original repo"
-    old_repo/blog = "the branch name that you want to copy"
-</p>
-<h3 class="mb-3 mt-5">push old_site_blog to origin server</h3>
-<p>
-    <pre>
-        <code>
-            $ git push origin old_site_blog
-        </code>
-    </pre>
-</p>
-<p>
-    Now, you can see all your <b>old_repo_blog</b> copied into origin branch online. If you want to copy another branch then follow last two steps again.
-</p>
-<h2 class="mb-3 mt-5">Many of you might want to use Custom Domain in react app</h2>
-<p>
-    To use custom domain, you have to setup github repository and change your DNS to github servers. You can follow this pretty forward tutorial <a href="https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site">here.</a> 
-</p>
-<p>
-    However, when you setup for react application you have to provide CNAME in github repository. But, when you run <b>npm run deploy</b> command, it overrides/delete the CNAME file. So, everytime you have to update the CNAME online. There's a open issue on github <a href="https://github.com/tschaub/gh-pages/issues/127">gh-pages -d dist overwrites custom domain</a>
-</p>
-<p>
-    There's a solution for automatic CNAME changes. You just have to add CNAME file in /public directory. create-react-app will include all /public directory files in the build output.
-</p>
-<p>Hope this tutorial helped you! Happy coding!!!!!</p>
