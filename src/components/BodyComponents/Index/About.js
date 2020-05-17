@@ -22,9 +22,8 @@ export default class About extends React.Component {
 			                  <p>I'm a software developer based in Stoughton, Wisconsin, USA. I have a passion for programming and a great experience on how to create web and mobile applications.</p>
 			                  <ul className="about-info mt-4 px-md-0 px-2">
 			                     <li className="d-flex"><span>Name:</span> <span>Keyul Patel</span></li>
-			                     <li className="d-flex"><span>Date of birth:</span> <span>April 14, 1997</span></li>
 			                     <li className="d-flex"><span>Email:</span> <span><a href="mailto:kvpatel@uwm.edu">kvpatel@uwm.edu</a></span></li>
-			                     <li className="d-flex"><span>Phone: </span> <span><a href="tel:+17123016140">+1-712-301-6140</a></span></li>
+								 <li className="d-flex"><span>Location:</span> <span><a href="https://goo.gl/maps/o8wZC6tmA6w7a1s29">Wisconsin, USA</a></span></li>
 			                  </ul>
 			               </div>
 			            </div>

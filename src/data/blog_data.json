@@ -44,7 +44,7 @@
             "react",
             "javascript",
             "programming",
-            "self-improvement"
+            "kepy's-word"
          ],
          "image": "blog/How-to-call-external-Javascript-file-function-from-react-component-logo.png",
          "description": "Is there any way to call external js file function from inside react component?",
@@ -61,7 +61,7 @@
             "react-native",
             "javascript",
             "programming",
-            "self-improvement"
+            "kepy's-word"
          ],
          "image": "blog/On-my-way-to-build-mobile-application-logo.png",
          "description": "Stepping into mobile application development",
@@ -110,7 +110,8 @@
          "tags": [
             "react-native",
             "tutorial",
-            "javascript"
+            "javascript",
+            "kepy's-word"
          ],
          "image": "blog/react-native-tutorial-for-beginners-part-2-logo.png",
          "description": "Mobile App Onboarding with React Native",

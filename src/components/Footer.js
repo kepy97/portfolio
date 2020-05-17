@@ -49,9 +49,10 @@ export default class Footer extends React.Component {
                 <h2 className="ftco-heading-2">Have a Questions?</h2>
                 <div className="block-23 mb-3">
                   <ul>
-                    <li><span className="icon icon-map-marker" /><span className="text">2216 Lake Woods Way, Stoughton, Wisconsin, USA</span></li>
-                    <li><a href="tel:+17123016140"><span className="icon icon-phone" /><span className="text">+1-712-301-6140</span></a></li>
-                    <li><a href="mailto:kvpatel@uwm.edu"><span className="icon icon-envelope" /><span className="text">kvpatel@uwm.edu</span></a></li>
+                    <li><a href="mailto:kvpatel@uwm.edu" target="_blank"><span className="icon icon-envelope" /><span className="text">kvpatel@uwm.edu</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/kepy97/" target="_blank"><span className="icon icon-linkedin" /><span className="text">Linkedin</span></a></li>
+                    <li><a href="https://github.com/kepy97" target="_blank"><span className="icon icon-github" /><span className="text">Github</span></a></li>
+                    <li><a href="https://goo.gl/maps/o8wZC6tmA6w7a1s29" target="_blank"><span className="icon icon-map-marker" /><span className="text">Wisconsin, USA</span></a></li>
                   </ul>
                 </div>
               </div>

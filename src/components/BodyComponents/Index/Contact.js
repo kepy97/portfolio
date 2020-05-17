@@ -19,19 +19,8 @@ export default class Contact extends React.Component {
                         <span className="icon-map-signs" />
                       </div>
                       <div>
-                        <h3 className="mb-4">Address</h3>
-                        <p>2216 Lake Woods Way Stoughton WI 53589 USA</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-6 col-lg-3 d-flex ftco-animate">
-                    <div className="align-self-stretch box text-center p-4 shadow">
-                      <div className="icon d-flex align-items-center justify-content-center">
-                        <span className="icon-phone2" />
-                      </div>
-                      <div>
-                        <h3 className="mb-4">Contact Number</h3>
-                        <p><a href="tel:+17123016140">+1-712-301-6140</a></p>
+                        <h3 className="mb-4">Location</h3>
+                        <p><a href="https://goo.gl/maps/o8wZC6tmA6w7a1s29" target="_blank">Wisconsin, USA</a></p>
                       </div>
                     </div>
                   </div>
@@ -54,6 +43,17 @@ export default class Contact extends React.Component {
                       <div>
                         <h3 className="mb-4">Profile</h3>
                         <p><a href="https://www.linkedin.com/in/kepy97/" target="_blank">LinkedIn</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div className="align-self-stretch box text-center p-4 shadow">
+                      <div className="icon d-flex align-items-center justify-content-center">
+                        <span className="icon-github" />
+                      </div>
+                      <div>
+                        <h3 className="mb-4">Projects</h3>
+                        <p><a href="https://github.com/kepy97" target="_blank">Github</a></p>
                       </div>
                     </div>
                   </div>
