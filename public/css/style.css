@@ -9697,7 +9697,9 @@ textarea.form-control {
     border-radius: 200px;
     color: #fff !important;
     text-decoration: none;
-    transition: 0.4s ease all;}
+    transition: 0.4s ease all;
+    cursor: pointer;
+  }
   
 .cancel_btn:hover {color: #000000 !important;}
 .slide-menu-middle .inner-slide-menu{padding: 0;}
@@ -9779,4 +9781,11 @@ color: #FFFFFF
 .blogBannerButton {
   width: 100%; 
   text-align: center;
+}
+
+.blogIndexBorder {
+  margin-top: 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
 }

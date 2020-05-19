@@ -1,15 +1,23 @@
 import React from 'react';
 import Sidebar from './Sidebar';
+import { Redirect } from "react-router-dom";
 
 export default class BlogBody extends React.Component {
     componentDidMount() {
         window.globalFunction();
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
     }
     render() {
         const posts = this.props.postsData;
         const { params } = this.props.match
         const postData = posts.filter(post => post.url === params.url)
-
+        if (postData.length < 1) {
+            return <Redirect to={process.env.PUBLIC_URL + "/blog/index"} />
+        }
         return (
             <div>
                 <div className="hero-wrap js-fullheight">
@@ -30,7 +38,7 @@ export default class BlogBody extends React.Component {
                             <div className="col-lg-8 ftco-animate" id="post-section">
                                 <div dangerouslySetInnerHTML={{ __html: postData[0].body }} />
                             </div>
-                            <Sidebar postData = {posts}/>
+                            <Sidebar postData={posts} />
                         </div>
                     </div>
                 </section>

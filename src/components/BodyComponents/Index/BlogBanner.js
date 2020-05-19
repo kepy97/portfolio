@@ -42,7 +42,13 @@ export default class BlogBanner extends React.Component {
               })
             }
             <div className="blogBannerButton">
-              <a href="/resume/resume.pdf" className="btn btn-primary py-3 px-3">View More</a>
+
+              <Link to={{ pathname: `/blog/index` }}>
+                <div className="btn btn-primary py-3 px-3">
+                  View More
+                  </div>
+              </Link>
+
             </div>
           </div>
         </div>
