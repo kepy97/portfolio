@@ -159,7 +159,10 @@ samp {
 pre {
   margin-top: 0;
   margin-bottom: 1rem;
-  overflow: auto; }
+  overflow: auto;
+  background-color: #eee;
+  white-space: pre-line;
+}
 
 figure {
   margin: 0 0 1rem; }
@@ -9788,4 +9791,11 @@ color: #FFFFFF
   margin-bottom: 30px;
   border-bottom: 1px solid #ddd;
   padding-bottom: 30px;
+}
+
+figcaption {
+  background-color: #eee;
+  color: #212529;
+  font-family: Monaco, monospace;
+  text-decoration: underline;
 }
