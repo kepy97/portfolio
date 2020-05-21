@@ -9804,6 +9804,17 @@ color: #FFFFFF
   padding-bottom: 30px;
 }
 
+.blogIndexImage {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 350px;
+}
+
 figcaption {
   background-color: #eee;
   color: #212529;
