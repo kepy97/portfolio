@@ -27,7 +27,7 @@ export default class BlogBody extends React.Component {
                             <div className="col-lg-10 ftco-animate d-flex align-items-center">
                                 <div className="text text-center">
                                     <h1 className="mb-3 bread">{postData[0].title}</h1>
-                                    <p className="breadcrumbs"><span class="mr-2"><Link to={{pathname: `/index.html`, hash: "#home-section"}}>Home <i className="ion-ios-arrow-forward"></i></Link></span> <span className="mr-2"><Link to={{pathname: `/blog/index`}}>Blog <i className="ion-ios-arrow-forward"></i></Link></span> <span>Post <i className="ion-ios-arrow-forward"></i></span></p>
+                                    <p className="breadcrumbs"><span className="mr-2"><Link to={{pathname: `/index.html`, hash: "#home-section"}}>Home <i className="ion-ios-arrow-forward"></i></Link></span> <span className="mr-2"><Link to={{pathname: `/blog/index`}}>Blog <i className="ion-ios-arrow-forward"></i></Link></span> <span>Post <i className="ion-ios-arrow-forward"></i></span></p>
                                 </div>
                             </div>
                         </div>

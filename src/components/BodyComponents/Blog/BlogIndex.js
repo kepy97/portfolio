@@ -60,7 +60,7 @@ export default class BlogIndex extends React.Component {
                             <div className="col-lg-10 ftco-animate d-flex align-items-center">
                                 <div className="text text-center">
                                     <h1 className="mb-3 bread">Welcome to my journal</h1>
-                                    <p className="breadcrumbs"><span className="mr-2"><Link to={{ pathname: `/index.html`, hash: "#home-section" }}>Home <i className="ion-ios-arrow-forward"></i></Link></span> <span className="mr-2">Blog <i className="ion-ios-arrow-forward"></i></span> <span>Page {this.state.currentPage} <i class="ion-ios-arrow-forward"></i></span></p>
+                                    <p className="breadcrumbs"><span className="mr-2"><Link to={{ pathname: `/index.html`, hash: "#home-section" }}>Home <i className="ion-ios-arrow-forward"></i></Link></span> <span className="mr-2">Blog <i className="ion-ios-arrow-forward"></i></span> <span>Page {this.state.currentPage} <i className="ion-ios-arrow-forward"></i></span></p>
                                 </div>
                             </div>
                         </div>
@@ -76,11 +76,11 @@ export default class BlogIndex extends React.Component {
                                             <div className="blogIndexBorder" key={i}>
                                                 <h2 className="mb-3"><Link to={`/blog/${post.url}`}>{post.title}</Link></h2>
                                                 <p>Published on {moment(post.created).format('LLLL')}</p>
-                                                <p>
+                                                <div>
                                                     <Link to={`/blog/${post.url}`}>
                                                         <div className="blogIndexImage" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/${post.image})` }}></div>
                                                     </Link>
-                                                </p>
+                                                </div>
                                                 <h5>{post.description}</h5>
                                             </div>
                                         );
