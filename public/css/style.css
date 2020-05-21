@@ -9732,6 +9732,16 @@ textarea.form-control {
  .tecser{padding: 10px 20px; border-bottom: 1px solid #efefef; background: #f7f7f7;}
  
  .width_100{ width: 100%; float: left;}
+
+ .close-slide {
+  color: #fff;
+  border: 1px solid #3e64ff;
+  border-radius: 200px;
+  text-decoration: none;
+  transition: 0.4s ease all;
+  cursor: pointer;
+  background-color: #3e64ff;
+ }
  
 /* end new slide option  */
 @media (max-width: 576px) {
@@ -9744,7 +9754,6 @@ textarea.form-control {
 {
 	color: #000;
 }
-
 
 .mobprofile
 {

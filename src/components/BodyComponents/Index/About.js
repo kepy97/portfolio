@@ -31,7 +31,7 @@ export default class About extends React.Component {
 			               <div className="text">
 			                  <p className="mb-4">
 			                  </p>
-			                  <p><a href={process.env.PUBLIC_URL+"resume/resume.pdf"} target="_blank" className="btn btn-primary py-3 px-3">Download Resume</a></p>
+			                  <p><a href={process.env.PUBLIC_URL+"resume/resume.pdf"} target="_blank" className="btn btn-primary py-3 px-3" rel="noopener noreferrer">Download Resume</a></p>
 			               </div>
 			            </div>
 			         </div>

@@ -91,11 +91,11 @@ export default class BlogIndex extends React.Component {
                                         {
                                             Array(this.state.totalPage).fill(1).map((page, index) =>
                                                 <li key={index + 1} className={index + 1 === this.state.currentPage ? 'page-item active' : 'page-item'}>
-                                                    <a className="page-link" onClick={() => this.handlePaginationClick(index + 1)}>{index + 1}</a>
+                                                    <span className="page-link" onClick={() => this.handlePaginationClick(index + 1)}>{index + 1}</span>
                                                 </li>)
                                         }
                                         <li className="page-item disabled">
-                                            <a className="page-link" href="#">>></a>
+                                            <span className="page-link" >>></span>
                                         </li>
                                     </ul>
                                 </nav>

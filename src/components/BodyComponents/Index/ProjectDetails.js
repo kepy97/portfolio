@@ -15,7 +15,7 @@ const ProjectDetails = (props) => {
 	              {projectDetail[0].name} ({projectDetail[0].year})
 	            </div>
 	            <div className="close-cross">
-	              <a href="javascript:void(0)" onClick={() => {props.parentCallback(null)}} className="close-slide"> <i className="fas fa-times" /></a>
+	              <span onClick={() => {props.parentCallback(null)}} className="close-slide"> <i className="fas fa-times" /></span>
 	            </div>
 	          </div>
 	          <div className="slide-menu-middle scroll-bar-style clr_b">

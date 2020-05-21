@@ -203,7 +203,7 @@ export default class Resume extends React.Component {
                                  <span className="date">Dec 2019</span>
                                  <h2>Chancellor’s Graduate Student Award</h2>
                                  <span className="position">University of Wisconsin-Milwaukee</span>
-                                 <p>The Chancellor’s Graduate Student Award <a href="https://uwm.edu/graduateschool/chancellors-graduate-student-awards/" target="_blank">(CGSA)</a> program is designed to give UWM a competitive edge in attracting and retaining high quality, talented graduate students.</p>
+                                 <p>The Chancellor’s Graduate Student Award <a href="https://uwm.edu/graduateschool/chancellors-graduate-student-awards/" target="_blank" rel="noopener noreferrer">(CGSA)</a> program is designed to give UWM a competitive edge in attracting and retaining high quality, talented graduate students.</p>
                               </div>
                            </div>
                            <div className="resume-wrap d-flex ftco-animate">
@@ -214,7 +214,7 @@ export default class Resume extends React.Component {
                                  <span className="date">Mar 2019</span>
                                  <h2>Young Performer Of the Month</h2>
                                  <span className="position">SculptSoft</span>
-                                 <p>Even due to the lack of experience, I had learned fast and did work that was praiseworthy also at a young age. I received this award, check out this linkedin <a href="https://www.linkedin.com/posts/sculptsoft-hr_whole-sculptsoft-family-congratulates-you-activity-6521387185143418881-n7S-/" target="_blank">post</a> and <a href={process.env.PUBLIC_URL+ "/images/sculptSoftCertificate.jpg"} target="_blank">certificate</a>.</p>
+                                 <p>Even due to the lack of experience, I had learned fast and did work that was praiseworthy also at a young age. I received this award, check out this linkedin <a href="https://www.linkedin.com/posts/sculptsoft-hr_whole-sculptsoft-family-congratulates-you-activity-6521387185143418881-n7S-/" target="_blank" rel="noopener noreferrer">post</a> and <a href={process.env.PUBLIC_URL+ "/images/sculptSoftCertificate.jpg"} target="_blank" rel="noopener noreferrer">certificate</a>.</p>
                               </div>
                            </div>
                            <div className="resume-wrap d-flex ftco-animate">
@@ -225,7 +225,7 @@ export default class Resume extends React.Component {
                                  <span className="date">Feb 2019</span>
                                  <h2>Certificate of Excellence</h2>
                                  <span className="position">Umiya Education Trust</span>
-                                 <p>Received <a href={process.env.PUBLIC_URL+"/images/BECertificate.png"} target="_blank">certificate</a> of third rank in Bachelor degree in Kadava Patidar Community.</p>
+                                 <p>Received <a href={process.env.PUBLIC_URL+"/images/BECertificate.png"} target="_blank" rel="noopener noreferrer">certificate</a> of third rank in Bachelor degree in Kadava Patidar Community.</p>
                               </div>
                            </div>
                         </div>

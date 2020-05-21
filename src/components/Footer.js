@@ -12,10 +12,10 @@ export default class Footer extends React.Component {
                 <h2 className="ftco-heading-2">About</h2>
                 <p>I'm a software developer based in Stoughton, Wisconsin, USA. I have a passion for programming and a great experience on how to create web and mobile applications.</p>
                 <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                  <li className="ftco-animate"><a href="https://www.linkedin.com/in/kepy97/" target="_blank"><span className="icon-linkedin" /></a></li>
-                  <li className="ftco-animate"><a href="https://github.com/kepy97" target="_blank"><span className="icon-github" /></a></li>
-                  <li className="ftco-animate"><a href="https://www.facebook.com/Kepy97" target="_blank"><span className="icon-facebook" /></a></li>
-                  <li className="ftco-animate"><a href="https://www.instagram.com/kepy97/" target="_blank"><span className="icon-instagram" /></a></li>
+                  <li className="ftco-animate"><a href="https://www.linkedin.com/in/kepy97/" target="_blank" rel="noopener noreferrer"><span className="icon-linkedin" /></a></li>
+                  <li className="ftco-animate"><a href="https://github.com/kepy97" target="_blank" rel="noopener noreferrer"><span className="icon-github" /></a></li>
+                  <li className="ftco-animate"><a href="https://www.facebook.com/Kepy97" target="_blank" rel="noopener noreferrer"><span className="icon-facebook" /></a></li>
+                  <li className="ftco-animate"><a href="https://www.instagram.com/kepy97/" target="_blank" rel="noopener noreferrer"><span className="icon-instagram" /></a></li>
                 </ul>
               </div>
             </div>
@@ -49,10 +49,10 @@ export default class Footer extends React.Component {
                 <h2 className="ftco-heading-2">Have a Questions?</h2>
                 <div className="block-23 mb-3">
                   <ul>
-                    <li><a href="mailto:kvpatel@uwm.edu" target="_blank"><span className="icon icon-envelope" /><span className="text">kvpatel@uwm.edu</span></a></li>
-                    <li><a href="https://www.linkedin.com/in/kepy97/" target="_blank"><span className="icon icon-linkedin" /><span className="text">Linkedin</span></a></li>
-                    <li><a href="https://github.com/kepy97" target="_blank"><span className="icon icon-github" /><span className="text">Github</span></a></li>
-                    <li><a href="https://goo.gl/maps/o8wZC6tmA6w7a1s29" target="_blank"><span className="icon icon-map-marker" /><span className="text">Wisconsin, USA</span></a></li>
+                    <li><a href="mailto:kvpatel@uwm.edu" target="_blank" rel="noopener noreferrer"><span className="icon icon-envelope" /><span className="text">kvpatel@uwm.edu</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/kepy97/" target="_blank" rel="noopener noreferrer"><span className="icon icon-linkedin" /><span className="text">Linkedin</span></a></li>
+                    <li><a href="https://github.com/kepy97" target="_blank" rel="noopener noreferrer"><span className="icon icon-github" /><span className="text">Github</span></a></li>
+                    <li><a href="https://goo.gl/maps/o8wZC6tmA6w7a1s29" target="_blank" rel="noopener noreferrer"><span className="icon icon-map-marker" /><span className="text">Wisconsin, USA</span></a></li>
                   </ul>
                 </div>
               </div>

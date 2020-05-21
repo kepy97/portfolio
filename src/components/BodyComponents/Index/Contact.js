@@ -20,7 +20,7 @@ export default class Contact extends React.Component {
                       </div>
                       <div>
                         <h3 className="mb-4">Location</h3>
-                        <p><a href="https://goo.gl/maps/o8wZC6tmA6w7a1s29" target="_blank">Wisconsin, USA</a></p>
+                        <p><a href="https://goo.gl/maps/o8wZC6tmA6w7a1s29" target="_blank" rel="noopener noreferrer">Wisconsin, USA</a></p>
                       </div>
                     </div>
                   </div>
@@ -42,7 +42,7 @@ export default class Contact extends React.Component {
                       </div>
                       <div>
                         <h3 className="mb-4">Profile</h3>
-                        <p><a href="https://www.linkedin.com/in/kepy97/" target="_blank">LinkedIn</a></p>
+                        <p><a href="https://www.linkedin.com/in/kepy97/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
                       </div>
                     </div>
                   </div>
@@ -53,7 +53,7 @@ export default class Contact extends React.Component {
                       </div>
                       <div>
                         <h3 className="mb-4">Projects</h3>
-                        <p><a href="https://github.com/kepy97" target="_blank">Github</a></p>
+                        <p><a href="https://github.com/kepy97" target="_blank" rel="noopener noreferrer">Github</a></p>
                       </div>
                     </div>
                   </div>

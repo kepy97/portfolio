@@ -2,9 +2,11 @@ import React from 'react';
 import moment from 'moment';
 import { HashLink as Link } from 'react-router-hash-link';
 
+const MAX_POSTS = 3;
 export default class BlogBanner extends React.Component {
   render() {
-    const posts = this.props.postsData;
+    let posts = this.props.postsData;
+    posts = posts.slice(0, MAX_POSTS);
     return (
       <section className="ftco-section" id="blog-section">
         <div className="container">
@@ -17,28 +19,26 @@ export default class BlogBanner extends React.Component {
           <div className="row d-flex">
             {
               posts.map((post, i) => {
-                if (i < 3) {
-                  return (
-                    <div className="col-md-4 d-flex ftco-animate" key={i}>
-                      <div className="blog-entry justify-content-end">
+                return (
+                  <div className="col-md-4 d-flex ftco-animate" key={i}>
+                    <div className="blog-entry justify-content-end">
+                      <Link to={{ pathname: `/blog/${post.url}`, hash: "#post-section" }}>
+                        <div className="block-20" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/${post.image})` }}></div>
+                      </Link>
+                      <div className="text mt-3 float-right d-block">
                         <Link to={{ pathname: `/blog/${post.url}`, hash: "#post-section" }}>
-                          <div className="block-20" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/${post.image})` }}></div>
+                          <h3 className="heading">{post.title}</h3>
                         </Link>
-                        <div className="text mt-3 float-right d-block">
-                          <Link to={{ pathname: `/blog/${post.url}`, hash: "#post-section" }}>
-                            <h3 className="heading">{post.title}</h3>
-                          </Link>
-                          <div className="d-flex align-items-center mb-3 meta">
-                            <p className="mb-0">
-                              <span className="mr-2">{moment(post.created).format('LLLL')}</span>
-                            </p>
-                          </div>
-                          <p>{post.description}</p>
+                        <div className="d-flex align-items-center mb-3 meta">
+                          <p className="mb-0">
+                            <span className="mr-2">{moment(post.created).format('LLLL')}</span>
+                          </p>
                         </div>
+                        <p>{post.description}</p>
                       </div>
                     </div>
-                  );
-                }
+                  </div>
+                );
               })
             }
             <div className="blogBannerButton">
