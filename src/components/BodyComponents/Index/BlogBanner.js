@@ -21,14 +21,12 @@ export default class BlogBanner extends React.Component {
               posts.map((post, i) => {
                 return (
                   <div className="col-md-4 d-flex ftco-animate" key={i}>
-                    <div className="blog-entry justify-content-end">
+                    <div className="blog-entry justify-content-end blogBannerPost">
                       <Link to={{ pathname: `/blog/${post.url}`, hash: "#post-section" }}>
                         <div className="block-20" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/${post.image})` }}></div>
                       </Link>
                       <div className="text mt-3 float-right d-block">
-                        <Link to={{ pathname: `/blog/${post.url}`, hash: "#post-section" }}>
-                          <h3 className="heading">{post.title}</h3>
-                        </Link>
+                        <h3 className="heading"><Link to={{ pathname: `/blog/${post.url}`, hash: "#post-section" }}>{post.title}</Link></h3>
                         <div className="d-flex align-items-center mb-3 meta">
                           <p className="mb-0">
                             <span className="mr-2">{moment(post.created).format('LLLL')}</span>
