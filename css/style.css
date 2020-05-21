@@ -9111,6 +9111,9 @@ textarea.form-control {
       border: 2px solid #fff !important; }
   .ftco-footer p {
     color: rgba(255, 255, 255, 0.7); }
+  .ftco-footer li {
+    color: rgba(255, 255, 255, 0.7); }
+    /* Kepy changes: .ftco-footer li  added to show the text of skills in footer */
   .ftco-footer a {
     color: rgba(255, 255, 255, 0.7); }
     .ftco-footer a:hover {
@@ -9795,6 +9798,10 @@ color: #FFFFFF
 .blogBannerButton {
   width: 100%; 
   text-align: center;
+}
+
+.blogBannerPost {
+  width: 100%;
 }
 
 .blogIndexBorder {
