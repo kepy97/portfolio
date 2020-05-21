@@ -77,7 +77,7 @@ export default class BlogIndex extends React.Component {
                                                 <p>Published on {moment(post.created).format('LLLL')}</p>
                                                 <p>
                                                     <Link to={`/blog/${post.url}`}>
-                                                        <img src={process.env.PUBLIC_URL + "/images/" + post.image} alt="" className="img-fluid" />
+                                                        <div className="blogIndexImage" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/${post.image})` }}></div>
                                                     </Link>
                                                 </p>
                                                 <h5>{post.description}</h5>
