@@ -88,11 +88,11 @@ export default class BlogIndex extends React.Component {
                                 }
                                 {/* Pagination */}
                                 <nav aria-label="Page navigation example">
-                                    <ul className="pagination justify-content-center cursor-pointer">
+                                    <ul className="pagination justify-content-center">
                                         {
                                             Array(this.state.totalPage).fill(1).map((page, index) =>
                                                 <li key={index + 1} className={index + 1 === this.state.currentPage ? 'page-item active' : 'page-item'}>
-                                                    <span className="page-link" onClick={() => this.handlePaginationClick(index + 1)}>{index + 1}</span>
+                                                    <span className="page-link cursor-pointer" onClick={() => this.handlePaginationClick(index + 1)}>{index + 1}</span>
                                                 </li>)
                                         }
                                         <li className="page-item disabled">

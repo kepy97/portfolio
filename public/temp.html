@@ -1,20 +1,44 @@
-<h1 class="mb-3">The incredible period after writing an exam.</h1>
+<h1 class="mb-3">As you know, Apple thinks and works differently. This causes inconsistency and inconvenience sometimes.</h1>
 <p>
-    The mood after the exam totally depends on how your exams went. When the exams paper is done properly well, then the
-    mood is already good and you have soo many ideas for you to do in the vacation. But when sometimes paper is just
-    like worse then it feels very very bad. You get constant thought about it.
+    Apple ---The idea of thinking different doesn’t just stop with hardware design and user interface, Even the internal working is designed differently. One such thing happened in the project which I was working.
 </p>
-<h2 class="mb-3 mt-5">My experience</h2>
+<p><img src="/images/blog/the-most-strange-bug-that-I-never-expected-logo.png" alt class="img-fluid" /></p>
+<h2 class="mb-3 mt-5">Project Information</h2>
 <p>
-    Today, my exams are completed for Spring 2020. Exam paper was very good. I got all the answers. Now, I have almost
-    three and a half month summer vacation. I have lots of things in my mind to do but I'm feeling strong relief and
-    excitement.
+    I was working on my web application that built using ReactJS. So, the issue is when I shot a picture having the iphone vertically the picture gets saved in iphone. When I viewed it in iphone or mac it shows properly in portrait view, but when it is uploaded into my web application it was turning into landscape view with wrong orientation.
 </p>
 <p>
-    Today, the weather is very good outside. So for relaxation, I'm sitting outside in the backyard of my home and
-    writing this post. Enjoying the nature beauty!!
+    I have uploaded to my blog post: <a href="#/blog/feelings-after-writing-final-exams">Feelings after writing final exams</a>. So, I took photo from my iPhone and uploaded to my website. After posting it, I checked it on my laptop. At that time, post was looking wonderful. Check out below image:
 </p>
-<p><img src="/images/blog/feelings-after-writing-final-exams-logo.png" alt class="img-fluid" /></p>
+<p><img src="/images/blog/the-most-strange-bug-that-I-never-expected-1.png" alt class="img-fluid" /></p>
+<h2 class="mb-3 mt-5">After somedays</h2>
 <p>
-    Hope you are doing great in this time. Best wishes to you from KePy :).
+    One of my friend checking my posts and he said one of the image is not showing properly. I again looked into my laptop and it was showing perfectly. But, when he said he is checking in the iPhone so I looked into it and found this:
+</p>
+<p><img src="/images/blog/the-most-strange-bug-that-I-never-expected-2.png" alt class="img-fluid" /></p>
+<h2 class="mb-3 mt-5">Actual Problem: EXIF</h2>
+<p>
+    EXIF is a format in which pictures meta data can be found. These meta data may include information including device used for capturing like (iPhone 7, Samsung S4), camera specifications, GPS coordinates, orientation, etc,.
+</p>
+<h2 class="mb-3 mt-5">How typically devices take picture?</h2>
+<p>
+    Typically if a device takes a picture it uses its sensors to rotate the image to the right orientation. Because of this wherever we view the photo we have the correct orientation for the image.
+</p>
+<h2 class="mb-3 mt-5">How iPhone takes picture?</h2>
+<p>
+    iPhone, when takes the image it doesn’t rotate the image rather it keeps the image as it was taken and inserts the information with which the image can be correctly viewed. The is something like 90 degree clockwise. It expects the software used for viewing to rotate the image taken to correct orientation.
+</p>
+<h2 class="mb-3 mt-5">Why does it do so?</h2>
+<p>
+    hmm… maybe to save battery in iphone, or maybe it will cause a sight delay to save the image.
+</p>
+<h2 class="mb-3 mt-5">What now?</h2>
+<p>
+    As you thinking, this is the problem in iPhone not in Android or Laptop. To fix this issue, you have to use library that transform the image. Here I found the github ticker <a href="https://github.com/mosch/react-avatar-editor/issues/123" target="_blank" rel="noopener noreferrer">The image is rotated in iPhone</a>
+</p>
+<p>
+    You can use this javascript library to fix this issue: <a href="https://www.npmjs.com/package/fix-image-rotation" target="_blank" rel="noopener noreferrer">fix-image-rotation</a>.
+</p>
+<p>
+    Still, I have not solved this issue becuase I don't want to add another library to just fix one photo rotation problem. So, If you want to see the bug then checkout this post in iPhone. Best wishes to you from KePy :).
 </p>
