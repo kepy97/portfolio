@@ -12,12 +12,12 @@ export default class Header extends React.Component {
               </button>
               <div className="collapse navbar-collapse" id="ftco-nav">
                 <ul className="navbar-nav nav ml-auto">
-                  <li className="nav-item"><Link to={{pathname: `/index.html`, hash: "#home-section"}} className="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"><span>Home</span></Link></li>
-                  <li className="nav-item"><Link to={{pathname: `/index.html`, hash: "#about-section"}} className="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"><span>About</span></Link></li>
-                  <li className="nav-item"><Link to={{pathname: `/index.html`, hash: "#resume-section"}} className="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"><span>Resume</span></Link></li>
-                  <li className="nav-item"><Link to={{pathname: `/index.html`, hash: "#projects-section"}} className="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"><span>Projects</span></Link></li>
-                  <li className="nav-item"><Link to={{pathname: `/index.html`, hash: "#blog-section"}} className="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"><span>My Blog</span></Link></li>
-                  <li className="nav-item"><Link to={{pathname: `/index.html`, hash: "#contact-section"}} className="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"><span>Contact</span></Link></li>
+                  <li className="nav-item"><Link to={{pathname: `/index.html`, hash: "#home-section"}} className="nav-link" ><span>Home</span></Link></li>
+                  <li className="nav-item"><Link to={{pathname: `/index.html`, hash: "#about-section"}} className="nav-link" ><span>About</span></Link></li>
+                  <li className="nav-item"><Link to={{pathname: `/index.html`, hash: "#resume-section"}} className="nav-link"><span>Resume</span></Link></li>
+                  <li className="nav-item"><Link to={{pathname: `/index.html`, hash: "#projects-section"}} className="nav-link"><span>Projects</span></Link></li>
+                  <li className="nav-item"><Link to={{pathname: `/index.html`, hash: "#blog-section"}} className="nav-link"><span>My Blog</span></Link></li>
+                  <li className="nav-item"><Link to={{pathname: `/index.html`, hash: "#contact-section"}} className="nav-link"><span>Contact</span></Link></li>
                 </ul>
               </div>
             </div>
