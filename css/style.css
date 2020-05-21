@@ -9799,3 +9799,7 @@ figcaption {
   font-family: Monaco, monospace;
   text-decoration: underline;
 }
+
+.cursor-pointer{
+  cursor: pointer;
+}
