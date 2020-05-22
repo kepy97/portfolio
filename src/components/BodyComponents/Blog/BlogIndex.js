@@ -13,8 +13,8 @@ export default class BlogIndex extends React.Component {
             currentPage: 1,
             totalPage: Math.ceil(props.postsData.length / MAX_POSTS),
             totalPosts: props.postsData.length,
-            startIndex: props.postsData.length,
-            endIndex: props.postsData.length - MAX_POSTS
+            startIndex: 0,
+            endIndex: MAX_POSTS
         };
     }
 
@@ -30,8 +30,8 @@ export default class BlogIndex extends React.Component {
     // Changing Pagination Values to handle requested posts
     handlePaginationClick(current) {
         if (current !== this.state.currentPage) {
-            let startIndex = this.state.totalPosts - ((current - 1) * MAX_POSTS)
-            let endIndex = (startIndex - MAX_POSTS) < 0 ? 0 : (startIndex - MAX_POSTS);
+            let startIndex = (current - 1) * MAX_POSTS
+            let endIndex = current * MAX_POSTS
             this.setState({
                 currentPage: current,
                 startIndex: startIndex,
@@ -50,7 +50,7 @@ export default class BlogIndex extends React.Component {
 
     render() {
         const posts = this.props.postsData;
-        const postIndex = posts.filter(post => post.id > this.state.endIndex && post.id <= this.state.startIndex)
+        const postIndex = posts.slice(this.state.startIndex, this.state.endIndex);
 
         return (
             <div>
