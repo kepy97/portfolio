@@ -6,12 +6,7 @@
          "url": "React-Github-Blog-Test",
          "tags": [
             "react",
-            "github",
-            "github-pages",
-            "programming",
-            "self-improvement",
-            "self-written",
-            "kepy's-word"
+            "github-pages"
          ],
          "image": "blog/React-Blog-Github-Test-logo.png",
          "description": "First post of my blogging!!",
@@ -26,8 +21,8 @@
          "url": "ABB-Internship-Offer",
          "tags": [
             "internship",
-            "job-offer",
-            "kepy's-word"
+            "abb",
+            "job-offer"
          ],
          "image": "blog/ABB-Internship-Offer-logo.png",
          "description": "Finally, Got an Internship in Fortune 500 Company!!",
@@ -42,9 +37,7 @@
          "url": "How-to-call-external-Javascript-file-function-from-react-component",
          "tags": [
             "react",
-            "javascript",
-            "programming",
-            "kepy's-word"
+            "javascript"
          ],
          "image": "blog/How-to-call-external-Javascript-file-function-from-react-component-logo.png",
          "description": "Is there any way to call external js file function from inside react component?",
@@ -58,10 +51,7 @@
          "title": "On my way to build mobile application",
          "url": "On-my-way-to-build-mobile-application",
          "tags": [
-            "react-native",
-            "javascript",
-            "programming",
-            "kepy's-word"
+            "react-native"
          ],
          "image": "blog/On-my-way-to-build-mobile-application-logo.png",
          "description": "Stepping into mobile application development",
@@ -75,9 +65,7 @@
          "title": "The Secret of 100% Commitment and Success is 10 Behaviors",
          "url": "the-secret-of-100-commitment-and-success-is-10-behaviors",
          "tags": [
-            "motivation",
-            "inspiration",
-            "life-lesson"
+            "motivation"
          ],
          "image": "blog/the-secret-of-100-commitment-and-success-is-10-behaviors-logo.png",
          "description": "The bigger your future, the better your present.",
@@ -92,9 +80,7 @@
          "url": "react-native-tutorial-for-beginners-using-native-cli",
          "tags": [
             "react-native",
-            "tutorial",
-            "kepy's-word",
-            "javascript"
+            "tutorial"
          ],
          "image": "blog/react-native-tutorial-for-beginners-using-native-cli-logo.png",
          "description": "Best React Native Tutorial without Expo.",
@@ -109,9 +95,7 @@
          "url": "react-native-tutorial-for-beginners-part-2",
          "tags": [
             "react-native",
-            "tutorial",
-            "javascript",
-            "kepy's-word"
+            "tutorial"
          ],
          "image": "blog/react-native-tutorial-for-beginners-part-2-logo.png",
          "description": "Mobile App Onboarding with React Native",
@@ -127,9 +111,7 @@
          "tags": [
             "react-native",
             "tutorial",
-            "javascript",
-            "problems",
-            "kepy's-word"
+            "bug"
          ],
          "image": "blog/problems-for-react-native-beginners-logo.png",
          "description": "Here's the common problem that you might face in react-native",
@@ -145,11 +127,8 @@
          "tags": [
             "react-native",
             "tutorial",
-            "javascript",
             "react-redux",
-            "redux-persist",
-            "AsyncStorage",
-            "kepy's-word"
+            "redux-persist"
          ],
          "image": "blog/react-redux-guide-for-beginners-logo.png",
          "description": "Understanding Redux: How it can be used in React-Native?",
@@ -165,11 +144,8 @@
          "tags": [
             "react-native",
             "tutorial",
-            "javascript",
             "react-redux",
-            "redux-persist",
-            "AsyncStorage",
-            "kepy's-word"
+            "redux-persist"
          ],
          "image": "blog/how-to-persist-redux-state-to-the-local-storage-logo.png",
          "description": "Time saver library to manage redux state data locally.",
@@ -185,9 +161,6 @@
          "tags": [
             "react",
             "tutorial",
-            "javascript",
-            "kepy's-word",
-            "github",
             "github-pages"
          ],
          "image": "blog/hosting-react-blog-to-github-pages-logo.png",
@@ -203,9 +176,7 @@
          "url": "how-to-run-android-emulator-without-opening-android-studio",
          "tags": [
             "react-native",
-            "android",
-            "android-studio",
-            "kepy's-word"
+            "android-studio"
          ],
          "image": "blog/how-to-run-android-emulator-without-opening-android-studio-logo.png",
          "description": "Start the emulator from the command line",
@@ -220,9 +191,7 @@
          "url": "surviving-finals-week",
          "tags": [
             "masters",
-            "study",
-            "exams",
-            "kepy's-word"
+            "exams"
          ],
          "image": "blog/surviving-finals-week-logo.png",
          "description": "Final Week of semester Spring 2020",
@@ -237,9 +206,7 @@
          "url": "feelings-after-writing-final-exams",
          "tags": [
             "masters",
-            "study",
-            "exams",
-            "kepy's-word"
+            "exams"
          ],
          "image": "blog/feelings-after-writing-final-exams-logo.png",
          "description": "The incredible period after writing an exam.",
@@ -254,8 +221,7 @@
          "url": "scroll-to-section-on-click-in-react",
          "tags": [
             "react",
-            "javascript",
-            "kepy's-word"
+            "tutorial"
          ],
          "image": "blog/scroll-to-section-on-click-in-react-logo.png",
          "description": "How to Scroll to a List Item in React? ",
@@ -270,9 +236,7 @@
          "url": "strangest-bug-that-i-never-thought-about-it",
          "tags": [
             "react",
-            "javascript",
-            "bug-solution",
-            "kepy's-word"
+            "bug"
          ],
          "image": "blog/strangest-bug-that-i-never-thought-about-it-logo.png",
          "description": "Apple thinks and works differently. This causes inconsistency and inconvenience sometimes..",
@@ -287,8 +251,8 @@
          "url": "is-react-seo-friendly",
          "tags": [
             "react",
-            "seo",
-            "kepy's-word"
+            "tutorial",
+            "seo"
          ],
          "image": "blog/is-react-seo-friendly-logo.png",
          "description": "In this post, I'll talk about optimizing my react single page website, for search engines.",
