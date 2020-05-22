@@ -12,6 +12,11 @@ export default class BlogBody extends React.Component {
             behavior: 'smooth'
         });
     }
+
+    handleSideBars(e) {
+        this.props.history.push("/blog/index");
+    }
+
     render() {
         const posts = this.props.postsData;
         const { params } = this.props.match
@@ -46,7 +51,7 @@ export default class BlogBody extends React.Component {
                             <div className="col-lg-8 ftco-animate" id="post-section">
                                 <div dangerouslySetInnerHTML={{ __html: postData[0].body }} />
                             </div>
-                            <Sidebar postData={posts} />
+                            <Sidebar postData={posts} parentSearchFilter={(e) => this.handleSideBars(e)} parentTagsFilter={(e) => this.handleSideBars(e)} />
                         </div>
                     </div>
                 </section>

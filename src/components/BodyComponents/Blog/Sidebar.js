@@ -11,6 +11,8 @@ export default class Sidebar extends React.Component {
     render() {
         let posts = this.props.postData;
         let recentPosts = posts.slice(0, MAX_POSTS);
+        const tagsCloud = [];
+        posts.map((post, i) => post.tags.map((tag, j) => tagsCloud.indexOf(tag) === -1 ? tagsCloud.push(tag) : null));
 
         return (
             <div className="col-lg-4 sidebar ftco-animate">
@@ -18,19 +20,23 @@ export default class Sidebar extends React.Component {
                     <div action="#" className="search-form">
                         <div className="form-group">
                             <span className="icon icon-search" />
-                            <input type="text" className="form-control" placeholder="Search..." onChange={(e) => this.props.parentFilterSearch(e.target.value)} />
+                            <input type="text" className="form-control" placeholder="Search..." onChange={(e) => this.props.parentSearchFilter(e.target.value)} />
                         </div>
                     </div>
                 </div>
-                {/* <div className="sidebar-box ftco-animate">
+                <div className="sidebar-box ftco-animate">
                     <h3 className="heading-sidebar">Tags</h3>
                     <div className="tagcloud">
-                        <span className="tag-cloud-link">house</span>
-                        <span className="tag-cloud-link">house</span>
-                        <span className="tag-cloud-link">house</span>
-                        <span className="tag-cloud-link">house</span>
+                        <span className="tag-cloud-link" onClick={(e) => this.props.parentTagsFilter(e.target.textContent)}>Show All</span>
+                        {
+                            tagsCloud.map((tag, i) => {
+                                return (
+                                    <span className="tag-cloud-link" key={i} onClick={(e) => this.props.parentTagsFilter(e.target.textContent)}>{tag}</span>
+                                );
+                            })
+                        }
                     </div>
-                </div> */}
+                </div>
                 <div className="sidebar-box ftco-animate">
                     <h3 className="heading-sidebar">Recent Posts</h3>
                     {
