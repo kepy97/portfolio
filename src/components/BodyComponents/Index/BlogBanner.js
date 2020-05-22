@@ -13,7 +13,10 @@ export default class BlogBanner extends React.Component {
           <div className="row justify-content-center mb-5 pb-5">
             <div className="col-md-7 heading-section text-center ftco-animate">
               <h2 className="mb-4">Recent Posts</h2>
-              <p>Anyone can write code that a computer can understand. Good programmers write code that anyone can understand.</p>
+              {/* <p>Anyone can write code that a computer can understand. Good programmers write code that anyone can understand.</p> */}
+              <p>
+                Here you will find useful tips, my experiences, life hacks and the usual daily thoughts about everything that surrounds me.
+              </p>
             </div>
           </div>
           <div className="row d-flex">

@@ -10,7 +10,7 @@ export default class Footer extends React.Component {
             <div className="col-md">
               <div className="ftco-footer-widget mb-4">
                 <h2 className="ftco-heading-2">About</h2>
-                <p>I'm a software developer based in Stoughton, Wisconsin, USA. I have a passion for programming and a great experience on how to create web and mobile applications.</p>
+                <p>I enjoy meeting new people and finding ways to help them have an uplifting experience. I am dedicated, outgoing, and a team player. I enjoy reading, and the knowledge and perspective that my reading gives me has strengthened my thought process. I considers myself a forever student.</p>
                 <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                   <li className="ftco-animate"><a href="https://www.linkedin.com/in/kepy97/" target="_blank" rel="noopener noreferrer"><span className="icon-linkedin" /></a></li>
                   <li className="ftco-animate"><a href="https://github.com/kepy97" target="_blank" rel="noopener noreferrer"><span className="icon-github" /></a></li>
