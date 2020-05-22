@@ -2,6 +2,7 @@ import React from 'react';
 import moment from 'moment';
 import Sidebar from './Sidebar';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet'
 
 const MAX_POSTS = 5;
 const ref = React.createRef();
@@ -53,6 +54,10 @@ export default class BlogIndex extends React.Component {
 
         return (
             <div>
+                <Helmet>
+                    <title>Keyul Patel's journal</title>
+                    <meta name="description" content="Here you will find useful tips, my experiences, life hacks and the usual daily thoughts about everything that surrounds me."/>
+                </Helmet>
                 <div className="hero-wrap js-fullheight">
                     <div className="overlay"></div>
                     <div className="container">
