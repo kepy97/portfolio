@@ -9475,18 +9475,25 @@ textarea.form-control {
       margin: 0 10px;
       opacity: .5; }
 
-.tagcloud a {
+/* Kepy changes: tagcloud changed from a to span */
+.tagcloud span {
   text-transform: uppercase;
   display: inline-block;
   padding: 4px 10px;
   margin-bottom: 7px;
   margin-right: 4px;
-  border-radius: 4px;
-  color: #fff;
+  border-radius: 10px;
+  color: #3f65ff;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 11px; }
-  .tagcloud a:hover {
-    border: 1px solid #000; }
+  border-color: #3f65ff;
+  font-size: 13px; }
+  .tagcloud span:hover {
+    border: 1px solid #000; 
+    border-color: #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #3f65ff;
+  }
 
 .comment-form-wrap {
   clear: both; }
