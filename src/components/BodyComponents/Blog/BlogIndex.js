@@ -14,7 +14,8 @@ export default class BlogIndex extends React.Component {
             totalPage: Math.ceil(props.postsData.length / MAX_POSTS),
             totalPosts: props.postsData.length,
             startIndex: 0,
-            endIndex: MAX_POSTS
+            endIndex: MAX_POSTS,
+            allPostData: props.postsData
         };
     }
 
@@ -48,15 +49,30 @@ export default class BlogIndex extends React.Component {
         });
     }
 
-    render() {
-        const posts = this.props.postsData;
-        const postIndex = posts.slice(this.state.startIndex, this.state.endIndex);
+    // Filter based on blog body or title based on search keyword from sidebar
+    handleSearchFilter(keyword) {
+        const filteredAllPostData = this.props.postsData.filter(post => post.body.toLowerCase().indexOf(keyword.toLowerCase()) !== -1 || post.title.toLowerCase().indexOf(keyword.toLowerCase()) !== -1);
+        const filteredTotalPosts = filteredAllPostData.length;
+        this.setState({
+            allPostData: filteredAllPostData,
+            currentPage: 1,
+            totalPage: Math.ceil(filteredTotalPosts / MAX_POSTS),
+            totalPosts: filteredTotalPosts,
+            startIndex: 0,
+            endIndex: MAX_POSTS,
+        });
+    }
 
+    render() {
+        const posts = this.state.allPostData;
+        const postIndex = posts.slice(this.state.startIndex, this.state.endIndex);
+        console.log(this.state.allPostData);
+        console.log(this.state);
         return (
             <div>
                 <Helmet>
                     <title>Keyul Patel's journal</title>
-                    <meta name="description" content="Here you will find useful tips, my experiences, life hacks and the usual daily thoughts about everything that surrounds me."/>
+                    <meta name="description" content="Here you will find useful tips, my experiences, life hacks and the usual daily thoughts about everything that surrounds me." />
                 </Helmet>
                 <div className="hero-wrap js-fullheight">
                     <div className="overlay"></div>
@@ -86,7 +102,12 @@ export default class BlogIndex extends React.Component {
                                                         <div className="blogIndexImage" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/${post.image})` }}></div>
                                                     </Link>
                                                 </div>
-                                                <h5>{post.description}</h5>
+                                                <h5 className="mt-3">{post.description}</h5>
+                                                <div className="mt-1">
+                                                    <Link to={`/blog/${post.url}`}>
+                                                        <button type="button" className="btn btn-outline-primary btn-lg">Read More</button>
+                                                    </Link>
+                                                </div>
                                             </div>
                                         );
                                     })
@@ -107,7 +128,7 @@ export default class BlogIndex extends React.Component {
                                 </nav>
                                 {/* Pagination */}
                             </div>
-                            <Sidebar postData={posts} />
+                            <Sidebar postData={this.props.postsData} parentFilterSearch={(e) => this.handleSearchFilter(e)}/>
                         </div>
                     </div>
                 </section>

@@ -4,12 +4,24 @@ import { Link } from 'react-router-dom';
 
 const MAX_POSTS = 5;
 export default class Sidebar extends React.Component {
+    shouldComponentUpdate(nextProps, nextState) {
+        return false;
+    }
+
     render() {
         let posts = this.props.postData;
         let recentPosts = posts.slice(0, MAX_POSTS);
 
         return (
             <div className="col-lg-4 sidebar ftco-animate">
+                <div className="sidebar-box">
+                    <div action="#" className="search-form">
+                        <div className="form-group">
+                            <span className="icon icon-search" />
+                            <input type="text" className="form-control" placeholder="Search..." onChange={(e) => this.props.parentFilterSearch(e.target.value)} />
+                        </div>
+                    </div>
+                </div>
                 {/* <div className="sidebar-box ftco-animate">
                     <h3 className="heading-sidebar">Tags</h3>
                     <div className="tagcloud">
