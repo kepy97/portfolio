@@ -9839,3 +9839,9 @@ figcaption {
 .cursor-pointer{
   cursor: pointer;
 }
+
+/* tag active class added */
+.tag-active{
+  background-color: #3f65ff;
+  color: white !important;
+}

@@ -52,27 +52,21 @@ export default class BlogIndex extends React.Component {
     // Filter based on blog body or title based on search keyword from sidebar
     handleSearchFilter(keyword) {
         const filteredAllPostData = this.props.postsData.filter(post => post.body.toLowerCase().indexOf(keyword.toLowerCase()) !== -1 || post.title.toLowerCase().indexOf(keyword.toLowerCase()) !== -1);
-        const filteredTotalPosts = filteredAllPostData.length;
-        this.setState({
-            allPostData: filteredAllPostData,
-            currentPage: 1,
-            totalPage: Math.ceil(filteredTotalPosts / MAX_POSTS),
-            totalPosts: filteredTotalPosts,
-            startIndex: 0,
-            endIndex: MAX_POSTS,
-        });
-    }
-
-    // Filter based on blog body or title based on search keyword from sidebar
-    handleSearchFilter(keyword) {
-        const filteredAllPostData = this.props.postsData.filter(post => post.body.toLowerCase().indexOf(keyword.toLowerCase()) !== -1 || post.title.toLowerCase().indexOf(keyword.toLowerCase()) !== -1);
         this.setStateData(filteredAllPostData);
     }
 
     handleTagsFilter(tag) {
         let filteredAllPostData = this.props.postsData;
-        if (tag !== "Show All") {
-            filteredAllPostData = this.props.postsData.filter(post => post.tags.indexOf(tag) !== -1);
+        if (tag.indexOf("Show All") === -1) {
+            filteredAllPostData = filteredAllPostData.filter(function (post) {
+                var flag = false;
+                tag.forEach(element => {
+                    if (post.tags.indexOf(element) > -1) {
+                        flag = true;
+                    }
+                });
+                return flag;
+            });
         }
         this.setStateData(filteredAllPostData);
     }
@@ -152,7 +146,7 @@ export default class BlogIndex extends React.Component {
                                 </nav>
                                 {/* Pagination */}
                             </div>
-                            <Sidebar postData={this.props.postsData} parentSearchFilter={(e) => this.handleSearchFilter(e)} parentTagsFilter={(e) => this.handleTagsFilter(e)}/>
+                            <Sidebar postData={this.props.postsData} parentSearchFilter={(e) => this.handleSearchFilter(e)} parentTagsFilter={(e) => this.handleTagsFilter(e)} />
                         </div>
                     </div>
                 </section>
