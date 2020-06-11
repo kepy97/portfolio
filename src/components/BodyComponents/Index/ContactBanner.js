@@ -8,7 +8,7 @@ export default class ContactBanner extends React.Component {
               <div className="container">
                 <div className="row justify-content-center">
                   <div className="col-md-7 ftco-animate text-center" id="ftco-nav">
-                    <h2> Looking for <span>Summer 20 Internship</span> candidate?</h2>
+                    <h2> Need any <span>Help</span> ?</h2>
                     <p className="mb-0"><a href="#contact-section" className="btn btn-primary py-3 px-5">Contact me</a></p>
                   </div>
                 </div>
