@@ -10,7 +10,10 @@ const postsDataSorted = blogData.posts
 						.slice()
 						.sort((a, b) => 
 							new Date(b.created) - new Date(a.created
-						))
+                        ))
+                        .filter(function(data) {
+                            return data.published;
+                        });
 
 export default class Body extends React.Component {
     render() {
