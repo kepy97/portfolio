@@ -274,6 +274,21 @@
          "published": true,
          "created": "2020-05-22T23:08:14.942Z",
          "updated": "2020-05-22T23:08:14.942Z"
+      },
+      {
+         "id": 19,
+         "title": "Officially Commenced My Journey at ABB",
+         "url": "officially-commenced-my-journey-at-abb",
+         "tags": [
+            "ABB",
+            "internship"
+         ],
+         "image": "blog/officially-commenced-my-journey-at-abb-logo.png",
+         "description": "The Next Big Thing in USA",
+         "body": "<h1 class=\"mb-3 mt-5\">The Next Big Thing in the USA</h1> <p> I am super excited to share that I finished my first week back at <a href=\"https://new.abb.com/\">ABB</a> as the LEAD Intern! I would like to thank the onboarding team for such a seamless virtual onboarding experience despite the current pandemic. Also, I am grateful to my manager and colleagues for an extremely warm welcome and for making this process, a smooth one. </p> <p><img src=\"/images/blog/officially-commenced-my-journey-at-abb-1.png\" alt class=\"img-fluid\" /></p> <h2 class=\"mb-3 mt-5\">Hit the road (First week experience)</h2> <p> No matter how many times I do a thing, I would still feel giddy, nervous, anxiety and all the other emotions which were there when i did it for the first time. This does not mean that I am a nervous wreck it just means that I care about that event too much and want to give my best. On the first day, I had so many questions going in my mind. But, after I met with my manager and colleagues, I felt relief. </p> <p><img src=\"/images/blog/officially-commenced-my-journey-at-abb-logo.png\" alt class=\"img-fluid\" /></p> <p> This week I've learned a lot. <ul> <li> Privilege to meet with great colleagues </li> <li> Setting up my desk and system </li> <li> Learned about the project </li> <li> Familiar with the facility of ABB </li> </ul> Also, they have taken so many <a href=\"https://www.cdc.gov/coronavirus/2019-ncov/index.html\">COVID-19</a> safety precautions to protect their employees. </p> <h2 class=\"mb-3 mt-5\">Down the road</h2> <p> I'm grateful that this company is still able to host interns this summer in this global pandemic. I can't wait to see what we'll build this summer. Also, I'm very excited to see what the rest of the summer has in store for me! Grateful to have a new opportunity and going to give it 110%. </p>\n\n",
+         "published": true,
+         "created": "2020-06-13T22:17:24.571Z",
+         "updated": "2020-06-13T22:17:24.571Z"
       }
    ]
 }
