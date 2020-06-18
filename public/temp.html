@@ -1,33 +1,53 @@
-<h1 class="mb-3 mt-5">The Next Big Thing in the USA</h1>
+<h1 class="mb-3 mt-5">Hide option to Publish to SharePoint in MS Access</h1>
 <p>
-    I am super excited to share that I finished my first week back at <a href="https://new.abb.com/">ABB</a> as the LEAD Intern! I would like to thank the onboarding team for such a seamless virtual onboarding experience despite the current pandemic. Also, I am grateful to my manager and colleagues for an extremely warm welcome and for making this process, a smooth one.
+    Microsoft has been binding Office to <a href="https://www.microsoft.com/skydrive" target="_blank">Skydrive</a>/<a href="https://onedrive.live.com/" target="_blank">Onedrive</a>/<a href="https://www.microsoft.com/en-us/microsoft-365/sharepoint/collaboration" target="_blank">SharePoint</a> more and more since 2013. For those of us who don't use the cloud, this integration is more of a headache than a beneficial feature.
 </p>
-<p><img src="/images/blog/officially-commenced-my-journey-at-abb-1.png" alt class="img-fluid" /></p>
-<h2 class="mb-3 mt-5">Hit the road (First week experience)</h2>
+<h2 class="mb-3 mt-5">The Problem</h2>
 <p>
-    No matter how many times I do a thing, I would still feel giddy, nervous, anxiety and all the other emotions which were there when i did it for the first time. This does not mean that I am a nervous wreck it just means that I care about that event too much and want to give my best. On the first day, I had so many questions going in my mind. But, after I met with my manager and colleagues, I felt relief.
+    Whenever user open the <a href="https://www.microsoft.com/en/microsoft-365/access" target="_blank">Microsoft Access</a> file, the yellow alert bar that says "Save to SharePoint Site" is showing up. However, user don't want to do it but it pops up again and again on starting. Many people are posting about this problem, even I found a post that posted in Microsoft Community page on December 7, 2012. and I found only one reply that posted after 3 years from another user. The user commented: "Sad that nobody at MS can answer this question, even to say "no, it is not possible". Check out article <a href="https://answers.microsoft.com/en-us/msoffice/forum/all/access-2010-remove-save-to-sharepoint-site-yellow/cc0e7141-62fd-499c-a33d-87c11fb60bac" target="_blank">Access 2010: Remove "Save to SharePoint Site" yellow bar</a>
 </p>
-<p><img src="/images/blog/officially-commenced-my-journey-at-abb-logo.png" alt class="img-fluid" /></p>
+<p><img src="/images/blog/hide-option-to-publish-to-sharepoint-in-ms-access-logo.png" alt class="img-fluid" /></p>
+<h2 class="mb-3 mt-5">Solution</h2>
 <p>
-    This week I've learned a lot.
+    The below solution can work on all of these Access version: Access 2003 (version 11.5), Access 2007 (version 12.0), Access 2010 (version 14.0), and Access 2013 (version 15.0). (source: <a href="https://en.wikipedia.org/wiki/Microsoft_Access" target="_blank">wiki</a>)
+</p>
+<p>
+    Steps:
     <ul>
         <li>
-            Privilege to meet with great colleagues
+            Create the new form in MS Access (From Menu bar-> Select <b>Create</b> -> Click on <b>Form</b>)
         </li>
         <li>
-            Setting up my desk and system
+            Save that form as "RemoveAlert" and open "Design View" of that form
         </li>
         <li>
-            Learned about the project
+            Right click anywhere in "RemoveAlert" form and click "Form Properties"
         </li>
         <li>
-            Familiar with the facility of ABB
+            Toolbar will appear on right hand side. Toolbar -> Event -> On Load (Click on three dots appear in right hand side)
+        </li>
+        <li>
+            Choose "Code Builder" from the menu
+        </li>
+        <li>
+            Then it will open Microsoft Visual Basic and paste this line "CurrentDb.Properties.Delete" and Save
         </li>
     </ul>
-    Also, they have taken so many <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">COVID-19</a> safety precautions to protect their employees.
 </p>
-<h2 class="mb-3 mt-5">Down the road</h2>
 <p>
-    I'm grateful that this company is still able to host interns this summer in this global pandemic. I can't wait to see what we'll build this summer. Also, I'm very excited to see what the rest of the summer has in store for me! Grateful to have a new opportunity and going to give it 110%.
+    In the end, you code will look like this:
+    <figure>
+        <pre><code>Private Sub Form_Load()
+            CurrentDb.Properties.Delete ("PublishURL")
+        End Sub</code></pre>
+    </figure>
 </p>
-
+<p>
+    Now, just reopen that form. Boom! Now your problem is solved. Try and check it out by reopening the MS Access file. Also, You can delete the "RemoveAlert" form.
+</p>
+<p>
+    I found an idea from this article: <a href="http://www.utteraccess.com/forum/Remove-save-Sharepoint-t2000044.html" target="_blank">Prevent “Save to SharePoint Site” alert in Access</a>. The user commented to put the line in a sub: "CurrentDb.Properties.Delete ("PublishURL")" but I don't know where can I put this. So, I tried and it was worked.
+</p>
+<p>
+    Hope this post helps someone. Take care and Have a great day ahead.
+</p>
