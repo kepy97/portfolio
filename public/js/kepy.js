@@ -1,0 +1,7 @@
+var dad_vinod_patel = "+919879027856"
+var sister_sona_patel = "+17125351860"
+var brother_in_law_bhavesh_patel = "+16082083895"
+var hiren_patel_usa = "+17126357194"
+var lu_yang_abb = "+12623475130"
+var arpit_makhiyaviya_sculptsoft = "+919714376669"
+var prashant_thakkar_sculptsoft = "+919909953970"
