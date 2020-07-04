@@ -8,9 +8,9 @@ export default class SidebarTags extends React.Component {
         };
     }
 
-    shouldComponentUpdate(nextProps, nextState) {
-        return this.state.selectedTags !== nextState.selectedTags;
-    }
+    // shouldComponentUpdate(nextProps, nextState) {
+    //     return this.state.selectedTags.length !== nextState.selectedTags.length;
+    // }
 
     handleTagClick (tag) {
         var newTags = this.state.selectedTags;

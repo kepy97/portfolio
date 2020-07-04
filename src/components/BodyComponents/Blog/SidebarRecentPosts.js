@@ -30,6 +30,13 @@ export default class SidebarRecentPosts extends React.Component {
                         );
                     })
                 }
+                <div className="blogBannerButton">
+                    <Link to={{ pathname: `/blog/index` }}>
+                        <div className="btn btn-primary py-3 px-3">
+                            View More
+                        </div>
+                    </Link>
+                </div>
             </div>
         );
     }
