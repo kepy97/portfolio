@@ -18,6 +18,14 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://kepy.online/#/blog/database-designing</loc>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://kepy.online/#/blog/building-web-application-from-scratch#post-section</loc>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
         <loc>https://kepy.online/#/blog/hide-option-to-publish-to-sharepoint-in-ms-access</loc>
         <changefreq>yearly</changefreq>
     </url>
