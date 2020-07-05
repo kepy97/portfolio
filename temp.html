@@ -1,75 +1,75 @@
-<h1 class="mb-3 mt-5">Building web application from scratch</h1>
+<h1 class="mb-3 mt-5">Database Designing</h1>
 <p>
-    I have started working on creating a web application at ABB. I'll be working on this project alone so I have to
-    gather all the requirement and decide which programming languages to use to full-fill the requirement. I think
-    spending time on project plan instead of directly jump on to the programming is less burden and beneficial decision
-    later on.
+    After selecting web technologies and database, I'm moving forward to designing the database. I read many articles regarding database design. So, I want to list out few important rules that are different from the common rules.
 </p>
-<h2 class="mb-3 mt-5">Language Selection</h2>
+<h2 class="mb-3 mt-5">1) Nature of the application (OLTP or OLAP)</h2>
 <p>
-    When a programming language decision must be made, programs should conduct a trade study to determine the best
-    computer programming language, or mix of programming languages, to be used to satisfy system life cycle
-    requirements. Each programming language has their own benefits but choosing the right programming language saves a
-    lot of time. How?
-<ul>
-    <li>Easiness of writing the code</li>
-    <li>Faster performance</li>
-    <li>Reuse --- You can use existing library/packages to complete task </li>
-    <li>Support --- If technology is well known so you can get lot of support and bug solution from the internet</li>
-    <li>Extent of compatibility with and impact of other related direction</li>
-</ul>
+    When you start your database design the first thing to analyze is the nature of the application you are designing for, is it Transactional or Analytical.
 </p>
 <p>
-    To make a data-centric web app from the bottom-up, it is advantageous to plan below things:
-<ul>
-    <li>Web front end (HTML, CSS, Javascript) - for the look and feel of your web app</li>
-    <li>Backend language (e.g. Node.js, Python, Ruby) - control how your web app works</li>
-    <li>Database (Oracle, PostgreSQL) - to store the data of the application</li>
-    <li>DevOps (Github, Jenkins) - Deploying / hosting your web app</li>
-</ul>
-</p>
-<p><img src="/images/blog/building-web-application-from-scratch-logo.png" alt class="img-fluid" /></p>
-<h2 class="mb-3 mt-5">Frontend technology</h2>
-<p>
-    User experience is the number one priority for every business in the market today. As a developer, even the brief
-    you get on your project talks about the simplicity of the user interface it is supposed to feature. No matter how
-    complex functions and operations happen in the background, what users see and experience has to be seamless.
-</p>
-<h3 class="mb-3 mt-5">Best Frontend Framework 2020</h3>
-<p>
-    I choose <a href="https://reactnative.dev/" target="_blank" rel="noopener noreferrer"><b>React</b></a> over all other frameworks in the market. There were multiple reasons behind this but one of the
-    main thing is popularity.
+    <b>Transactional</b>: In this kind of application, your end user is more interested in CRUD, i.e., creating, reading, updating, and deleting records. The official name for such a kind of database is OLTP.
 </p>
 <p>
-    Talking about the relative popularity of each framework, the below graph shows the overall usage popularity of
-    each framework listed for best frontend frameworks in 2020. We can see that after the year 2015-16, Angular and
-    React have been in huge demand.
+    <b>Analytical</b>: In these kinds of applications your end user is more interested in analysis, reporting, forecasting, etc. These kinds of databases have a less number of inserts and updates. The main intention here is to fetch and analyze data as fast as possible. The official name for such a kind of database is OLAP.
 </p>
-<p><img src="/images/blog/building-web-application-from-scratch-1.png" alt class="img-fluid" /></p>
-<p> Also, One of the simplest frameworks to learn – React – was developed at Facebook to fix code maintainability
-    issues due to the constant addition of features in the app. An open-source framework now, React stands out
-    because of its virtual Document Object Model (DOM), which offers its exceptional functionality. An ideal
-    framework for those who anticipate high traffic and need a stable platform to handle it.
-</p>
-<h2 class="mb-3 mt-5">Backend language</h2>
+<p><img src="/images/blog/database-designing-1.png" alt class="img-fluid" /></p>
 <p>
-    The backend programming language is also known as server side programming. The name given to all types of programs which run on the web server. They process the user input, interact with the databases and control what content is served back to the client as a response to his request. It is written in a number of programming languages including PHP, NodeJS, Python, etc and has full access to the server’s OS and the programmer can chose the language he/she wants to code in.
+    In other words if you think inserts, updates, and deletes are more prominent then go for a normalized table design, else create a flat denormalized database structure.
 </p>
+<h2 class="mb-3 mt-5">2) Naming Convention</h2>
 <p>
-    I'm going to code in the <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer"><b>Node.js</b></a> language. Node.js is the newest in the list (released in 2009) and the quickest growing today.  It provides the ability to run JavaScript code server-side. The great thing is that I do not have to learn a new language for back-end development. I'll use Javascript as backend and frontend development. It's also helpful to full stack development.
+    A naming convention is an important part of a well-built data model. Look at the database model below. The model is not very fun to look at, to try to understand, or to code around.
 </p>
-<p><img src="/images/blog/building-web-application-from-scratch-2.png" alt class="img-fluid" /></p>
-<h2 class="mb-3 mt-5">Database</h2>
+<p><img src="/images/blog/database-designing-2.png" alt class="img-fluid" /></p>
 <p>
-    There are hundreds of tech-heavy database reviews out there, but they don’t always give clear guidance on the first step in selecting a database: choosing the best general type for a specific application. All databases are not created equal. Each has specific strengths and weaknesses.
+    Let’s start with some things that you should consider if you need to create a new naming convention. You want to give name that follows across the whole database.
 </p>
 <p>
-    I choose <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer"><b>PostgreSQL</b></a> database to store the data for our application. I have an option to choose NoSQL database but our application have certain limits so I went for RDMS. Also, postgre is an Enterprise-class relational database system. It is easy to setup and installs. It offers support for SQL and NoSQL. It has a great community which happy to serve you when you are facing issues while using PostgreSQL.
+    The case of the name. You can choose between:
+    <ul>
+        <li>UPPERCASE names - All name in uppercase</li>
+        <li>lowercase names - All name in lowercase</li>
+        <li>camelCase names – the name starts with a lowercase letter, but new words start with an uppercase letter</li>
+        <li>PascalCaseNames (also known as upper camel) – similar to camelCase, but the name starts with an uppercase letter, as do all additional words</li>
+        <li>Underscore - you can separate them with an underscore (like_this)</li>
+    </ul>
 </p>
-<h2 class="mb-3 mt-5">DevOps</h2>
+<h2 class="mb-3 mt-5">3) Data types</h2>
 <p>
-    I'll use <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><b>Github</b></a> as version control software as I'm the only one creating, maintaining this project. GitHub is occupies by far the largest market share. In fact, it was bought out by Microsoft last year, which actually made people to choose it.
+    We deal with different types of data such as strings, characters, whole numbers (integers), and decimal numbers (floating point numbers). Similarly, when we write a computer program to process different types of data, we need to specify its type clearly.
 </p>
 <p>
-    Overall, I selected technologies that I'll work on. Now, I'll create project plan according to our project requirements.
+    PostgreSQL supports many data types. Here, I list out few points to choose data type:
+    <ul>
+        <li>Choose BIGINT for primary ID. Many developer face issues to convert INTEGER to BIGINT later on.</li>
+        <li>Store all timestamps using UTC.</li>
+        <li>Always use a library to perform date and time math.</li>
+        <li>Use a standard time offset.</li>
+    </ul>
 </p>
+<h2 class="mb-3 mt-5">4) Break data into logical pieces</h2>
+<p>
+    This rule is actually the first rule from 1st normal form. Better approach would be to break table field into further logical pieces so that we can write clean and optimal queries.
+</p>
+<p>
+    However, I want to add here. <b>"Break data into logical pieces but don't overdose it"</b>
+</p>
+<p>
+    Developers are cute creatures. If you tell them this is the way, they keep doing it; well, they overdo it leading to unwanted consequences. For example: you can see the phone number field; it’s rare that you will operate on ISD codes of phone numbers separately (until your application demands it). So it would be a wise decision to just leave it as it can lead to more complications.
+</p>
+<p><img src="/images/blog/database-designing-3.png" alt class="img-fluid" /></p>
+<p>
+    PostgreSQL supports many data types. Here, I list out few points to choose data type:
+    <ul>
+        <li>Choose BIGINT for primary ID. Many developer face issues to convert INTEGER to BIGINT later on.</li>
+        <li>Store all timestamps using UTC.</li>
+        <li>Always use a library to perform date and time math.</li>
+        <li>Use a standard time offset.</li>
+    </ul>
+</p>
+<p>
+    You can follow these tutorials for more details:
+</p>
+<p>1) <a href="https://www.guru99.com/postgresql-data-types.html" target="_blank" rel="noopener noreferrer">PostgreSQL Data Types</a></p> 
+<p>2) <a href="https://www.postgresqltutorial.com/postgresql-data-types/" target="_blank" rel="noopener noreferrer">Getting started with PostgreSQL Data Types</a></p> 
+<p>3) <a href="https://medium.com/@vivekmadurai/how-to-deal-with-date-and-time-across-time-zones-39b1bd747f35" target="_blank" rel="noopener noreferrer">How to Deal with Date and Time across Time Zones</a></p>
