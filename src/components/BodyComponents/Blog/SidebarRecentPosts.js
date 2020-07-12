@@ -19,7 +19,7 @@ export default class SidebarRecentPosts extends React.Component {
                     recentPosts.map((post, i) => {
                         return (
                             <div className="block-21 mb-4 d-flex" key={i}>
-                                <div className="blog-img mr-4 cursor-pointer" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/${post.image})` }} ></div>
+                                <Link to={`/blog/${post.url}`}><div className="blog-img mr-4 cursor-pointer" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/${post.image})` }} ></div></Link>
                                 <div className="text">
                                     <h3 className="heading"><Link to={`/blog/${post.url}`}>{post.title}</Link></h3>
                                     <div className="meta">
