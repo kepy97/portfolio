@@ -1,75 +1,37 @@
-<h1 class="mb-3 mt-5">Database Designing</h1>
-<p>
-    After selecting web technologies and database, I'm moving forward to designing the database. I read many articles regarding database design. So, I want to list out few important rules that are different from the common rules.
-</p>
-<h2 class="mb-3 mt-5">1) Nature of the application (OLTP or OLAP)</h2>
-<p>
-    When you start your database design the first thing to analyze is the nature of the application you are designing for, is it Transactional or Analytical.
-</p>
-<p>
-    <b>Transactional</b>: In this kind of application, your end user is more interested in CRUD, i.e., creating, reading, updating, and deleting records. The official name for such a kind of database is OLTP.
-</p>
-<p>
-    <b>Analytical</b>: In these kinds of applications your end user is more interested in analysis, reporting, forecasting, etc. These kinds of databases have a less number of inserts and updates. The main intention here is to fetch and analyze data as fast as possible. The official name for such a kind of database is OLAP.
-</p>
-<p><img src="/images/blog/database-designing-1.png" alt class="img-fluid" /></p>
-<p>
-    In other words if you think inserts, updates, and deletes are more prominent then go for a normalized table design, else create a flat denormalized database structure.
-</p>
-<h2 class="mb-3 mt-5">2) Naming Convention</h2>
-<p>
-    A naming convention is an important part of a well-built data model. Look at the database model below. The model is not very fun to look at, to try to understand, or to code around.
-</p>
-<p><img src="/images/blog/database-designing-2.png" alt class="img-fluid" /></p>
-<p>
-    Let’s start with some things that you should consider if you need to create a new naming convention. You want to give name that follows across the whole database.
-</p>
-<p>
-    The case of the name. You can choose between:
-    <ul>
-        <li>UPPERCASE names - All name in uppercase</li>
-        <li>lowercase names - All name in lowercase</li>
-        <li>camelCase names – the name starts with a lowercase letter, but new words start with an uppercase letter</li>
-        <li>PascalCaseNames (also known as upper camel) – similar to camelCase, but the name starts with an uppercase letter, as do all additional words</li>
-        <li>Underscore - you can separate them with an underscore (like_this)</li>
-    </ul>
-</p>
-<h2 class="mb-3 mt-5">3) Data types</h2>
-<p>
-    We deal with different types of data such as strings, characters, whole numbers (integers), and decimal numbers (floating point numbers). Similarly, when we write a computer program to process different types of data, we need to specify its type clearly.
-</p>
-<p>
-    PostgreSQL supports many data types. Here, I list out few points to choose data type:
-    <ul>
-        <li>Choose BIGINT for primary ID. Many developer face issues to convert INTEGER to BIGINT later on.</li>
-        <li>Store all timestamps using UTC.</li>
-        <li>Always use a library to perform date and time math.</li>
-        <li>Use a standard time offset.</li>
-    </ul>
-</p>
-<h2 class="mb-3 mt-5">4) Break data into logical pieces</h2>
-<p>
-    This rule is actually the first rule from 1st normal form. Better approach would be to break table field into further logical pieces so that we can write clean and optimal queries.
-</p>
-<p>
-    However, I want to add here. <b>"Break data into logical pieces but don't overdose it"</b>
-</p>
-<p>
-    Developers are cute creatures. If you tell them this is the way, they keep doing it; well, they overdo it leading to unwanted consequences. For example: you can see the phone number field; it’s rare that you will operate on ISD codes of phone numbers separately (until your application demands it). So it would be a wise decision to just leave it as it can lead to more complications.
-</p>
-<p><img src="/images/blog/database-designing-3.png" alt class="img-fluid" /></p>
-<p>
-    PostgreSQL supports many data types. Here, I list out few points to choose data type:
-    <ul>
-        <li>Choose BIGINT for primary ID. Many developer face issues to convert INTEGER to BIGINT later on.</li>
-        <li>Store all timestamps using UTC.</li>
-        <li>Always use a library to perform date and time math.</li>
-        <li>Use a standard time offset.</li>
-    </ul>
-</p>
-<p>
-    You can follow these tutorials for more details:
-</p>
-<p>1) <a href="https://www.guru99.com/postgresql-data-types.html" target="_blank" rel="noopener noreferrer">PostgreSQL Data Types</a></p> 
-<p>2) <a href="https://www.postgresqltutorial.com/postgresql-data-types/" target="_blank" rel="noopener noreferrer">Getting started with PostgreSQL Data Types</a></p> 
-<p>3) <a href="https://medium.com/@vivekmadurai/how-to-deal-with-date-and-time-across-time-zones-39b1bd747f35" target="_blank" rel="noopener noreferrer">How to Deal with Date and Time across Time Zones</a></p>
+<div>
+    <h1 class="mb-3 mt-5">How to create database diagram easily without SQL knowledge</h1>
+    <p>
+        Currently, I'm in database designing phase after finalizing our <a href="https://kepy.online/#/blog/best-free-prototype-tool-online-2020" target="_blank" rel="noopener noreferrer">prototype</a> for the web application. Firstly, I created database tables and columns using pen and paper. However, that was not very helpful because it kinda getting tough to change design.
+    </p>
+    <p><img src="/images/blog/how-to-create-database-diagram-easily-logo.png" alt="" class="img-fluid"></p>
+    <p>
+        We always need to think as a bigger picture for the system. Good database design always helps for future enhancements. As you know, there will be always some change from client side after you deliver the software. If you just think for current requirements, it will be very hard to implement new requirements in that system. So, I think whenever you create the new database spend some more time in schema.
+    </p>
+    <p> There were many times I changed the schema of the database and it was annoying to me change it using pen and paper. So, I started looking for the tool and I found out 
+        <b><a href="https://dbdiagram.io/home" target="_blank" rel="noopener noreferrer">dbdiagram.io</a></b> is very popular tool in creating database diagram. 
+    </p>
+    <p>
+        This tool is different from other tools because you have to write some lines to create the diagram. It's not like a drag and drop tool. You might be thinking it will take your more precious time to write the code. I agree that it will take some time but this tool provide few more feature that save your lot more time than you think. 
+    </p>
+    <p>
+        I started using <a href="https://dbdiagram.noting.io/" target="_blank" rel="noopener noreferrer">dbdiagram</a> to only see the diagram. You can export the db design in PNG and PDF format. But there is another feature to export the schema in sql queries for different databases like: "PostGreSQL", "SQL Server" and many more.
+    </p>
+    <p>
+        Overall, using dbdiagram tool you don't have to write db schema queries. Also, it is very easy to create the diagram. I'll suggest you to check it out.
+    </p>
+    <p>
+        You can refer few other points to create good database: <a href="https://kepy.online/#/blog/database-designing" target="_blank" rel="noopener noreferrer">Database Designing</a>
+    </p>
+    <p>
+        Also, take care of the naming convention. I chose <a href="https://kepy.online/#/blog/building-web-application-from-scratch" target="_blank" rel="noopener noreferrer">PostgreSQL</a> for my web application. So, I'll be using "underscore" naming convention as table and column names are stored in lowercase in PostGreSQL.
+        <p>Source</p>
+        <ul>
+            <li>
+                <a href="https://martendb.io/documentation/postgres/naming/" target="_blank" rel="noopener noreferrer">Naming Conventions by Marten</a>
+            </li>
+            <li>
+                <a href="https://launchbylunch.com/posts/2014/Feb/16/sql-naming-conventions/" target="_blank" rel="noopener noreferrer">How I Write SQL, Part 1: Naming Conventions</a>
+            </li>
+        </ul>
+    </p>
+</div>
