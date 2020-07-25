@@ -315,12 +315,13 @@
             "internship",
             "react",
             "node.js",
+            "Python-Flask",
             "Postgre",
             "Project-Planning"
          ],
          "image": "blog/building-web-application-from-scratch-logo.png",
          "description": "In this post, I'm going to show which web technologies and database I chose to create new web application.",
-         "body": "<h1 class=\"mb-3 mt-5\">Building web application from scratch</h1> <p> I have started working on creating a web application at ABB. I'll be working on this project alone so I have to gather all the requirement and decide which programming languages to use to full-fill the requirement. I think spending time on project plan instead of directly jump on to the programming is less burden and beneficial decision later on. </p> <h2 class=\"mb-3 mt-5\">Language Selection</h2> <p> When a programming language decision must be made, programs should conduct a trade study to determine the best computer programming language, or mix of programming languages, to be used to satisfy system life cycle requirements. Each programming language has their own benefits but choosing the right programming language saves a lot of time. How? <ul> <li>Easiness of maintaining the code</li> <li>Faster performance</li> <li>Reuse --- You can use existing library/packages to complete task </li> <li>Support --- If technology is well known so you can get lot of support and bug solution from the internet</li> <li>Extent of compatibility with and impact of other related direction</li> </ul> </p> <p> To make a data-centric web app from the bottom-up, it is advantageous to plan below things: <ul> <li>Web front end (HTML, CSS, Javascript) - for the look and feel of your web app</li> <li>Backend language (e.g. Node.js, Python, Ruby) - control how your web app works</li> <li>Database (Oracle, PostgreSQL) - to store the data of the application</li> <li>DevOps (Github, Jenkins) - Deploying / hosting your web app</li> </ul> </p> <p><img src=\"/images/blog/building-web-application-from-scratch-logo.png\" alt class=\"img-fluid\" /></p> <h2 class=\"mb-3 mt-5\">Frontend technology</h2> <p> User experience is the number one priority for every business in the market today. As a developer, even the brief you get on your project talks about the simplicity of the user interface it is supposed to feature. No matter how complex functions and operations happen in the background, what users see and experience has to be seamless. </p> <h3 class=\"mb-3 mt-5\">Best Frontend Framework 2020</h3> <p> I choose <a href=\"https://reactnative.dev/\" target=\"_blank\" rel=\"noopener noreferrer\"><b>React</b></a> over all other frameworks in the market. There were multiple reasons behind this but one of the main thing is popularity. </p> <p> Talking about the relative popularity of each framework, the below graph shows the overall usage popularity of each framework listed for best frontend frameworks in 2020. We can see that after the year 2015-16, Angular and React have been in huge demand. </p> <p><img src=\"/images/blog/building-web-application-from-scratch-1.png\" alt class=\"img-fluid\" /></p> <p> Also, One of the simplest frameworks to learn – React – was developed at Facebook to fix code maintainability issues due to the constant addition of features in the app. An open-source framework now, React stands out because of its virtual Document Object Model (DOM), which offers its exceptional functionality. An ideal framework for those who anticipate high traffic and need a stable platform to handle it. </p> <h2 class=\"mb-3 mt-5\">Backend language</h2> <p> The backend programming language is also known as server side programming. The name given to all types of programs which run on the web server. They process the user input, interact with the databases and control what content is served back to the client as a response to his request. It is written in a number of programming languages including PHP, NodeJS, Python, etc and has full access to the server’s OS and the programmer can chose the language he/she wants to code in. </p> <p> I'm going to code in the <a href=\"https://nodejs.org/en/\" target=\"_blank\" rel=\"noopener noreferrer\"><b>Node.js</b></a> language. Node.js is the newest in the list (released in 2009) and the quickest growing today. It provides the ability to run JavaScript code server-side. The great thing is that I do not have to learn a new language for back-end development. I'll use Javascript as backend and frontend development. It's also helpful to full stack development. </p> <p><img src=\"/images/blog/building-web-application-from-scratch-2.png\" alt class=\"img-fluid\" /></p> <h2 class=\"mb-3 mt-5\">Database</h2> <p> There are hundreds of tech-heavy database reviews out there, but they don’t always give clear guidance on the first step in selecting a database: choosing the best general type for a specific application. All databases are not created equal. Each has specific strengths and weaknesses. </p> <p> I choose <a href=\"https://www.postgresql.org/\" target=\"_blank\" rel=\"noopener noreferrer\"><b>PostgreSQL</b></a> database to store the data for our application. I have an option to choose NoSQL database but our application have certain limits so I went for RDMS. Also, postgre is an Enterprise-class relational database system. It is easy to setup and installs. It offers support for SQL and NoSQL. It has a great community which happy to serve you when you are facing issues while using PostgreSQL. </p> <h2 class=\"mb-3 mt-5\">DevOps</h2> <p> I'll use <a href=\"https://github.com/\" target=\"_blank\" rel=\"noopener noreferrer\"><b>Github</b></a> as version control software as I'm the only one creating, maintaining this project. GitHub is occupies by far the largest market share. In fact, it was bought out by Microsoft last year, which actually made people to choose it. </p> <p> Overall, I selected technologies that I'll work on. Now, I'll create project plan according to our project requirements. </p>",
+         "body": "<h1 class=\"mb-3 mt-5\">Building web application from scratch</h1> <p> I have started working on creating a web application at ABB. I'll be working on this project alone so I have to gather all the requirement and decide which programming languages to use to full-fill the requirement. I think spending time on project plan instead of directly jump on to the programming is less burden and beneficial decision later on. </p> <h2 class=\"mb-3 mt-5\">Language Selection</h2> <p> When a programming language decision must be made, programs should conduct a trade study to determine the best computer programming language, or mix of programming languages, to be used to satisfy system life cycle requirements. Each programming language has their own benefits but choosing the right programming language saves a lot of time. How? <ul> <li>Easiness of maintaining the code</li> <li>Faster performance</li> <li>Reuse --- You can use existing library/packages to complete task </li> <li>Support --- If technology is well known so you can get lot of support and bug solution from the internet</li> <li>Extent of compatibility with and impact of other related direction</li> </ul> </p> <p> To make a data-centric web app from the bottom-up, it is advantageous to plan below things: <ul> <li>Web front end (HTML, CSS, Javascript) - for the look and feel of your web app</li> <li>Backend language (e.g. Node.js, Python, Ruby) - control how your web app works</li> <li>Database (Oracle, PostgreSQL) - to store the data of the application</li> <li>DevOps (Github, Jenkins) - Deploying / hosting your web app</li> </ul> </p> <p><img src=\"/images/blog/building-web-application-from-scratch-logo.png\" alt class=\"img-fluid\" /></p> <h2 class=\"mb-3 mt-5\">Frontend technology</h2> <p> User experience is the number one priority for every business in the market today. As a developer, even the brief you get on your project talks about the simplicity of the user interface it is supposed to feature. No matter how complex functions and operations happen in the background, what users see and experience has to be seamless. </p> <h3 class=\"mb-3 mt-5\">Best Frontend Framework 2020</h3> <p> I choose <a href=\"https://reactnative.dev/\" target=\"_blank\" rel=\"noopener noreferrer\"><b>React</b></a> over all other frameworks in the market. There were multiple reasons behind this but one of the main thing is popularity. </p> <p> Talking about the relative popularity of each framework, the below graph shows the overall usage popularity of each framework listed for best frontend frameworks in 2020. We can see that after the year 2015-16, Angular and React have been in huge demand. </p> <p><img src=\"/images/blog/building-web-application-from-scratch-1.png\" alt class=\"img-fluid\" /></p> <p> Also, One of the simplest frameworks to learn – React – was developed at Facebook to fix code maintainability issues due to the constant addition of features in the app. An open-source framework now, React stands out because of its virtual Document Object Model (DOM), which offers its exceptional functionality. An ideal framework for those who anticipate high traffic and need a stable platform to handle it. </p> <h2 class=\"mb-3 mt-5\">Backend language</h2> <p> The backend programming language is also known as server side programming. The name given to all types of programs which run on the web server. They process the user input, interact with the databases and control what content is served back to the client as a response to his request. It is written in a number of programming languages including PHP, NodeJS, Python, etc and has full access to the server’s OS and the programmer can chose the language he/she wants to code in. </p> <p> I'm confused to choose between <a href=\"https://nodejs.org/en/\" target=\"_blank\" rel=\"noopener noreferrer\"><b>Node.js Express</b></a> and <a href=\"https://flask.palletsprojects.com/en/1.1.x/\" target=\"_blank\" rel=\"noopener noreferrer\">Python Flask</a> language. </p> <p> Node.js is the newest in the list (released in 2009) and the quickest growing today. It provides the ability to run JavaScript code server-side. The great thing is that I do not have to learn a new language for back-end development. I'll use Javascript as backend and frontend development. </p> <p> Flask is an elegant, lightweight web framework for Python. Flask features a powerful request dispatching system (capable of RESTful design), and uses Jinja 2 as its templating engine. Flask is easy enough for developer to pick up and build something over a weekend. It's extremely easy to getting start with it. Also, performance of the python language is always great. </p> <h2 class=\"mb-3 mt-5\">Database</h2> <p> There are hundreds of tech-heavy database reviews out there, but they don’t always give clear guidance on the first step in selecting a database: choosing the best general type for a specific application. All databases are not created equal. Each has specific strengths and weaknesses. </p> <p> I choose <a href=\"https://www.postgresql.org/\" target=\"_blank\" rel=\"noopener noreferrer\"><b>PostgreSQL</b></a> database to store the data for our application. I have an option to choose NoSQL database but our application have certain limits so I went for RDMS. Also, postgre is an Enterprise-class relational database system. It is easy to setup and installs. It offers support for SQL and NoSQL. It has a great community which happy to serve you when you are facing issues while using PostgreSQL. </p> <h2 class=\"mb-3 mt-5\">DevOps</h2> <p> I'll use <a href=\"https://github.com/\" target=\"_blank\" rel=\"noopener noreferrer\"><b>Github</b></a> as version control software as I'm the only one creating, maintaining this project. GitHub is occupies by far the largest market share. In fact, it was bought out by Microsoft last year, which actually made people to choose it. </p> <p> Overall, I selected technologies that I'll work on. Now, I'll create project plan according to our project requirements. </p>",
          "published": true,
          "created": "2020-06-20T22:04:04.571Z",
          "updated": "2020-06-20T22:04:04.571Z"
@@ -405,12 +406,13 @@
          "updated": "2020-07-14T23:27:46.234Z"
       },
       {
-         "id": 25,
+         "id": 27,
          "title": "ABB internship exteneded",
          "url": "abb-internship-exteneded",
          "tags": [
             "ABB",
-            "internship"
+            "internship",
+            "Project-Planning"
          ],
          "image": "blog/abb-internship-exteneded-logo.png",
          "description": "ABB Summer internship extended throughout part-time during the school year.",
@@ -418,6 +420,57 @@
          "published": false,
          "created": "2020-07-15T20:45:40.571Z",
          "updated": "2020-07-15T20:45:40.571Z"
+      },
+      {
+         "id": 28,
+         "title": "Project setup is not a walk in the park",
+         "url": "project-setup-is-not-a-walk-in-the-park",
+         "tags": [
+            "ABB",
+            "internship",
+            "Project-Planning",
+            "Python-Flask"
+         ],
+         "image": "blog/project-setup-is-not-a-walk-in-the-park-logo.png",
+         "description": "I've described how much time and efforts are required to set up the project and a few tips to take care of.",
+         "body": "<div> <h1 class=\"mb-3 mt-5\">Project setup is not a walk in the park</h1> <p> In software development, whenever we switch to another project or starting a new one, it always takes some time to properly configure the environment and workspace components. In some projects, it takes much time to set up the project. </p> <p> There is always a dependency on other libraries or packages in any project. Some of those packages/libraries are updated, some functions/classes are deprecated. So, it will take days to weeks to solve these problems. </p> <p> However, there's always a way to solve those kinds of problem. As I'm building <a href=\"https://restfulapi.net/\" target=\"_blank\" rel=\"noopener noreferrer\">RESTful</a> APIs in python using flask web framework. In python, we can easily install any package using <a href=\"https://pip.pypa.io/en/stable/\" target=\"_blank\" rel=\"noopener noreferrer\">PIP</a>. Also, there is another package that is useful to set up your project in another workspace easily. </p> <h3 class=\"mb-3 mt-5\">Virtual environment</h3> <p> In python, you can use <a href=\"https://docs.python-guide.org/dev/virtualenvs/\" target=\"_blank\" rel=\"noopener noreferrer\">pipenv.</a> Virtual environment freezes your libraries/packages of same version. Now, setting up the project in new workspace will download the same version's of library and packages. So, you don't have to worry about versioning problem and depreciation. </p> <p><img src=\"/images/blog/project-setup-is-not-a-walk-in-the-park-logo.png\" alt=\"\" class=\"img-fluid\"></p> <p> Python virtualenv concept is great once you get going, but as we've already seen \"getting set up\" isn't always a walk in the park. This is one of those things that always seems to be wrong no matter how many times you've done it from memory. I know it requires lots of time and efforts to solve some weird bug. But I like to say keep patience and find the solution. Think about how you feel after solving this problem. It will boost your moral. Happy Coding. </p> </div>",
+         "published": true,
+         "created": "2020-07-19T15:10:38.198Z",
+         "updated": "2020-07-19T15:10:38.198Z"
+      },
+      {
+         "id": 29,
+         "title": "Python Flask Project Structure/Tree",
+         "url": "python-flask-project-structure-tree",
+         "tags": [
+            "ABB",
+            "internship",
+            "Project-Planning",
+            "Python-Flask"
+         ],
+         "image": "blog/python-flask-project-structure-tree-logo.png",
+         "description": "",
+         "body": "",
+         "published": true,
+         "created": "2020-07-22T22:29:18.198Z",
+         "updated": "2020-07-22T22:29:18.198Z"
+      },
+      {
+         "id": 30,
+         "title": "Which authentication method to choose for the project?",
+         "url": "which-authentication-method-to-choose-for-the-project",
+         "tags": [
+            "ABB",
+            "internship",
+            "Project-Planning",
+            "Python-Flask"
+         ],
+         "image": "blog/which-authentication-method-to-choose-for-the-project-logo.png",
+         "description": "",
+         "body": "",
+         "published": true,
+         "created": "2020-07-25T18:30:38.198Z",
+         "updated": "2020-07-25T18:30:38.198Z"
       }
    ]
 }
