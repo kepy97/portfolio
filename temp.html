@@ -1,21 +1,43 @@
 <div>
-    <h1 class="mb-3 mt-5">ABB internship exteneded</h1>
+    <h1 class="mb-3 mt-5">Which authentication method to choose for the project?</h1>
     <p>
-        5 weeks completed at ABB. I have done so many great things. I'm so excited to continue work here during the school year.
+        Authentication is common way to handle security for all applications. This is only way to answer the question “who you are?” to the application, when comes to stateless architecture or service oriented architecture we got lot of new concepts and technologies in the market. You can find details of different type of methods in the internet. In this article, I wrote about how to choose the authentication method.
+    </p>
+    <p><img src="/images/blog/which-authentication-method-to-choose-for-the-project-logo.png" alt="" class="img-fluid"></p>
+    <h3 class="mb-3 mt-5">Types of Authentication</h3>
+    <p>
+        <ul>
+            <li>Cookie-Based authentication</li>
+            <li>Token-Based authentication</li>
+            <li>OpenId</li>
+            <li>SAML</li>
+            <li>Third party access</li>
+        </ul>
     </p>
     <p>
-        Today my manager told me, he has a meeting with his manager so he's gonna talk about the work that I did during 5 weeks. Also, they're gonna discuss about I can work after the Summer or not. I was very happy today as well as quite nervous.
+        Stateless authentication is used by all around the world. Above are the common practicies for web or mobile authentication. I can say that no one is perfect for your project. But, you have to choose best suitable method for your project. 
     </p>
-    <p><img src="/images/blog/abb-internship-exteneded-logo.png" alt="" class="img-fluid"></p>
+    <h3 class="mb-3 mt-5">SSO(Single Sign ON)</h3>
     <p>
-        Take a look at your database design after completion. You must need to check there'a not any cycle occurs. Managing foreign key constraints is a pain but it certainly is possible. There may be problems that arise if you add constraints to the database later which introduce new circular dependencies. You have to be careful in this situation. However, as long as one of the records in the cycle has a nullable foreign-key field, the cycle can be broken and the records can be deleted. Updates are not usually a problem as long as you insert the records in the right order.
-        <ul><li>Check this tutorial to understand circular reference: <a href="https://www.codeproject.com/Articles/38655/Prevent-Circular-References-in-Database-Design" target="_blank" rel="noopener noreferrer">Prevent Circular References in Database Design</a></li></ul>
+        Nowadays, <a href="https://en.wikipedia.org/wiki/Single_sign-on" target="_blank" rel="noopener noreferrer">SSO(Single Sign ON)</a> is used by big tech companies. If you have multiple portals for different users, you should definately go for the SSO. As a user, he/she didn't have to remember different passwords. Also, they don't have to login multiple times. You can choose different service provider for your project like: <a href="https://aws.amazon.com/single-sign-on/" target="_blank" rel="noopener noreferrer">Amazon AWS</a>, <a href="https://azure.microsoft.com/en-us/services/active-directory/" target="_blank" rel="noopener noreferrer">Microsoft Azure</a> etc.
+    </p>
+    <h3 class="mb-3 mt-5">Open Authentication(OAuth)</h3>
+    <p>
+        If you want to integrate third party authentication like Login via Facebook or Google or Linkedin or Github or any other specific site, you have to go for Open Authentication(OAuth). OAuth is a protocol that allows an application to authenticate against server as a user. The recommendation is to implement OAuth 1.0a or OAuth 2.0. OAuth 2.0 relies on HTTPS for security and it currently implemented by Google, Facebook, Twitter etc.
+    </p>
+    <h3 class="mb-3 mt-5">Token-Based authentication</h3>
+    <p>
+        If you have only one portal, you can opt for the token base authentication. JSON web tokens are mostly used. You can easily find the library or package in any popular programming language. So, you don't have to write code for generating or verifying the tokens. I'm gonna use this method. I found the popular library for Python Flask Project: <a href="https://github.com/vimalloc/flask-jwt-extended" target="_blank" rel="noopener noreferrer">Flask JWT Extended</a>
     </p>
     <p>
-        I felt relief after all. Now, I can focus on my project and give my best to it. This project is really gonna help me for my career. I like to say thanks to my manager, his boss and <a href="http://www.abb.com" target="_blank" rel="noopener noreferrer">ABB</a> for giving me this opportunity.
+        Source:
+        <ul>
+            <li><a href="https://medium.com/@vivekmadurai/different-ways-to-authenticate-a-web-application-e8f3875c254a" target="_blank" rel="noopener noreferrer">Different ways to Authenticate a Web Application</a></li>
+            <li><a href="https://medium.com/@pavithraranathunga/the-most-common-authentication-methods-in-web-application-development-35845ecb1da0" target="_blank" rel="noopener noreferrer">The Most Common Authentication Methods in Web Application Development.</a></li>
+        </ul>
     </p>
 </div>
 
-<a href="" target="_blank" rel="noopener noreferrer"></a>
-<h3 class="mb-3 mt-5">DBDiagram.io</h3> 
+<a href="https://medium.com/@vivekmadurai/different-ways-to-authenticate-a-web-application-e8f3875c254a" target="_blank" rel="noopener noreferrer">Flask JWT Extended</a>
+<h3 class="mb-3 mt-5">Final Note: Spend time thinking about readability</h3>
 <p><img src="/images/blog/abb-internship-exteneded-logo.png" alt="" class="img-fluid"></p>
