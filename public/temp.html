@@ -1,49 +1,43 @@
 <div>
-    <h1 class="mb-3 mt-5">Project setup is not a walk in the park</h1>
+    <h1 class="mb-3 mt-5">Which authentication method to choose for the project?</h1>
     <p>
-        In software development, whenever we switch to another project or starting a new one, it always takes some time
-        to properly configured the environment and workspace components. In some projects, it takes much time to setup
-        the project.
+        Authentication is common way to handle security for all applications. This is only way to answer the question “who you are?” to the application, when comes to stateless architecture or service oriented architecture we got lot of new concepts and technologies in the market. You can find details of different type of methods in the internet. In this article, I wrote about how to choose the authentication method.
+    </p>
+    <p><img src="/images/blog/which-authentication-method-to-choose-for-the-project-logo.png" alt="" class="img-fluid"></p>
+    <h3 class="mb-3 mt-5">Types of Authentication</h3>
+    <p>
+        <ul>
+            <li>Cookie-Based authentication</li>
+            <li>Token-Based authentication</li>
+            <li>OpenId</li>
+            <li>SAML</li>
+            <li>Third party access</li>
+        </ul>
     </p>
     <p>
-        There are always a dependency on other libraries or packages in any project. Some of those packages/libraries
-        are updated, some functions/classes are deprecated. So, it will take days to weeks to solve those kind of
-        issues.
+        Stateless authentication is used by all around the world. Above are the common practicies for web or mobile authentication. I can say that no one is perfect for your project. But, you have to choose best suitable method for your project. 
     </p>
-    <p><img src="/images/blog/project-setup-is-not-a-walk-in-the-park-logo.png" alt="" class="img-fluid"></p>
+    <h3 class="mb-3 mt-5">SSO(Single Sign ON)</h3>
     <p>
-        However, there's always a way to solve those kind of problem. As I'm building <a href="https://restfulapi.net/"
-            target="_blank" rel="noopener noreferrer">RESTful</a> APIs in python using flask web framework. In python,
-        we can easily install any package using <a href="https://pip.pypa.io/en/stable/" target="_blank"
-            rel="noopener noreferrer">PIP</a>. Also, there is another package that is useful to setup your project in
-        another workspace easily.
+        Nowadays, <a href="https://en.wikipedia.org/wiki/Single_sign-on" target="_blank" rel="noopener noreferrer">SSO(Single Sign ON)</a> is used by big tech companies. If you have multiple portals for different users, you should definately go for the SSO. As a user, he/she didn't have to remember different passwords. Also, they don't have to login multiple times. You can choose different service provider for your project like: <a href="https://aws.amazon.com/single-sign-on/" target="_blank" rel="noopener noreferrer">Amazon AWS</a>, <a href="https://azure.microsoft.com/en-us/services/active-directory/" target="_blank" rel="noopener noreferrer">Microsoft Azure</a> etc.
     </p>
-    <h3 class="mb-3 mt-5">Virtual environment</h3>
+    <h3 class="mb-3 mt-5">Open Authentication(OAuth)</h3>
     <p>
-        In python, you can use <a href="https://docs.python-guide.org/dev/virtualenvs/" target="_blank"
-            rel="noopener noreferrer">pipenv.</a> Virtual environment freezes your libraries/packages of same version.
-        Now, setting up the project in new workspace will download the same version's of library and packages. So, you
-        don't have to worry about versioning problem and depreciation.
+        If you want to integrate third party authentication like Login via Facebook or Google or Linkedin or Github or any other specific site, you have to go for Open Authentication(OAuth). OAuth is a protocol that allows an application to authenticate against server as a user. The recommendation is to implement OAuth 1.0a or OAuth 2.0. OAuth 2.0 relies on HTTPS for security and it currently implemented by Google, Facebook, Twitter etc.
+    </p>
+    <h3 class="mb-3 mt-5">Token-Based authentication</h3>
+    <p>
+        If you have only one portal, you can opt for the token base authentication. JSON web tokens are mostly used. You can easily find the library or package in any popular programming language. So, you don't have to write code for generating or verifying the tokens. I'm gonna use this method. I found the popular library for Python Flask Project: <a href="https://github.com/vimalloc/flask-jwt-extended" target="_blank" rel="noopener noreferrer">Flask JWT Extended</a>
     </p>
     <p>
-        Python virtualenv concept is great once you get going, but as we've already seen "getting set up" isn't always a
-        walk in the park. This is one of those things that always seems to be wrong no matter how many times you've done
-        it from memory. I know it requires lots of time and efforts to solve some weird bug. But I like to say keep
-        patience and find the solution. Think about how you feel after solving this problem. It will boost your moral.
-        Happy Coding.
-    </p>
-    <p> 
-        I'm confused to choose between <a href="https://nodejs.org/en/" target="_blank"
-            rel="noopener noreferrer"><b>Node.js Express</b></a> and <a href="https://flask.palletsprojects.com/en/1.1.x/" target="_blank" rel="noopener noreferrer">Python Flask</a> language.
-    </p>
-    <p>
-        Node.js is the newest in the list (released in 2009) and the quickest growing today. It provides the ability to run JavaScript code server-side. The great thing is that I do not have to learn a new language for back-end development. I'll use Javascript as backend and frontend development. 
-    </p>
-    <p>
-        Flask is an elegant, lightweight web framework for Python. Flask features a powerful request dispatching system (capable of RESTful design), and uses Jinja 2 as its templating engine. Flask is easy enough for developer to pick up and build something over a weekend. It's extremely easy to getting start with it. I'm thinking I'll choose python over the Node.js
+        Source:
+        <ul>
+            <li><a href="https://medium.com/@vivekmadurai/different-ways-to-authenticate-a-web-application-e8f3875c254a" target="_blank" rel="noopener noreferrer">Different ways to Authenticate a Web Application</a></li>
+            <li><a href="https://medium.com/@pavithraranathunga/the-most-common-authentication-methods-in-web-application-development-35845ecb1da0" target="_blank" rel="noopener noreferrer">The Most Common Authentication Methods in Web Application Development.</a></li>
+        </ul>
     </p>
 </div>
 
-<a href="https://flask.palletsprojects.com/en/1.1.x/" target="_blank" rel="noopener noreferrer"></a>
-<h3 class="mb-3 mt-5">DBDiagram.io</h3>
+<a href="https://medium.com/@vivekmadurai/different-ways-to-authenticate-a-web-application-e8f3875c254a" target="_blank" rel="noopener noreferrer">Flask JWT Extended</a>
+<h3 class="mb-3 mt-5">Final Note: Spend time thinking about readability</h3>
 <p><img src="/images/blog/abb-internship-exteneded-logo.png" alt="" class="img-fluid"></p>

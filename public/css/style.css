@@ -9296,7 +9296,7 @@ textarea.form-control {
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: left top;
   position: relative;
   display: block;
   width: 100%;
@@ -9822,7 +9822,7 @@ color: #FFFFFF
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: left top;
   position: relative;
   display: block;
   width: 100%;
