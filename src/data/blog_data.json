@@ -471,6 +471,21 @@
          "published": true,
          "created": "2020-07-25T18:30:38.198Z",
          "updated": "2020-07-25T18:30:38.198Z"
+      },
+      {
+         "id": 31,
+         "title": "National Intern Day at ABB",
+         "url": "national-intern-day-at-abb",
+         "tags": [
+            "ABB",
+            "internship"
+         ],
+         "image": "blog/national-intern-day-at-abb-logo.png",
+         "description": "Celebration of National Intern Day(July 30th, 2020) at ABB",
+         "body": "<div> <h1 class=\"mb-3 mt-5\">National Intern Day at ABB</h1> <p> National Intern Day created by <a href=\"https://www.wayup.com/\" target=\"_blank\" rel=\"noopener noreferrer\">WayUp</a> in 2017. It is dedicated to recognizing and celebrating the future leaders of the world: interns!<a href=\"https://www.nationalinternday.com/\" target=\"_blank\" rel=\"noopener noreferrer\">(reference)</a> Today, I got a chance to enjoy this day at ABB. </p> <p><img src=\"/images/blog/national-intern-day-at-abb-logo.png\" alt=\"\" class=\"img-fluid\"></p> <p> Almost 2 months gonna complete at ABB as an intern in the next few days. It was one of the great experience of my life. I got what I expected from the internship. I'm creating a new web application from scratch by myself. I always wanted to do this. Also, I gained a new sense of professionalism and a clearer view of what it meant to be in a large organization. </p> <p> ABB is already helping students to gain real-world experience by creating internship programs like <a href=\"https://new.abb.com/us/careers/internships\" target=\"_blank\" rel=\"noopener noreferrer\">LEAD Summer Internship Program</a>. Also, many people in the organization are involved to improve skills of current interns by organizing different activities. I attended many professional development sessions, webinars, workshops to improve my professional skills and those are specially for the interns only. Those programs are like: <ul> <li> Resume tips </li> <li> Goal Setting </li> <li> Personal Branding </li> <li> Interviews in Digital Era </li> <li> Presentation Skills and many more. </li> </ul> I got to know many experienced person advice and it is helping me to boost my performance. Still, many more weeks remaining to learn from ABB's LEAD internship program. </p> <p> I'm happy that I'm doing my internship at ABB.</p> </div>",
+         "published": true,
+         "created": "2020-07-31T03:18:12.844Z",
+         "updated": "2020-07-31T03:18:12.844Z"
       }
    ]
 }
