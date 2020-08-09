@@ -502,6 +502,38 @@
          "published": true,
          "created": "2020-08-02T22:29:18.198Z",
          "updated": "2020-08-02T22:29:18.198Z"
+      },
+      {
+         "id": 33,
+         "title": "ReactJS Project Structure",
+         "url": "reactjs-project-structure",
+         "tags": [
+            "ABB",
+            "internship",
+            "Project-Planning",
+            "React"
+         ],
+         "image": "blog/reactjs-project-structure-logo.png",
+         "description": "Checkout how to create organized python flask project.",
+         "body": "",
+         "published": false,
+         "created": "2020-08-08T15:29:18.198Z",
+         "updated": "2020-08-08T15:29:18.198Z"
+      },
+      {
+         "id": 34,
+         "title": "My Personal Visual Studio Code Setup",
+         "url": "my-personal-visual-studio-code-setup",
+         "tags": [
+            "ABB",
+            "internship"
+         ],
+         "image": "blog/my-personal-visual-studio-code-setup-logo.png",
+         "description": "KePy style using of Visual Studio Code.",
+         "body": "<div> <h1 class=\"mb-3 mt-5\">My Personal Visual Studio Code Setup</h1> <p> I love the text editor setup I've been using for the past year and a half, so I want to show off my setup! Visual Studio Code has far surpassed my experiences with other editors which I used for the years before it. I thought I would do a quick write up on my setup and the extensions I love! </p> <p> Its been a while since I moved to Visual Studio Code for every programming language and it has been a great experience. <a href=\"https://code.visualstudio.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Visual Studio Code</a> is not the same as the full Visual Studio, that Microsoft is well-known for. It is an excellent editor with a plugin ecosystem for most languages and tools. Install the right plugins and you are good to Go :-) Below are my personal recommendations: </p> <h3 class=\"mb-3 mt-5\">Theme</h3> <p> Since I teach people how to code professionally and give a lot of talks on programming, having a readable theme is super important to me. I also love to have a theme that I enjoy aesthetically, so usually something with a lot of girly colors. My all-time favorite theme is <a href=\"https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula\" target=\"_blank\" rel=\"noopener noreferrer\">Dracula</a>. </p> <p><img src=\"/images/blog/my-personal-visual-studio-code-setup-logo.png\" alt=\"\" class=\"img-fluid\"></p> <h3 class=\"mb-3 mt-5\">Icon Theme</h3> <p> As a software developer, we have to work with different types of extension files. So, there's a theme in VS Code marketplace that I loved it to use it. <a href=\"https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme\" target=\"_blank\" rel=\"noopener noreferrer\">Material Icon Theme</a> supports different file extension icons as well as folder icons. You can also use custom icons to the files/folders. </p> <h3 class=\"mb-3 mt-5\">Saving Configuration</h3> <p> Another key piece of my setup is my save configuration. Many developers are using autosave code. In that case, your code automatically saved after some delay. However, I don't like to use that because I'm a person who keeps uses ctrl + s button whenever I feel satisfied with current code. If you want you can follow this <a href=\"https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save\" target=\"_blank\" rel=\"noopener noreferrer\">article</a> steps to enable it. </p> <p> Most importantly you would like to auto-format your code. So, your code always looks pretty and easy to readable. I'm using this feature on format code on Save and format code on Paste. Now, whenever you save the file or paste code from another file it will be autoformatted. You have to specify it in setting.json file. Follow this article steps: <a href=\"https://code.visualstudio.com/docs/editor/codebasics#_formatting\" target=\"_blank\" rel=\"noopener noreferrer\">Formatting</a> </p> <h3 class=\"mb-3 mt-5\">Programming Errors</h3> <p> Above are the general feature that you can use it for any programming language. Now, many time we make programming errors. It can be typing mistake or import module error. There are many extension that you can download for your programming language and it will identify error for you before you run the code. In python, I'm using pylint to check syntactical and stylistic problems. <a href=\"https://code.visualstudio.com/docs/python/linting\" target=\"_blank\" rel=\"noopener noreferrer\">(Linting Python in Visual Studio Code)</a> </p> <h3 class=\"mb-3 mt-5\">Snippets</h3> <p> Again, you need to find a specific extension to use this feature. I'm sure you're using ctrl + space button to auto-complete the line/code. So, code snippets are templates that make it easier to enter repeating code patterns, such as loops or conditional-statements. There are a bunch of extensions that can support this feature in VS Code in your programming language. For python, you can find <a href=\"https://marketplace.visualstudio.com/items?itemName=ms-python.python\" target=\"_blank\" rel=\"noopener noreferrer\">Python by Microsoft</a> extension in the marketplace. </p> <h3 class=\"mb-3 mt-5\">GitLens</h3> <p> Last but not the least, GitLens supercharges the Git capabilities built into Visual Studio Code. If you are working with other developers, you might be using <a href=\"https://github.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Github</a>, <a href=\"https://bitbucket.org/product\" target=\"_blank\" rel=\"noopener noreferrer\">Bitbucket</a>, <a href=\"https://about.gitlab.com/\" target=\"_blank\" rel=\"noopener noreferrer\">GitLab</a> or any other version control tool. <a href=\"https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens\" target=\"_blank\" rel=\"noopener noreferrer\">GitLens</a> helps you to visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more. </p> <p> Above are my personal recommendations. Hope at least one of those you find it helpful. <b>I suggest you to spend some time on the configuration of your IDE as you will be working at least 8 hours on that every day.</b> It should be configured as you need so you can work more effectively. Happy Hacking :) </p> </div>",
+         "published": false,
+         "created": "2020-08-18T12:29:18.198Z",
+         "updated": "2020-08-18T12:29:18.198Z"
       }
    ]
 }
