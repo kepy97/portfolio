@@ -1,44 +1,55 @@
 <div>
-    <h1 class="mb-3 mt-5">My Personal Visual Studio Code Setup</h1>
+    <h1 class="mb-3 mt-5">Performance Improvement in Project</h1>
     <p>
-        I love the text editor setup I've been using for the past year and a half, so I want to show off my setup! Visual Studio Code has far surpassed my experiences with other editors which I used for the years before it. I thought I would do a quick write up on my setup and the extensions I love!
+        Recently, I got some time from the developing the project. So, I thought let's take a look to improve the performance of the project.
+    </p>
+    <h3 class="mb-3 mt-5">How to improve?</h3>
+    <p><img src="/images/blog/performance-improvement-in-project-logo.png" alt="" class="img-fluid"></p>
+    <p>
+        There are several ways improve the performance. Like? You can start first from cleaning up code, removing unnecessary imports in the file, deleting not needed files. Also, you can reorganize your project structure by dividing into multiple components.
     </p>
     <p>
-        Its been a while since I moved to Visual Studio Code for every programming language and it has been a great experience. <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a> is not the same as the full Visual Studio, that Microsoft is well-known for. It is an excellent editor with a plugin ecosystem for most languages and tools. Install the right plugins and you are good to Go :-) Below are my personal recommendations:
+        Above are the very basic things that you can do in your project. After that, you can take a look at your application main section which is used many times when user open the application. This is the section which executes several times. It can be homepage of your application. If there's multiple loops are running, try to remove that first.
     </p>
-    <h3 class="mb-3 mt-5">Theme</h3>
+    <h3 class="mb-3 mt-5">Loops?</h3>
     <p>
-        Since I teach people how to code professionally and give a lot of talks on programming, having a readable theme is super important to me. I also love to have a theme that I enjoy aesthetically, so usually something with a lot of girly colors. My all time favorite theme is <a href="https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula" target="_blank" rel="noopener noreferrer">Dracula</a>.
+        Yes, loops like for, while are downgrade your application performance. You can move that loop code from backend to front-end or get specific formatted data from the database. Always, try to avoid using loops in the backend except there's not any other way.
     </p>
-    <p><img src="/images/blog/my-personal-visual-studio-code-setup-logo.png" alt="" class="img-fluid"></p>
-    <h3 class="mb-3 mt-5">Icon Theme</h3>
+    <h3 class="mb-3 mt-5">What next?</h3>
     <p>
-        As a software developer, we have to work with different types of extension files. So, there's a theme in VS Code marketplace that I loved it to use it. <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme" target="_blank" rel="noopener noreferrer">Material Icon Theme</a> supports diffent file extension icons as well folder icons. You can also use custom icons to the files/folders.
-    </p>
-    <h3 class="mb-3 mt-5">Saving Configuration</h3>
-    <p>
-        Another key piece of my setup is my save configuration. Many developers are using auto save code. In that case, your code automatically saved after somedelay. However, I don't like to use that because I'm a person who keep uses ctrl + s button whenever I feel satisfy. If you want you can follow this <a href="https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save" target="_blank" rel="noopener noreferrer">article</a> steps to enable it.
+        By following above steps, your application will be significantly improved. Now, you can focus on database part.
     </p>
     <p>
-        Most importantly you would like to auto format your code. So, your code always looks pretty and easy to readable. I'm using this feature on format code on Save and format code on Paste. Now, whenever you save the file or paste code from another file it will be auto formatted. You have to specify it in setting.json file. Follow this article steps: <a href="https://code.visualstudio.com/docs/editor/codebasics#_formatting" target="_blank" rel="noopener noreferrer">Formatting</a> 
-    </p>
-    <h3 class="mb-3 mt-5">Programming Errors</h3>
-    <p>
-        Above are the general feature that you can use it for any programming language. Now, many time we make programming errors. It can be typing mistake or import module error. There are many extension that you can download for your programming language and it will identify error for you before you run the code. In python, I'm using pylint to check syntactical and stylistic problems. <a href="https://code.visualstudio.com/docs/python/linting" target="_blank" rel="noopener noreferrer">(Linting Python in Visual Studio Code)</a>
-    </p>
-    <h3 class="mb-3 mt-5">Snippets</h3>
-    <p>
-        Again, you need to find specific extension to use this feature. I'm sure you're using ctrl + space button to auto complete the line/code. So, code snippets are templates that make it easier to enter repeating code patterns, such as loops or conditional-statements. There are bunch of extension that can support this feature in VS Code in your programming language. For python, you can find <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" target="_blank" rel="noopener noreferrer">python by microsoft</a> extension in marketplace.
-    </p>
-    <h3 class="mb-3 mt-5">GitLens</h3>
-    <p>
-        Last but not the least, GitLens supercharges the Git capabilities built into Visual Studio Code. If you are working with other developers, you might be using <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Github</a>, <a href="https://bitbucket.org/product" target="_blank" rel="noopener noreferrer">Bitbucket</a>, <a href="https://about.gitlab.com/" target="_blank" rel="noopener noreferrer">GitLab</a> or any other version control tool. <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank" rel="noopener noreferrer">GitLens</a> helps you to visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more.
+        In software application, there are major performance based on backend, and it continuously interacts with the database. You must be using ORM in backend to get the data. You can find many guidelines about how to improve performace in your ORM library. I'm using <a href="https://www.kepy.online/blog/sqlalchemy-tips-for-flask-database-connection" target="_blank" rel="noopener noreferrer">SQLAlchemy</a> in python flask framework.
     </p>
     <p>
-        Above are my personal recommendations. Hope at least one of those you find it helpful. Happy Hacking :)
+        I found pretty good article about <a href="https://blog.theodo.com/2020/03/sqlalchemy-relationship-performance/" target="_blank" rel="noopener noreferrer">Master SQLAlchemy Relationships in a Performance Friendly Way.</a> If you can't find anything there are some basic rules that you can <b>avoid</b> like:
+        <ul>
+            <li>
+                Retrieving an entire result set when only the count is needed
+            </li>
+            <li>
+                Retrieving entire models when only a few columns are needed
+            </li>
+            <li>
+                Updating one object at a time inside a loop
+            </li>
+            <li>
+                Triggering cascading deletes
+            </li>
+            <li>
+                Using the ORM for a bulk record import
+            </li>
+            <li>
+                Calling commit or flush multiple times
+            </li>
+        </ul>
+    </p>
+    <p>
+        I've followed above all rules in my project. Now, performance is drastically changed. I hope this list of common pitfalls can help you avoid these issues and keep your application running smoothly. As always, when diagnosing a performance problem, measurement is key. Most databases offer performance diagnostics that can help you pinpoint issues, such as the PostgreSQL pg_stat_statements module.
     </p>
 </div>
 
-<a href="https://new.abb.com/us/careers/internships" target="_blank" rel="noopener noreferrer">Flask JWT Extended</a>
-<h3 class="mb-3 mt-5">Final Note: Spend time thinking about readability</h3>
-<p><img src="/images/blog/abb-internship-exteneded-logo.png" alt="" class="img-fluid"></p>
+<a href="https://blog.theodo.com/2020/03/sqlalchemy-relationship-performance/" target="_blank" rel="noopener noreferrer">Master SQLAlchemy Relationships in a Performance Friendly Way</a>
+<h3 class="mb-3 mt-5">Analysis paralysis</h3>
+<p><img src="/images/blog/reactjs-project-structure-logo.png" alt="" class="img-fluid"></p>
