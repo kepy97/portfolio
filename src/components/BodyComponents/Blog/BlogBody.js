@@ -49,7 +49,16 @@ export default class BlogBody extends React.Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-8 ftco-animate" id="post-section">
-                                <div dangerouslySetInnerHTML={{ __html: postData[0].body }} />
+                                <div dangerouslySetInnerHTML={{ __html: postData[0].body }}/>
+                                <div className="mt-5 about-author d-flex p-4 bg-light">
+                                    <div className="bio mr-5">
+                                        <img src="/images/profile.jpg" alt="Image placeholder" className="img-fluid mb-4" />                         
+                                    </div>
+                                    <div className="desc"> 
+                                        <h3><a href="https://kepy.online" target="_blank" rel="noopener noreferrer">Keyul Patel</a></h3>
+                                        <p>Keyul Patel is a 22-year-old computing student who enjoys eating out, relaxing and camping. He is helpful and loveable, but can also be very greedy. He is currently at college. studying computing. He is obsessed with programming.</p>
+                                    </div>
+                                </div>
                             </div>
                             <Sidebar postData={posts} parentSearchFilter={(e) => this.handleSideBars(e)} parentTagsFilter={(e) => this.handleSideBars(e)} />
                         </div>
