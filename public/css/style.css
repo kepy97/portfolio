@@ -9845,3 +9845,35 @@ figcaption {
   background-color: #3f65ff;
   color: white !important;
 }
+
+/* Blog Content CSS */
+
+.blog-title{font-weight: 500; margin-bottom: 0;}
+.blog-desc{font-size: 16px; line-height: 1.8; color: rgba(0,0,0,0.63); font-family: serif; }
+.blog-image{box-shadow: 0 0 15px rgba(0,0,0,0.3); padding: 8px; margin: 22px 0 20px 0; }
+.blog-image img{width: 100%; }
+.blog-desc-title{font-size: 32px; font-weight: 500; margin: 30px 0 10px 0 !important; color: black;}
+.blog-desc-sub-title{font-size: 26px; font-weight: 500; margin: 30px 0 10px 0 !important; color: black;}
+.blog-desc-sub-title-2{font-size: 20px; font-weight: 500; margin: 30px 0 10px 0 !important; color: black;}
+.custinfobox p:last-child{margin-bottom: 0; }
+.custinfobox.custinfobox-1{position: relative; background: #f5f5f5; padding: 33px 25px 20px 25px; border-radius: 6px; z-index: 9; margin: 32px 0 30px 0; }
+.custinfobox.custinfobox-1:before{border-left: 5px solid #c9c9c9; position: absolute; left: 0; top: 0; bottom: 0;  content: ""; border-radius: 6px 0 0 6px; }
+.custinfobox.custinfobox-1:after{background: url("../images/quote-icon.svg") center no-repeat; background-size: 100%; position: absolute; left: 23px; top: -15px; content: ""; height: 40px; width: 40px; z-index: -1; }
+.cust-divider{border-top: 1px solid rgba(0, 0, 0, 0.1); margin: 16px 0; }
+.list-title{font-size: 18px; margin: 0 0 12px 0; line-height: 1.5; color: black; font-weight: 400; }
+.bullet-list{margin: 0; padding: 0 0 20px 0; }
+.bullet-list li{margin: 0; padding: 0 0 8px 25px; list-style: none; position: relative; line-height: 26px; }
+.bullet-list li:before{background: #5f5f5f; position: absolute; left: 0; top: 8px; height: 8px; width: 8px; content: ""; border-radius: 50%; }
+.number-list{margin: 0; padding: 0; } 
+.number-list li{margin: 0; padding: 0 0 8px 25px; list-style: none; position: relative; line-height: 26px; counter-increment: numberinc;   }
+.number-list li:before{content: counter(numberinc) "."; position: absolute; left: 0; top: 0; }
+.code-iframe iframe{width: 100%; height: 500px; }
+.summary-text{color: #262626; font-family: proxima nova; font-weight: 600; font-size: 18px !important;}
+.summary-text-uppercase{text-transform: uppercase;}
+.about-author .bio{width: 100px; height: 100px; margin: 0 35px 0 0 !important; min-width: 100px; max-width: 100px; border-radius: 50%; overflow: hidden;  }
+.about-author{box-shadow: 0 0 15px rgba(0,0,0,0.15)!important; -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.15)!important; background-color: #e8eff7 !important;}
+.blog-content-bold{color:#414141; font-weight: bolder !important;}
+.blog-content-italic{color:#414141; font-style: italic;}
+.blog-content-highlight{background-color: #FFFF00;}
+
+/* Blog Content CSS Completed */
