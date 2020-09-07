@@ -1,55 +1,145 @@
-<div>
-    <h1 class="mb-3 mt-5">Performance Improvement in Project</h1>
-    <p>
-        Recently, I got some time from the developing the project. So, I thought let's take a look to improve the performance of the project.
-    </p>
-    <h3 class="mb-3 mt-5">How to improve?</h3>
-    <p><img src="/images/blog/performance-improvement-in-project-logo.png" alt="" class="img-fluid"></p>
-    <p>
-        There are several ways improve the performance. Like? You can start first from cleaning up code, removing unnecessary imports in the file, deleting not needed files. Also, you can reorganize your project structure by dividing into multiple components.
-    </p>
-    <p>
-        Above are the very basic things that you can do in your project. After that, you can take a look at your application main section which is used many times when user open the application. This is the section which executes several times. It can be homepage of your application. If there's multiple loops are running, try to remove that first.
-    </p>
-    <h3 class="mb-3 mt-5">Loops?</h3>
-    <p>
-        Yes, loops like for, while are downgrade your application performance. You can move that loop code from backend to front-end or get specific formatted data from the database. Always, try to avoid using loops in the backend except there's not any other way.
-    </p>
-    <h3 class="mb-3 mt-5">What next?</h3>
-    <p>
-        By following above steps, your application will be significantly improved. Now, you can focus on database part.
-    </p>
-    <p>
-        In software application, there are major performance based on backend, and it continuously interacts with the database. You must be using ORM in backend to get the data. You can find many guidelines about how to improve performace in your ORM library. I'm using <a href="https://www.kepy.online/blog/sqlalchemy-tips-for-flask-database-connection" target="_blank" rel="noopener noreferrer">SQLAlchemy</a> in python flask framework.
-    </p>
-    <p>
-        I found pretty good article about <a href="https://blog.theodo.com/2020/03/sqlalchemy-relationship-performance/" target="_blank" rel="noopener noreferrer">Master SQLAlchemy Relationships in a Performance Friendly Way.</a> If you can't find anything there are some basic rules that you can <b>avoid</b> like:
-        <ul>
-            <li>
-                Retrieving an entire result set when only the count is needed
-            </li>
-            <li>
-                Retrieving entire models when only a few columns are needed
-            </li>
-            <li>
-                Updating one object at a time inside a loop
-            </li>
-            <li>
-                Triggering cascading deletes
-            </li>
-            <li>
-                Using the ORM for a bulk record import
-            </li>
-            <li>
-                Calling commit or flush multiple times
-            </li>
-        </ul>
-    </p>
-    <p>
-        I've followed above all rules in my project. Now, performance is drastically changed. I hope this list of common pitfalls can help you avoid these issues and keep your application running smoothly. As always, when diagnosing a performance problem, measurement is key. Most databases offer performance diagnostics that can help you pinpoint issues, such as the PostgreSQL pg_stat_statements module.
-    </p>
-</div>
+<html lang="en">
+   <head>
+      <title>ReactJS Project Structure</title>
+      <meta charset="utf-8">
+      <link rel="icon" href="favicon.ico">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="theme-color" content="#000000">
+      <meta property="og:title" content="Welcome to life of Keyul Patel">
+      <meta name="description" content="I'm a student at UWM. I love to creating products that improve people’s lives. I considers myself a forever student.">
+      <meta property="og:image" content="images/profile.jpg">
+      <meta property="og:type" content="website">
+      <link rel="apple-touch-icon" href="logo192.png">
+      <!--
+         manifest.json provides metadata used when your web app is installed on a
+         user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+         -->
+      <link rel="manifest" href="manifest.json">
+      <!--
+         Notice the use of  in the tags above.
+         It will be replaced with the URL of the `public` folder during the build.
+         Only files inside the `public` folder can be referenced from the HTML.
+         
+         Unlike "favicon.ico" or "favicon.ico", "favicon.ico" will
+         work correctly both with client-side routing and a non-root public URL.
+         Learn how to configure a non-root public URL by running `npm run build`.
+         -->
+      <link rel="stylesheet" href="css/fonts-googleapis.css">
+      <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+      <link rel="stylesheet" href="css/animate.css">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="css/magnific-popup.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/aos.css">
+      <link rel="stylesheet" href="css/ionicons.min.css">
+      <link rel="stylesheet" href="css/flaticon.css">
+      <link rel="stylesheet" href="css/icomoon.css">
+      <link rel="stylesheet" href="css/style.css">
+      <style type="text/css">.scrollax-performance, .scrollax-performance *, .scrollax-performance *:before, .scrollax-performance *:after { pointer-events: none !important; -webkit-animation-play-state: paused !important; animation-play-state: paused !important; };</style>
+      <meta name="description" content="Checkout how to create organized ReactJS project." data-react-helmet="true">
+      <meta property="og:title" content="ReactJS Project Structure" data-react-helmet="true">
+      <meta property="og:image" content="images/blog/reactjs-project-structure-logo.png" data-react-helmet="true">
+   </head>
+   <body id="html-main-body" data-spy="scroll" data-target="ftco-navbar" data-offset="300" data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div id="root">
+         
+         <div>
+             <section class="ftco-section">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-8 ftco-animate fadeInUp ftco-animated" id="post-section">
+                         <!-- Ashwin: You have to change between this -->
+                        <div>
+                           <div> 
+                              <h1 class="mt-5 blog-title">ABB Internship Interview Experience</h1>
+                              <p class="blog-desc">Finally, Got an Internship in Fortune 500 Company!!</p>
+                              <p>
+                                 As an international student, it is very hard to secure an internship in the USA. In fact, <span class="blog-content-highlight"> international student even can't get phone interview so getting a video or in-person interview is a big achievement.</span> In this post, I have written my whole internship hunting experience.
+                              </p>
+                              <div class="blog-image">
+                                 <img src="/images/blog/ABB-Internship-Offer-logo.png" alt="" class="img-fluid">
+                               </div>
+                              <p>
+                                 I'm a graduate student at the <a href="https://uwm.edu" target="_blank" rel="noopener noreferrer">University of Wisconsin-Milwaukee</a>. I enrolled in Fall-2019. In the starting of November 2019, I started to apply for the internship application. Big companies already started to hire interns. I show many student posts about they got the offer for the Summer 2020 internship. I was feeling nervous because I'm getting only online coding challenges. It was a bad time for me.
+                              </p>
+                              <p class="mb-3 mt-5 blog-desc-title">Created Personal Website</p>
+                              <p>
+                                 I started wondering about what is wrong in my application. And I figured out it's because I'm on an F-1 visa. <span class="blog-content-bold"> Companies are looking for long-term players only</span> and they have to pay extra money for sponsorship. That's the main problem.
+                              </p>
+                              <p>
+                                 I need to do something different than other applications so I thought I should create my portfolio. Many people suggest that resume must be only 1 page. But, I can only put a few information in my resume so a personal website is a good idea to include more project information. <span class="blog-content-italic">So, I created a static website before January 2020.</span>
+                              </p>
+                              <p class="mb-3 mt-5 blog-desc-title">
+                                 University Career & Internship Fair
+                              </p>
+                              <p>
+                                 I attended a career fair at my university in the end of February 2020. However, I have applied to more than <span class="blog-content-bold">200 companies</span> for software development positions before the career fair.
+                              </p>
+                              <p>
+                                 After attending a career fair, I was feeling it is worthless because many companies representative doesn't know anything about the position. They were giving a business card or page and ask me to apply through online by a mentioned website. They were not even interested to take a look at the resume. Many companies do not hire international students, they were looking for US citizens. <span class="blog-content-italic blog-content-bold">But, I decided to go to every companies table and leave my resume. If they don't ask for my resume, I insisted them to keep my resume.</span>
+                              </p>
+                              <p class="mb-3 mt-5 blog-desc-title">
+                                 Luck?
+                              </p>
+                              <p>
+                                 I was getting many rejection emails and few of them are instant emails after submitting the application. I think that's an auto-generated email where if applicant select as not US citizen, he/she will get an email. One week passed after attending a career fair. Nothing was working out. So, I even stopped to apply for new companies because of frustration.
+                              </p>
+                              <p>
+                                 However, I got some good emails among them. I responded to those emails and scheduled an in-person interview with 2 companies. One of them was ABB(I got an email from ABB on Friday, March 6th). I went to the ABB site in Wisconsin office on Tuesday, March 10th for interview.
+                              </p>
+                              <div class="cust-divider"></div>
+                              <p>
+                                 The interview went well. I was confident that I will get this job. After 2 days(March 12th), I got a congratulation email from my manager. I was so happy on that day. I like to thanks my manger for trusting me and giving me a chance. Happy ending :)
+                              </p>
+                              <p class="mb-3 mt-5 blog-desc-title">
+                                 How did they got my resume?
+                              </p>
+                              <p>
+                                 I did not mention about how I got an in-person interview. As I said earlier, I went to every company table in my university career fair. After one week, ABB's manager emailed me that he got a resume from the HR department and he was looking for an intern to complete one project in the summer. <span class="blog-content-highlight"> So, the university career fair helped me to get a summer internship in my case even I was thinking career fair is worthless.</span>
+                              </p>
+                              <div class="custinfobox custinfobox-1"><p>
+                                 Interviewing is a lot about luck, trust me, but the only thing in your hand is practice and perseverance. 
+                              </p></div>
+                              <p class="summary-text summary-text-uppercase">
+                                 I know that was a long post but this is it, my full experience and journey into getting an offer from ABB. I was lucky but prepared. Goodluck with your journey!
+                              </p>
+                           </div>
+                        </div>
 
-<a href="https://blog.theodo.com/2020/03/sqlalchemy-relationship-performance/" target="_blank" rel="noopener noreferrer">Master SQLAlchemy Relationships in a Performance Friendly Way</a>
-<h3 class="mb-3 mt-5">Analysis paralysis</h3>
-<p><img src="/images/blog/reactjs-project-structure-logo.png" alt="" class="img-fluid"></p>
+                        <!-- Ashwin: You have to change between this. Aani upar nu -->
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+        
+      </div>
+      <!--
+         This HTML file is a template.
+         If you open it directly in the browser, you will see an empty page.
+         
+         You can add webfonts, meta tags, or analytics to this file.
+         The build step will place the bundled scripts into the <body> tag.
+         
+         To begin the development, run `npm start` or `yarn start`.
+         To create a production bundle, use `npm run build` or `yarn build`.
+         -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery-migrate-3.0.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/jquery.stellar.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.animateNumber.min.js"></script>
+      <script src="js/scrollax.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="static/js/bundle.js"></script><script src="static/js/0.chunk.js"></script><script src="static/js/main.chunk.js"></script>
+      <style type="text/css">.txt-rotate > .wrap { border-right: 0.08em solid #666 }</style>
+   </body>
+</html>
