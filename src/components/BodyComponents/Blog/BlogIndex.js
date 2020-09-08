@@ -4,7 +4,7 @@ import Sidebar from './Sidebar';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet'
 
-const MAX_POSTS = 5;
+const MAX_POSTS = 10;
 const ref = React.createRef();
 export default class BlogIndex extends React.Component {
     constructor(props) {
