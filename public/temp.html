@@ -52,61 +52,33 @@
                      <div class="col-lg-8 ftco-animate fadeInUp ftco-animated" id="post-section">
                          <!-- Ashwin: You have to change between this -->
                         <div>
-                           <div> 
-                              <h1 class="mt-5 blog-title">Why I changed Github Pages to Netlify Hosting Platform?</h1>
-                              <p class="blog-desc">Today, I changed this blog hosting from Github pages to Netlify plateform</p>
-                              <p>
-                                 Earlier, I wrote the tutorial about <a href="http://www.kepy.online/blog/hosting-react-blog-to-github-pages" target="_blank" rel="noopener noreferrer">How to deploy React App to GitHub Pages?</a> The hosting platform of Github is awesome. It was easy to host. They have integrated continuous deployment so no need to change files on the server. When I commit to my branch it is directly deployed.
-                              </p>
-                              <p class="blog-desc-title">
-                                 What is the reason to change?
-                              </p>
-                              <p>
-                                 The reason behind the changing plateform is <span class="blog-content-bold">SEO of my blog.</span> I wanted to index my blog pages in search engine sites. You can find the tutorial on my blog about <a href="https://www.kepy.online/blog/is-react-seo-friendly" target="_blank" rel="noopener noreferrer">React is SEO friendly or not.</a>
-                              </p>
-                              <p>
-                                 Above post was about 3 months ago. Since then, I have been trying to index my pages on Google. But, there was no luck. I'm getting only two results of my website.
-                              </p>
-                              <div class="blog-image">
-                                 <img src="/images/blog/why-i-changed-github-pages-to-netlify-hosting-platform-logo.png" alt="" class="img-fluid">
-                               </div>
-                               <p class="blog-desc-sub-title">
-                                 React was not a problem
-                               </p>
-                               <p>
-                                 Turns out, react was not a problem at all. So, whose problem it is. I can say that this problem is a combination of <span class="blog-content-highlight">Github Pages and my programming (LOL) and <a href="https://support.google.com/webmasters/answer/1061943?hl=en" target="_blank" rel="noopener noreferrer">Google crawlers.</a></span> Yeah, that's true. Let me explain it in more detail.
-                               </p>
-                               <p class="blog-desc-sub-title">
-                                 1) Github Pages
-                               </p>
-                               <p>
-                                 When I hosted my first blog on <a href="https://www.kepy.online/blog/React-Github-Blog-Test" target="_blank" rel="noopener noreferrer">Github Pages</a>, I face the problem of 404 when I refresh the blog page. It can't find the index.html file on the server on that route. You can find more detail here: <a href="https://github.com/rafgraph/spa-github-pages#how-it-works" target="_blank" rel="noopener noreferrer">SPA host on Github</a>.
-                               </p>
-                               <p class="blog-desc-sub-title">
-                                 2) Programming
-                               </p>
-                               <p>
-                                 However, I found the <a href="https://stackoverflow.com/questions/46056414/getting-404-for-links-with-create-react-app-deployed-to-github-pages/46060999#46060999" target="_blank" rel="noopener noreferrer">easy solution</a> that we can use HashRouter to generate the links. I changed the code according to that. So, URLs will change from <a href="http://www.kepy.online/blog/surviving-finals-week" target="_blank" rel="noopener noreferrer">http://www.kepy.online/blog/surviving-finals-week</a> to http://www.kepy.online/#/blog/surviving-finals-week.
-                               </p>
-                               <p class="blog-desc-sub-title">
-                                 3) Google crawlers
-                               </p>
-                               <p>
-                                 I didn't have the problem with hash-based URL. But, Google can't index those URLs. I got to know after I posted a question on google webmaster community. Question: <a href="https://support.google.com/webmasters/thread/68649059?hl=en" target="_blank" rel="noopener noreferrer">URL can be indexed: Still many pages not showing in Google</a>
-                               </p>
-                               <p class="blog-desc-title">
-                                 Solution
-                               </p>
-                               <p>
-                                 As you can see, the problem generated due to <span class="blog-content-bold">multiple factors</span>. I came up with a different solution like I can use query string as URL to find the specific route. But, I was looking for a permanent solution. Then, I got to know about Netlify.
-                               </p>
-                               <p>
-                                 <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">Netlify</a> is an all-in-one platform for automating modern web projects. It is very easy to deploy react website on Netlify. <span class="blog-content-highlight">Also, it has a free plan and solves 404 Github pages error using "_redirects" file.</span> Follow this tutorial to <a href="https://www.netlify.com/blog/2016/07/22/deploy-react-apps-in-less-than-30-seconds/" target="_blank" rel="noopener noreferrer">host on Netlify.</a>
-                               </p>
-                              <p class="summary-text summary-text-uppercase">
-                                 Now, everyone is happy. I hope google to index my pages in a few days. Wish me luck :)
-                              </p>
-                           </div>
+                            <div>
+                                <h1 class="mt-5 blog-title">ReactJS Project Structure</h1>
+                                <p class="blog-desc">Checkout how to create organized ReactJS project.</p>
+                                <p> From the last couple of weeks, I was working on front-end Side. I'm using React JS in front-end. As I'm <a href="https://www.kepy.online/blog/building-web-application-from-scratch" target="_blank" rel="noopener noreferrer">building a project from scratch</a>, I spent some time to find the proper file structure in ReactJS. </p>
+                                <div class="blog-image"><img src="/images/blog/reactjs-project-structure-logo.png" alt="" class="img-fluid"></div>
+                                <p> 
+                                    React JS file structure is pretty easy. Also, I can say that you don't have to Rome around to find perfect file structure because ReactJS official site provides it. You can follow these patterns in your project: <a href="https://reactjs.org/docs/faq-structure.html" target="_blank" rel="noopener noreferrer">File Structure in ReactJS (official site)</a> </p>
+                                <p class="mb-3 mt-5 blog-desc-title">Analysis paralysis</p>
+                                <p> <span class="blog-content-italic">What is Analysis paralysis?</span> Analysis paralysis in simple term means <span class="blog-content-bold">overthinking.</span> In software development, analysis paralysis typically manifests itself through the Waterfall model with exceedingly long phases of project planning, requirements gathering, program design and data modeling, which can create little or no extra value by those steps and risk many revisions -- <a href="https://en.wikipedia.org/wiki/Analysis_paralysis" target="_blank" rel="noopener noreferrer">wiki.</a> </p>
+                                <p>You need to be careful about it. <span class="blog-content-highlight">As many software developers face this problem.</span> Even I think I was doing overthinking when I was creating a backend structure(<a href="https://kepy.online/blog/python-flask-project-structure" target="_blank" rel="noopener noreferrer">Python Flask Project Structure</a>). It took so much effort. </p>
+                                <div class="custinfobox custinfobox-1">
+                                    <p>Sometimes overthinking does not help.</p>
+                                </div>
+                                <p> Even official ReactJS site says  <span class="blog-content-bold">"don’t spend more than five minutes on choosing a file structure."</span> You can always change after you write some code or when a project grows. </p>
+                                <p class="mb-3 mt-5 blog-desc-title">Naming Convention</p>
+                                <p> Regarding naming conventions, ReactJS is unopinionated. <span class="blog-content-bold">There isn't an official guideline or statement about it.</span> You won't find them in the documentation either. </p>
+                                <p> It's a personal (team) preference. If you struggle to enforce one, you could stick to something like <a href="https://github.com/airbnb/javascript/tree/master/react" target="_blank" rel="noopener noreferrer">Airbnb's mostly reasonable approach to React and JSX.</a> </p>
+                                <p> Front-end language gives much more freedom in architecture compared to Back-end programming languages because back-end application could be run on different platforms like Ubuntu, windows or mac. So, you have to keep in mind about that.
+                                <p class="list-title"> I'm adding a couple of references that are helpful in Front-end architecture.</p>
+                                <ul class="bullet-list"> 
+                                   <li> <a href="https://medium.com/javascript-in-plain-english/solving-the-file-structure-problem-in-react-apps-4b5b5dca775b" target="_blank" rel="noopener noreferrer">A Simple Approach to File Structures in React Apps</a> </li>
+                                   <li> <a href="https://levelup.gitconnected.com/2-simple-effective-react-file-naming-convention-tips-cce1022328a8" target="_blank" rel="noopener noreferrer">2 Simple and Effective React File Naming Convention Tips</a> </li>
+                                   <li> <a href="https://medium.com/@wittydeveloper/react-components-naming-convention-%EF%B8%8F-b50303551505" target="_blank" rel="noopener noreferrer">React components naming convention</a> </li>
+                                </ul>
+                                </p> 
+                                <p class="summary-text summary-text-uppercase">PS: As long as you're consistent, I would say you're safe.</p>
+                             </div>
                         </div>
 
                         <!-- Ashwin: You have to change between this. Aani upar nu -->
