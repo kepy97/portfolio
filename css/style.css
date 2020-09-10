@@ -9875,5 +9875,5 @@ figcaption {
 .blog-content-bold{color:#414141; font-weight: bolder !important;}
 .blog-content-italic{color:#414141; font-style: italic;}
 .blog-content-highlight{background-color: #FFFF00;}
-
+.blog-content-inline{background: #e8e8e8; color: #000; display: inline-block; padding: 0 8px; border-radius: 3px;}
 /* Blog Content CSS Completed */
