@@ -27,7 +27,7 @@ export default class Resume extends React.Component {
                                  <span className="date">Sep 2019 - May 2021</span>
                                  <h2>Master in Computer Science</h2>
                                  <span className="position">University of Wisconsin-Milwaukee</span>
-                                 <p>Currently, I am doing my masters in computer science. My focus is on Artificial Intelligence. Starting my education off in Fall 2019, my expected graduation is May 2021.</p>
+                                 <p>Currently, I am doing my <a href="https://uwm.edu" target="_blank" rel="noopener noreferrer">masters</a> in computer science. I want to grow and sharpen my skills through this degree. Starting my education off in Fall 2019, my expected graduation is May 2021.</p>
                               </div>
                            </div>
                            <div className="resume-wrap d-flex ftco-animate">
@@ -38,7 +38,7 @@ export default class Resume extends React.Component {
                                  <span className="date">Sep 2014 - May 2018</span>
                                  <h2>Bachelor of Engineering in Computer Engineering</h2>
                                  <span className="position">Gujarat Technological University</span>
-                                 <p>I received my bachelor's degree with first className distinction grades. My gpa is 8.72 out of 10. I have learned basics and advanced knowledge of computers and programming.</p>
+                                 <p>I received my <a href="https://www.gtu.edu" target="_blank" rel="noopener noreferrer">bachelor's</a> degree with first-class distinction grades. My GPA is 8.72 out of 10. I have learned the basics and advanced knowledge of computers and programming.</p>
                               </div>
                            </div>
                         </div>
@@ -49,10 +49,21 @@ export default class Resume extends React.Component {
                                  <span className="flaticon-ideas"></span>
                               </div>
                               <div className="text pl-3">
+                                 <span className="date">May 2020 - Present</span>
+                                 <h2>LEAD R&D Intern</h2>
+                                 <span className="position">ABB</span>
+                                 <p>I'm working on a new web application portal for internal usage at <a href="https://global.abb/group/en" target="_blank" rel="noopener noreferrer">ABB.</a> This is the first project of my life where I'm developing it from <a href="https://www.kepy.online/blog/building-web-application-from-scratch" target="_blank" rel="noopener noreferrer">scratch.</a> I cherished having complete ownership of the project - being able to work with end-users to gather requirements, incorporate feedback, propose new stretch goals, and work on additional features.</p>
+                              </div>
+                           </div>
+                           <div className="resume-wrap d-flex ftco-animate">
+                              <div className="icon d-flex align-items-center justify-content-center">
+                                 <span className="flaticon-ideas"></span>
+                              </div>
+                              <div className="text pl-3">
                                  <span className="date">Jun 2018 - Jul 2019</span>
                                  <h2>Software Developer</h2>
                                  <span className="position">SculptSoft</span>
-                                 <p>After completing my internship at SculptSoft at end of May 2018, they admired my working ethics. I was offered a position as a full-time Software Developer. I worked on many large projects. I've used different programming languages, all still to create web and moblie applications.</p>
+                                 <p>After completing my internship at <a href="https://www.sculptsoft.com/" target="_blank" rel="noopener noreferrer">SculptSoft</a> at end of May 2018, they admired my working ethics. So, I was offered a position as a full-time Software Developer. I worked on many large projects. I've used different programming languages, all still to create web and mobile applications.</p>
                               </div>
                            </div>
                            <div className="resume-wrap d-flex ftco-animate">
@@ -63,7 +74,7 @@ export default class Resume extends React.Component {
                                  <span className="date">Dec 2017 - May 2018</span>
                                  <h2>Data Analyst Intern</h2>
                                  <span className="position">SculptSoft</span>
-                                 <p>During 2017-18, I was working with Sculptsoft as an intern. My task is to find patterns in large purchasing datas and visualize them in different formats. To visualize these patterns I've used Tableau, PowerBI, and D3.js to create charts.</p>
+                                 <p>During 2017-18, I was working with <a href="https://www.sculptsoft.com/" target="_blank" rel="noopener noreferrer">Sculptsoft</a> as an intern. My task is to find patterns in large purchasing data and visualize them in different formats. To visualize these patterns I've used different tools like Tableau, PowerBI, and D3.js to create charts.</p>
                               </div>
                            </div>
                            <div className="resume-wrap d-flex ftco-animate">
@@ -74,7 +85,7 @@ export default class Resume extends React.Component {
                                  <span className="date">Jan 2017 - Dec 2017</span>
                                  <h2>Java Developer Intern</h2>
                                  <span className="position">iCreate Technologies</span>
-                                 <p>iCreate Technologies was a place I interned at, I worked with a great team and learned about Industrial Software Engineering. I've created java windows applications. I've used java top frameworks to create web applications.</p>
+                                 <p>iCreate Technologies was a place I interned at, I worked with a great team and learned about Industrial Software Engineering. I've created java windows applications. I've used java top frameworks to create web applications as well.</p>
                               </div>
                            </div>
                         </div>
@@ -153,7 +164,7 @@ export default class Resume extends React.Component {
                               </div>
                               <div className="col-md-6 animate-box">
                                  <div className="progress-wrap ftco-animate">
-                                    <h3>JavaScript</h3>
+                                    <h3>JavaScript(ReactJS)</h3>
                                     <div className="progress">
                                        <div className="progress-bar color-3" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style={{width:"100%"}}>
                                           <span>100%</span>
@@ -214,7 +225,7 @@ export default class Resume extends React.Component {
                                  <span className="date">Mar 2019</span>
                                  <h2>Young Performer Of the Month</h2>
                                  <span className="position">SculptSoft</span>
-                                 <p>Even due to the lack of experience, I had learned fast and did work that was praiseworthy also at a young age. I received this award, check out this linkedin <a href="https://www.linkedin.com/posts/sculptsoft-hr_whole-sculptsoft-family-congratulates-you-activity-6521387185143418881-n7S-/" target="_blank" rel="noopener noreferrer">post</a> and <a href={process.env.PUBLIC_URL+ "/images/sculptSoftCertificate.jpg"} target="_blank" rel="noopener noreferrer">certificate</a>.</p>
+                                 <p>Even due to the lack of experience, I had learned fast and done work that was praiseworthy also at a young age. So, I received this award, check out this LinkedIn <a href="https://www.linkedin.com/posts/sculptsoft-hr_whole-sculptsoft-family-congratulates-you-activity-6521387185143418881-n7S-/" target="_blank" rel="noopener noreferrer">post</a> and <a href={process.env.PUBLIC_URL+ "/images/sculptSoftCertificate.jpg"} target="_blank" rel="noopener noreferrer">certificate</a>.</p>
                               </div>
                            </div>
                            <div className="resume-wrap d-flex ftco-animate">

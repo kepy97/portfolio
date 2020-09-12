@@ -20,7 +20,7 @@ export default class Contact extends React.Component {
                       </div>
                       <div>
                         <h3 className="mb-4">Location</h3>
-                        <p><a href="https://goo.gl/maps/o8wZC6tmA6w7a1s29" target="_blank" rel="noopener noreferrer">Wisconsin, USA</a></p>
+                        <p><a href="https://goo.gl/maps/55aMtzvdzejrsRmKA" target="_blank" rel="noopener noreferrer">USA</a></p>
                       </div>
                     </div>
                   </div>

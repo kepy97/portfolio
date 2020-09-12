@@ -10,12 +10,12 @@ export default class Footer extends React.Component {
             <div className="col-md">
               <div className="ftco-footer-widget mb-4">
                 <h2 className="ftco-heading-2">About</h2>
-                <p>I enjoy meeting new people and finding ways to help them have an uplifting experience. I am dedicated, outgoing, and a team player. I enjoy reading, and the knowledge and perspective that my reading gives me has strengthened my thought process. I considers myself a forever student.</p>
+                <p>I enjoy meeting new people and finding ways to help them have an uplifting experience. I am a dedicated, outgoing, and a team player. I enjoy reading, and the knowledge and perspective that my reading gives me have strengthened my thought process. I consider myself a forever student.</p>
                 <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                   <li className="ftco-animate"><a href="https://www.linkedin.com/in/kepy97/" target="_blank" rel="noopener noreferrer"><span className="icon-linkedin" /></a></li>
                   <li className="ftco-animate"><a href="https://github.com/kepy97" target="_blank" rel="noopener noreferrer"><span className="icon-github" /></a></li>
-                  <li className="ftco-animate"><a href="https://www.facebook.com/Kepy97" target="_blank" rel="noopener noreferrer"><span className="icon-facebook" /></a></li>
-                  <li className="ftco-animate"><a href="https://www.instagram.com/kepy97/" target="_blank" rel="noopener noreferrer"><span className="icon-instagram" /></a></li>
+                  {/* <li className="ftco-animate"><a href="https://www.facebook.com/Kepy97" target="_blank" rel="noopener noreferrer"><span className="icon-facebook" /></a></li>
+                  <li className="ftco-animate"><a href="https://www.instagram.com/kepy97/" target="_blank" rel="noopener noreferrer"><span className="icon-instagram" /></a></li> */}
                 </ul>
               </div>
             </div>
@@ -52,7 +52,7 @@ export default class Footer extends React.Component {
                     <li><a href="mailto:kvpatel@uwm.edu" target="_blank" rel="noopener noreferrer"><span className="icon icon-envelope" /><span className="text">kvpatel@uwm.edu</span></a></li>
                     <li><a href="https://www.linkedin.com/in/kepy97/" target="_blank" rel="noopener noreferrer"><span className="icon icon-linkedin" /><span className="text">Linkedin</span></a></li>
                     <li><a href="https://github.com/kepy97" target="_blank" rel="noopener noreferrer"><span className="icon icon-github" /><span className="text">Github</span></a></li>
-                    <li><a href="https://goo.gl/maps/o8wZC6tmA6w7a1s29" target="_blank" rel="noopener noreferrer"><span className="icon icon-map-marker" /><span className="text">Wisconsin, USA</span></a></li>
+                    <li><a href="https://goo.gl/maps/55aMtzvdzejrsRmKA" target="_blank" rel="noopener noreferrer"><span className="icon icon-map-marker" /><span className="text">USA</span></a></li>
                   </ul>
                 </div>
               </div>

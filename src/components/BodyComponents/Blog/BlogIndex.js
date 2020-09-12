@@ -88,10 +88,12 @@ export default class BlogIndex extends React.Component {
         const postIndex = posts.slice(this.state.startIndex, this.state.endIndex);
         return (
             <div>
+                {/* Setting all the SEO description here */}
                 <Helmet>
                     <title>Keyul Patel's journal</title>
                     <meta name="description" content="Here you will find useful tips, my experiences, life hacks and the usual daily thoughts about everything that surrounds me." />
                     <meta property="og:image" content={"/images/profile.jpg"}></meta>
+                    <meta property="og:description" content="Here you will find useful tips, my experiences, life hacks and the usual daily thoughts about everything that surrounds me." />
                 </Helmet>
                 <div className="hero-wrap js-fullheight">
                     <div className="overlay"></div>

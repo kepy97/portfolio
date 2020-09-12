@@ -19,11 +19,11 @@ export default class About extends React.Component {
 								<div className="col-md-12 heading-section ftco-animate">
 									<h1 className="big">About</h1>
 									<h2 className="mb-4">About Me</h2>
-									<p>Currently, I'm a student at <a href="https://uwm.edu/" target="_blank" rel="noopener noreferrer">UWM</a>. I have a passion for programming and a great experience on how to create web and mobile applications. I love to creating products that improve people’s lives. People find me a quick learner.</p>
+									<p>Currently, I'm a student at <a href="https://uwm.edu/" target="_blank" rel="noopener noreferrer">UWM</a>. I have a passion for programming and a great experience on how to create web and mobile applications. I love creating products that improve people’s lives. People find me a quick learner.</p>
 									<ul className="about-info mt-4 px-md-0 px-2">
 										<li className="d-flex"><span>Name:</span> <span>Keyul Patel</span></li>
 										<li className="d-flex"><span>Email:</span> <span><a href="mailto:kvpatel@uwm.edu">kvpatel@uwm.edu</a></span></li>
-										<li className="d-flex"><span>Location:</span> <span><a href="https://goo.gl/maps/o8wZC6tmA6w7a1s29" target="_blank" rel="noopener noreferrer">Wisconsin, USA</a></span></li>
+										<li className="d-flex"><span>Location:</span> <span><a href="https://goo.gl/maps/55aMtzvdzejrsRmKA" target="_blank" rel="noopener noreferrer">USA</a></span></li>
 									</ul>
 								</div>
 							</div>

@@ -26,11 +26,13 @@ export default class BlogBody extends React.Component {
         }
         return (
             <div>
+                {/* Setting all the SEO description here */}
                 <Helmet>
                     <title>{postData[0].title}</title>
                     <meta name="description" content={postData[0].description} />
                     <meta property="og:title" content={postData[0].title}></meta>
                     <meta property="og:image" content={"/images/" + postData[0].image}></meta>
+                    <meta property="og:description" content={postData[0].description} />
                 </Helmet>
                 <div className="hero-wrap js-fullheight">
                     <div className="overlay"></div>
@@ -52,7 +54,7 @@ export default class BlogBody extends React.Component {
                                 <div dangerouslySetInnerHTML={{ __html: postData[0].body }}/>
                                 <div className="mt-5 about-author d-flex p-4 bg-light">
                                     <div className="bio mr-5">
-                                        <img src="/images/profile.jpg" alt="Image placeholder" className="img-fluid mb-4" />                         
+                                        <img src="/images/profile.jpg" alt="Profile" className="img-fluid mb-4" />                         
                                     </div>
                                     <div className="desc"> 
                                         <h3><a href="https://kepy.online" target="_blank" rel="noopener noreferrer">Keyul Patel</a></h3>
