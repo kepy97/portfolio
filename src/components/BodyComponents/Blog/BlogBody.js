@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from './Sidebar';
 import { Redirect, Link } from "react-router-dom";
 import { Helmet } from 'react-helmet'
+import ReactGA from 'react-ga';
 
 export default class BlogBody extends React.Component {
     componentDidMount() {
@@ -24,6 +25,12 @@ export default class BlogBody extends React.Component {
         if (postData.length < 1) {
             return <Redirect to={process.env.PUBLIC_URL + "/blog/index"} />
         }
+
+        ReactGA.event({
+            category: "Blog Body",
+            action: "User reading specific page: " + postData[0].title,
+        });
+
         return (
             <div>
                 {/* Setting all the SEO description here */}

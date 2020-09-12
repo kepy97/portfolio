@@ -3,6 +3,7 @@ import moment from 'moment';
 import Sidebar from './Sidebar';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet'
+import ReactGA from 'react-ga';
 
 const MAX_POSTS = 10;
 const ref = React.createRef();
@@ -86,6 +87,12 @@ export default class BlogIndex extends React.Component {
     render() {
         const posts = this.state.allPostData;
         const postIndex = posts.slice(this.state.startIndex, this.state.endIndex);
+
+        ReactGA.event({
+            category: "Blog Index",
+            action: "User came on blog index page",
+        });
+
         return (
             <div>
                 {/* Setting all the SEO description here */}

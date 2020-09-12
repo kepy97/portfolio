@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import loadingImage from "./../data/working-user.gif"
 
 import { BrowserRouter as Router } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 export default class Layout extends React.Component {
 	constructor(props){
@@ -19,6 +20,10 @@ export default class Layout extends React.Component {
 	}
 
 	render() {
+		const trackingId = "UA-177855828-1";
+		ReactGA.initialize(trackingId);
+		ReactGA.pageview(window.location.pathname + window.location.search);
+
 		return (
 			<Router basename={process.env.PUBLIC_URL}>
 				{!this.state.loading ?
