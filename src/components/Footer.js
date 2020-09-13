@@ -9,12 +9,13 @@ export default class Footer extends React.Component {
           <div className="row mb-5">
             <div className="col-md">
               <div className="ftco-footer-widget mb-4">
-                <h2 className="ftco-heading-2">About</h2>
+                <h2 className="ftco-heading-2">About Me</h2>
                 <p>I enjoy meeting new people and finding ways to help them have an uplifting experience. I am a dedicated, outgoing, and a team player. I enjoy reading, and the knowledge and perspective that my reading gives me have strengthened my thought process. I consider myself a forever student.</p>
                 <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                   <li className="ftco-animate"><a href="https://www.linkedin.com/in/kepy97/" target="_blank" rel="noopener noreferrer"><span className="icon-linkedin" /></a></li>
                   <li className="ftco-animate"><a href="https://github.com/kepy97" target="_blank" rel="noopener noreferrer"><span className="icon-github" /></a></li>
-                  <li className="ftco-animate"><a href="https://twitter.com/Keyul_kepy" target="_blank" rel="noopener noreferrer"><span className="icon-twitter" /></a></li>
+                  {/* <li className="ftco-animate"><a href="https://twitter.com/Keyul_kepy" target="_blank" rel="noopener noreferrer"><span className="icon-twitter" /></a></li> */}
+                  <li className="ftco-animate"><a href="https://www.youtube.com/channel/UCPL6VQew6f_tpgzpcJhrXsQ?view_as=subscriber" target="_blank" rel="noopener noreferrer"><span className="icon-youtube" /></a></li>
                   {/* <li className="ftco-animate"><a href="https://www.facebook.com/Kepy97" target="_blank" rel="noopener noreferrer"><span className="icon-facebook" /></a></li>*/}
                   <li className="ftco-animate"><a href="https://www.instagram.com/kepy97/" target="_blank" rel="noopener noreferrer"><span className="icon-instagram" /></a></li>
                 </ul>
@@ -52,7 +53,7 @@ export default class Footer extends React.Component {
                   <ul>
                     <li><a href="mailto:kvpatel@uwm.edu" target="_blank" rel="noopener noreferrer"><span className="icon icon-envelope" /><span className="text">kvpatel@uwm.edu</span></a></li>
                     <li><a href="https://www.linkedin.com/in/kepy97/" target="_blank" rel="noopener noreferrer"><span className="icon icon-linkedin" /><span className="text">Linkedin</span></a></li>
-                    <li><a href="https://github.com/kepy97" target="_blank" rel="noopener noreferrer"><span className="icon icon-github" /><span className="text">Github</span></a></li>
+                    <li><a href="https://twitter.com/Keyul_kepy" target="_blank" rel="noopener noreferrer"><span className="icon icon-twitter" /><span className="text">Twitter</span></a></li>
                     <li><a href="https://goo.gl/maps/55aMtzvdzejrsRmKA" target="_blank" rel="noopener noreferrer"><span className="icon icon-map-marker" /><span className="text">USA</span></a></li>
                   </ul>
                 </div>
