@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import Header from "./Header";
 import Body from "./Body";
 import Footer from "./Footer";
-import loadingImage from "./../data/working-user.gif"
 
 import { BrowserRouter as Router } from 'react-router-dom';
 import ReactGA from 'react-ga';
@@ -10,12 +9,12 @@ import ReactGA from 'react-ga';
 export default class Layout extends React.Component {
 	constructor(props){
 		super(props);
-		this.state = {loading: false};
+		document.getElementById("root").style.display = "none";
 	}
 	componentDidMount() {
-		this.setState({loading: true});
 		setTimeout(() => {
-			this.setState({loading: false});
+			document.getElementById("loader").style.display = "none";
+			document.getElementById("root").style.display = null;
 		}, 5000);
 	}
 
@@ -26,19 +25,11 @@ export default class Layout extends React.Component {
 
 		return (
 			<Router basename={process.env.PUBLIC_URL}>
-				{!this.state.loading ?
-					<Fragment>
-						<Header />
-						<Body />
-						<Footer />
-					</Fragment>
-				:
-					<div class="custom-landing-sec">
-						<div class="custom-landing-image">
-							<img src={loadingImage} alt="Loading Data" />
-						</div>
-					</div> 
-				}
+				<Fragment>
+					<Header />
+					<Body />
+					<Footer />
+				</Fragment>
 			</Router>
 		);
 	}
