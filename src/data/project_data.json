@@ -41,6 +41,20 @@
          "url":"Game-Bot-2019",
          "languages":["python"],
          "image":"gameBot.jpg"
+      },
+      {
+         "id":7,
+         "name":"Trivia Quiz",
+         "url":"trivia-quiz-2020",
+         "languages":["react-native"],
+         "image":"triviaQuiz.png"
+      },
+      {
+         "id":8,
+         "name":"Task Management System",
+         "url":"task-management-system-2020",
+         "languages":["python", "react"],
+         "image":"taskManagementSystem.jpg"
       }
    ]
 }
