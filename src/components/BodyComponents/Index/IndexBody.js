@@ -23,6 +23,13 @@ export default class IndexBody extends React.Component {
         return (
           <div>
             {/* Setting all the SEO description here */}
+            <Helmet>
+              <title>Welcome to a life of Keyul Patel</title>
+              <meta name="description" content="I'm a student at UWM. I love creating products that improve people’s lives. I consider myself a forever student." />
+              <meta property="og:title" content="Welcome to a life of Keyul Patel"></meta>
+              <meta property="og:image" content="/images/profile.jpg"></meta>
+              <meta property="og:description" content="I'm a student at UWM. I love creating products that improve people’s lives. I consider myself a forever student." />
+            </Helmet>
 
             <Home />
             <About />

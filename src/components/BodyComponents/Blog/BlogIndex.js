@@ -99,6 +99,7 @@ export default class BlogIndex extends React.Component {
                 <Helmet>
                     <title>Keyul Patel's journal</title>
                     <meta name="description" content="Here you will find useful tips, my experiences, life hacks and the usual daily thoughts about everything that surrounds me." />
+                    <meta property="og:title" content="Keyul Patel's journal"></meta>
                     <meta property="og:image" content="/images/profile.jpg"></meta>
                     <meta property="og:description" content="Here you will find useful tips, my experiences, life hacks and the usual daily thoughts about everything that surrounds me." />
                 </Helmet>
