@@ -13,8 +13,8 @@ export default class IndexBody extends React.Component {
     componentDidMount() {
         // FIXME: Added patch because of converted HashRouter to BrowserRouter
         let url = this.props.location.hash;
-        let start_string = url.substring(0,1);
-        if (start_string === "#") {
+        let start_string = url.substring(0,2);
+        if (start_string === "#/") {
           this.props.history.push(url.substring(1))
         }
         window.globalFunction();
