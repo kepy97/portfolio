@@ -27,7 +27,7 @@ export default class Resume extends React.Component {
                                  <span className="date">Sep 2019 - May 2021</span>
                                  <h2>Master in Computer Science</h2>
                                  <span className="position">University of Wisconsin-Milwaukee</span>
-                                 <p>Currently, I am doing my <a href="https://uwm.edu" target="_blank" rel="noopener noreferrer">masters</a> in computer science. I want to grow and sharpen my skills through this degree. Starting my education off in Fall 2019, my expected graduation is May 2021.</p>
+                                 <p>Currently, I am doing my <a href="https://uwm.edu" target="_blank" rel="noopener noreferrer">masters</a> in computer science. I want to grow and sharpen my skills through this degree. My cumulative GPA is <b>3.6 out of 4.0.</b> Starting my education off in Fall 2019, my expected graduation is May 2021.</p>
                               </div>
                            </div>
                            <div className="resume-wrap d-flex ftco-animate">
@@ -38,7 +38,7 @@ export default class Resume extends React.Component {
                                  <span className="date">Sep 2014 - May 2018</span>
                                  <h2>Bachelor of Engineering in Computer Engineering</h2>
                                  <span className="position">Gujarat Technological University</span>
-                                 <p>I received my <a href="https://www.gtu.edu" target="_blank" rel="noopener noreferrer">bachelor's</a> degree with first-class distinction grades. My GPA is 8.72 out of 10. I have learned the basics and advanced knowledge of computers and programming.</p>
+                                 <p>I received my <a href="https://www.gtu.edu" target="_blank" rel="noopener noreferrer">bachelor's</a> degree with first-class distinction grades. My GPA is <b>8.7 out of 10.0.</b> I have learned the basics and advanced knowledge of computers and programming.</p>
                               </div>
                            </div>
                         </div>
@@ -94,7 +94,7 @@ export default class Resume extends React.Component {
                            <div className="row progress-circle mb-5">
                               <div className="col-lg-4 mb-4">
                                  <div className="bg-white rounded-lg shadow p-4">
-                                    <h2 className="h5 font-weight-bold text-center mb-4">Programming</h2>
+                                    <h2 className="h5 font-weight-bold text-center mb-4">Team Work</h2>
                                     <div className="progress mx-auto" data-value='100'>
                                        <span className="progress-left">
                                        <span className="progress-bar border-primary"></span>
@@ -126,7 +126,7 @@ export default class Resume extends React.Component {
                               </div>
                               <div className="col-lg-4 mb-4">
                                  <div className="bg-white rounded-lg shadow p-4">
-                                    <h2 className="h5 font-weight-bold text-center mb-4">Team Work</h2>
+                                    <h2 className="h5 font-weight-bold text-center mb-4">Prioritization</h2>
                                     <div className="progress mx-auto" data-value='100'>
                                        <span className="progress-left">
                                        <span className="progress-bar border-primary"></span>
@@ -222,10 +222,10 @@ export default class Resume extends React.Component {
                                  <span className="flaticon-ideas"></span>
                               </div>
                               <div className="text pl-3">
-                                 <span className="date">Mar 2019</span>
-                                 <h2>Young Performer Of the Month</h2>
-                                 <span className="position">SculptSoft</span>
-                                 <p>Even due to the lack of experience, I had learned fast and done work that was praiseworthy also at a young age. So, I received this award, check out this LinkedIn <a href="https://www.linkedin.com/posts/sculptsoft-hr_whole-sculptsoft-family-congratulates-you-activity-6521387185143418881-n7S-/" target="_blank" rel="noopener noreferrer">post</a> and <a href={process.env.PUBLIC_URL+ "/images/sculptSoftCertificate.jpg"} target="_blank" rel="noopener noreferrer">certificate</a>.</p>
+                                 <span className="date">May 2019</span>
+                                 <h2>Certificate of Excellence</h2>
+                                 <span className="position">Umiya Education Trust</span>
+                                 <p>Received <a href={process.env.PUBLIC_URL+"/images/BECertificate.png"} target="_blank" rel="noopener noreferrer">certificate</a> of third rank in Bachelor degree in Kadava Patidar Community.</p>
                               </div>
                            </div>
                            <div className="resume-wrap d-flex ftco-animate">
@@ -233,10 +233,10 @@ export default class Resume extends React.Component {
                                  <span className="flaticon-ideas"></span>
                               </div>
                               <div className="text pl-3">
-                                 <span className="date">Feb 2019</span>
-                                 <h2>Certificate of Excellence</h2>
-                                 <span className="position">Umiya Education Trust</span>
-                                 <p>Received <a href={process.env.PUBLIC_URL+"/images/BECertificate.png"} target="_blank" rel="noopener noreferrer">certificate</a> of third rank in Bachelor degree in Kadava Patidar Community.</p>
+                                 <span className="date">Mar 2019</span>
+                                 <h2>Young Performer Of the Month</h2>
+                                 <span className="position">SculptSoft</span>
+                                 <p>Even due to the lack of experience, I had learned fast and done work that was praiseworthy also at a young age. So, I received this award, check out this LinkedIn <a href="https://www.linkedin.com/posts/sculptsoft-hr_whole-sculptsoft-family-congratulates-you-activity-6521387185143418881-n7S-/" target="_blank" rel="noopener noreferrer">post</a> and <a href={process.env.PUBLIC_URL+ "/images/sculptSoftCertificate.jpg"} target="_blank" rel="noopener noreferrer">certificate</a>.</p>
                               </div>
                            </div>
                         </div>

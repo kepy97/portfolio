@@ -24,7 +24,7 @@ export default class About extends React.Component {
 										<li className="d-flex"><span>Name:</span> <span>Keyul Patel</span></li>
 										<li className="d-flex"><span>Email:</span> <span><a href="mailto:kvpatel@uwm.edu">kvpatel@uwm.edu</a></span></li>
 										<li className="d-flex"><span>Projects:</span> <span><a href="https://github.com/kepy97" target="_blank" rel="noopener noreferrer">GitHub</a></span></li>
-										<li className="d-flex"><span>Location:</span> <span><a href="https://goo.gl/maps/55aMtzvdzejrsRmKA" target="_blank" rel="noopener noreferrer">USA</a></span></li>
+										<li className="d-flex"><span>Profile:</span> <span><a href="https://www.linkedin.com/in/kepy97/" target="_blank" rel="noopener noreferrer">Linkedin</a></span></li>
 									</ul>
 								</div>
 							</div>
