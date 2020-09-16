@@ -52,7 +52,7 @@ export default class Resume extends React.Component {
                                  <span className="date">May 2020 - Present</span>
                                  <h2>LEAD R&D Intern</h2>
                                  <span className="position">ABB</span>
-                                 <p>I'm working on a new web application portal for internal usage at <a href="https://global.abb/group/en" target="_blank" rel="noopener noreferrer">ABB.</a> This is the first project of my life where I'm developing it from <a href="https://www.kepy.online/blog/building-web-application-from-scratch" target="_blank" rel="noopener noreferrer">scratch.</a> I cherished having complete ownership of the project - being able to work with end-users to gather requirements, incorporate feedback, propose new stretch goals, and work on additional features.</p>
+                                 <p>I'm working on a new web application portal for internal usage at <a href="https://global.abb/group/en" target="_blank" rel="noopener noreferrer">ABB.</a> This is the first project of my life where I'm developing it from <a href="https://www.kepy.online/blog/building-web-application-from-scratch" target="_blank" rel="noopener noreferrer">scratch by myself.</a> I cherished having complete ownership of the project - being able to work with end-users to gather requirements, incorporate feedback, propose new stretch goals, and work on additional features.</p>
                               </div>
                            </div>
                            <div className="resume-wrap d-flex ftco-animate">
@@ -85,7 +85,7 @@ export default class Resume extends React.Component {
                                  <span className="date">Jan 2017 - Dec 2017</span>
                                  <h2>Java Developer Intern</h2>
                                  <span className="position">iCreate Technologies</span>
-                                 <p>iCreate Technologies was a place I interned at, I worked with a great team and learned about Industrial Software Engineering. I've created java windows applications. I've used java top frameworks to create web applications as well.</p>
+                                 <p>iCreate Technologies was a place where I worked with a great team and learned about Industrial Software Engineering. I've created java windows applications. I've used java top frameworks to create web applications as well.</p>
                               </div>
                            </div>
                         </div>
@@ -126,7 +126,7 @@ export default class Resume extends React.Component {
                               </div>
                               <div className="col-lg-4 mb-4">
                                  <div className="bg-white rounded-lg shadow p-4">
-                                    <h2 className="h5 font-weight-bold text-center mb-4">Prioritization</h2>
+                                    <h2 className="h5 font-weight-bold text-center mb-4">Multitasking</h2>
                                     <div className="progress mx-auto" data-value='100'>
                                        <span className="progress-left">
                                        <span className="progress-bar border-primary"></span>
@@ -164,7 +164,7 @@ export default class Resume extends React.Component {
                               </div>
                               <div className="col-md-6 animate-box">
                                  <div className="progress-wrap ftco-animate">
-                                    <h3>JavaScript(ReactJS)</h3>
+                                    <h3>JavaScript</h3>
                                     <div className="progress">
                                        <div className="progress-bar color-3" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style={{width:"100%"}}>
                                           <span>100%</span>

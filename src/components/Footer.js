@@ -38,11 +38,11 @@ export default class Footer extends React.Component {
               <div className="ftco-footer-widget mb-4">
                 <h2 className="ftco-heading-2">Skills</h2>
                 <ul className="list-unstyled">
-                  <li><span className="icon-long-arrow-right mr-2" />Data Analysis</li>
-                  <li><span className="icon-long-arrow-right mr-2" />Web Design</li>
-                  <li><span className="icon-long-arrow-right mr-2" />Web Development</li>
-                  <li><span className="icon-long-arrow-right mr-2" />Mobile App Development</li>
                   <li><span className="icon-long-arrow-right mr-2" />Software Development</li>
+                  <li><span className="icon-long-arrow-right mr-2" />Web Development</li>
+                  <li><span className="icon-long-arrow-right mr-2" />Data Analysis</li>
+                  <li><span className="icon-long-arrow-right mr-2" />Mobile App Development</li>
+                  <li><span className="icon-long-arrow-right mr-2" />Web Design</li>
                 </ul>
               </div>
             </div>
