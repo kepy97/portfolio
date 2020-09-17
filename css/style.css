@@ -9933,3 +9933,35 @@ custom-landing-image{
   }
 }
 /* loader css */
+
+/* Project Click Here css */
+
+.corner_click
+{
+	left: 0px;
+    top: 0;
+    position: absolute;
+    border-top: 70px solid #3e64ff;
+    border-right: 70px solid transparent;
+}
+
+.corner_clicktext
+{
+	position: absolute;
+    top: -61px;
+    left: 6px;
+    line-height: 14px;
+    text-align: center;
+    font-size: 14px;
+    transform: rotate(-45deg);
+    display: block;
+    color: #ffffff;
+    animation: blinker 0.8s ease-in-out infinite alternate;  
+}
+
+.ftco-animate:hover .corner_click
+{
+ display: none;
+}
+
+@keyframes blinker { to { opacity: 0.4; } }
