@@ -61,7 +61,6 @@ export default class BlogBody extends React.Component {
                                 <div dangerouslySetInnerHTML={{ __html: postData[0].body }}/>
                                 <div className="mt-5 about-author d-flex p-4 bg-light">
                                     <div className="bio mr-5">
-                                        <img src="/images/profile.jpg" alt="Profile" className="img-fluid mb-4" />                         
                                     </div>
                                     <div className="desc"> 
                                         <h3><a href="https://kepy.online" target="_blank" rel="noopener noreferrer">Keyul Patel</a></h3>

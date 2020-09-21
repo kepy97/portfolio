@@ -13,18 +13,7 @@ export default class Contact extends React.Component {
                   </div>
                 </div>
                 <div className="row d-flex contact-info mb-5">
-                  <div className="col-md-6 col-lg-3 d-flex ftco-animate">
-                    <div className="align-self-stretch box text-center p-4 shadow">
-                      <div className="icon d-flex align-items-center justify-content-center">
-                        <span className="icon-map-signs" />
-                      </div>
-                      <div>
-                        <h3 className="mb-4">Location</h3>
-                        <p><a href="https://goo.gl/maps/55aMtzvdzejrsRmKA" target="_blank" rel="noopener noreferrer">USA</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-6 col-lg-3 d-flex ftco-animate">
+                  <div className="col-md-6 col-lg-4 d-flex ftco-animate">
                     <div className="align-self-stretch box text-center p-4 shadow">
                       <div className="icon d-flex align-items-center justify-content-center">
                         <span className="icon-paper-plane" />
@@ -35,7 +24,7 @@ export default class Contact extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-6 col-lg-3 d-flex ftco-animate">
+                  <div className="col-md-6 col-lg-4 d-flex ftco-animate">
                     <div className="align-self-stretch box text-center p-4 shadow">
                       <div className="icon d-flex align-items-center justify-content-center">
                         <span className="icon-linkedin" />
@@ -46,7 +35,7 @@ export default class Contact extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-6 col-lg-3 d-flex ftco-animate">
+                  <div className="col-md-6 col-lg-4 d-flex ftco-animate">
                     <div className="align-self-stretch box text-center p-4 shadow">
                       <div className="icon d-flex align-items-center justify-content-center">
                         <span className="icon-github" />
