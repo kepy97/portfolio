@@ -9867,7 +9867,7 @@ figcaption {
 .number-list{margin: 0; padding: 0; } 
 .number-list li{margin: 0; padding: 0 0 8px 25px; list-style: none; position: relative; line-height: 26px; counter-increment: numberinc;   }
 .number-list li:before{content: counter(numberinc) "."; position: absolute; left: 0; top: 0; }
-.code-iframe iframe{width: 100%; height: 500px; }
+.code-iframe iframe{width: 100%;}
 .summary-text{color: #262626; font-family: proxima nova; font-weight: 600; font-size: 18px !important;}
 .summary-text-uppercase{text-transform: uppercase;}
 .about-author .bio{width: 100px; height: 100px; margin: 0 35px 0 0 !important; min-width: 100px; max-width: 100px; border-radius: 50%; overflow: hidden;  background-image: url("/images/profile.jpg"); background-size: cover;}
