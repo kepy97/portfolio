@@ -5,56 +5,64 @@
          "name":"Result Notifier",
          "url":"Result-Notifier-2016",
          "languages":["python"],
-         "image":"resultNotifier.jpg"
+         "image":"resultNotifier.jpg",
+         "featured":false
       },
       {
          "id":2,
          "name":"HealthMate",
          "url":"HealthMate-2017",
          "languages":["java","android"],
-         "image":"healthmate.png"
+         "image":"healthmate.png",
+         "featured":false
       },
       {
          "id":3,
          "name":"Data Analysis Projects",
          "url":"Data-Analysis-2018",
          "languages":["tableau", "powerBI", "D3.js"],
-         "image":"dataAnalysis.jpg"
+         "image":"dataAnalysis.jpg",
+         "featured":false
       },
       {
          "id":4,
          "name":"Chat-Bot Project",
          "url":"Chat-Bot-2019",
          "languages":["node.js"],
-         "image":"nodejs.jpg"
+         "image":"nodejs.jpg",
+         "featured":true
       },
       {
          "id":5,
          "name":"PHP Project",
          "url":"PHP-2019",
          "languages":["PHP"],
-         "image":"php.jpg"
+         "image":"php.jpg",
+         "featured":true
       },
       {
          "id":6,
          "name":"Game Bot",
          "url":"Game-Bot-2019",
          "languages":["python"],
-         "image":"gameBot.jpg"
+         "image":"gameBot.jpg",
+         "featured":false
       },
       {
          "id":7,
          "name":"Trivia Quiz",
          "url":"trivia-quiz-2020",
          "languages":["react-native"],
-         "image":"triviaQuiz.png"
+         "image":"triviaQuiz.png",
+         "featured":false
       },
       {
          "id":8,
          "name":"Task Management System",
          "url":"task-management-system-2020",
          "languages":["python", "react"],
-         "image":"taskManagementSystem.jpg"
+         "image":"taskManagementSystem.jpg",
+         "featured":true
       }
    ]
 }

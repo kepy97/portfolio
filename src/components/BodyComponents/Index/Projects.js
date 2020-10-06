@@ -42,8 +42,13 @@ export default class Projects extends React.Component {
                     projects.map((project, i) => {
                       return (
                         <div className="col-md-4" key={i} id={project.url} onClick={() => this.handleClick(project.url)}>
+                          {
+                            project.featured && <div className="proj-box">
+                              <div className="proj-ribbon"><span>FEATURED</span></div>
+                            </div>
+                          }
                           <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/${project.image})`}}>
-                            <div class="corner_click"><span class="corner_clicktext">Click Here</span></div>
+                            <div className="corner_click"><span className="corner_clicktext">Click Here</span></div>
                             <div className="overlay m-dis-non" />
                             <div className="text m-dis-non text-center p-4">
                               <h3><a id="section-projects-name" href="#section-projects-name">{project.name}</a></h3>
