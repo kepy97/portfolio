@@ -52,7 +52,7 @@ export default class Resume extends React.Component {
                                  <span className="date">May 2020 - Present</span>
                                  <h2>LEAD R&D Intern</h2>
                                  <span className="position">ABB</span>
-                                 <p>I'm working on a new web application portal for internal usage at <a href="https://global.abb/group/en" target="_blank" rel="noopener noreferrer">ABB.</a> This is the first project of my life where I'm developing it from <a href="https://www.kepy.online/blog/building-web-application-from-scratch" target="_blank" rel="noopener noreferrer">scratch by myself.</a> I cherished having complete ownership of the project - being able to work with end-users to gather requirements, incorporate feedback, propose new stretch goals, and work on additional features.</p>
+                                 <p>I'm working on a new web application portal for internal usage at <a href="https://global.abb/group/en" target="_blank" rel="noopener noreferrer">ABB.</a> This is the first project of my life where I'm developing it from <a href="https://kepy.online/blog/building-web-application-from-scratch" target="_blank" rel="noopener noreferrer">scratch by myself.</a> I cherished having complete ownership of the project - being able to work with end-users to gather requirements, incorporate feedback, propose new stretch goals, and work on additional features.</p>
                               </div>
                            </div>
                            <div className="resume-wrap d-flex ftco-animate">
