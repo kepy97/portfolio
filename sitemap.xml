@@ -18,6 +18,58 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://kepy.online/blog/why-i-changed-github-pages-to-netlify-hosting-platform</loc>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://kepy.online/blog/performance-improvement-in-project</loc>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://kepy.online/blog/my-personal-visual-studio-code-setup</loc>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://kepy.online/blog/big-change-in-my-internship-project-plan</loc>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://kepy.online/blog/reactjs-project-structure</loc>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://kepy.online/blog/why-bind-needed-in-react</loc>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://kepy.online/blog/sqlalchemy-tips-for-flask-database-connection</loc>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://kepy.online/blog/national-intern-day-at-abb</loc>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://kepy.online/blog/which-authentication-method-to-choose-for-the-project</loc>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://kepy.online/blog/project-setup-is-not-a-walk-in-the-park</loc>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://kepy.online/blog/how-to-create-database-diagram-easily-without-sql-knowledge</loc>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://kepy.online/blog/best-free-prototype-tool-online-2020</loc>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://kepy.online/blog/abb-month-1-highlights</loc>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
         <loc>https://kepy.online/blog/npm-install-not-working-in-corporate-network</loc>
         <changefreq>yearly</changefreq>
     </url>
