@@ -27,7 +27,7 @@ export default class Resume extends React.Component {
                                  <span className="date">Sep 2019 - May 2021</span>
                                  <h2>Master in Computer Science</h2>
                                  <span className="position">University of Wisconsin-Milwaukee</span>
-                                 <p>Currently, I am doing my <a href="https://uwm.edu" target="_blank" rel="noopener noreferrer">masters</a> in computer science. I want to grow and sharpen my skills through this degree. My cumulative GPA is <b>3.6 out of 4.0.</b> Starting my education off in Fall 2019, my expected graduation is May 2021.</p>
+                                 <p>Currently, I am doing my <a href="https://uwm.edu" target="_blank" rel="noopener noreferrer">masters</a> in computer science. I want to grow and sharpen my skills through this degree. My cumulative GPA is <b>3.7 out of 4.0.</b> Starting my education off in Fall 2019, my expected graduation is May 2021.</p>
                               </div>
                            </div>
                            <div className="resume-wrap d-flex ftco-animate">
