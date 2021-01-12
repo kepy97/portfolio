@@ -88,6 +88,17 @@ export default class Resume extends React.Component {
                                  <p>iCreate Technologies was a place where I worked with a great team and learned about Industrial Software Engineering. I've created java windows applications. I've used java top frameworks to create web applications as well.</p>
                               </div>
                            </div>
+                           <div className="resume-wrap d-flex ftco-animate">
+                              <div className="icon d-flex align-items-center justify-content-center">
+                                 <span className="flaticon-ideas"></span>
+                              </div>
+                              <div className="text pl-3">
+                                 <span className="date">Jun 2015 - Oct 2016</span>
+                                 <h2>Digital Marketing Specialist</h2>
+                                 <span className="position">Freelance</span>
+                                 <p>I researched into UX and website marketing experience. Then, assisted in the execution of digital programs including paid social media, email, SMS, and search marketing. Increased almost 70% revenue of the website.</p>
+                              </div>
+                           </div>
                         </div>
                         <div id="page-3" className="page three">
                            <h2 className="heading">Skills</h2>
