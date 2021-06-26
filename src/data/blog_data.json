@@ -602,6 +602,21 @@
          "published": true,
          "created": "2020-09-04T21:39:59.907Z",
          "updated": "2020-09-04T21:39:59.907Z"
+      },
+      {
+         "id": 39,
+         "title": "New Adventure in my life: Day 1 at Amazon",
+         "url": "new-adventure-in-my-life-day-1-at-amazon",
+         "tags": [
+            "Amazon",
+            "job-offer"
+         ],
+         "image": "blog/new-adventure-in-my-life-day-1-at-amazon-logo.png",
+         "description": "I am excited to share that I joined Amazon after I graduated from the University of Wisconsin - Milwaukee.",
+         "body": " <div> <h1 class=\"mt-5 blog-title\">New Adventure in my life: Day 1 at Amazon</h1> <p class=\"blog-desc\">I am excited to share that I joined <a href=\"https://www.amazon.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon</a> after I graduated from the University of Wisconsin - Milwaukee.</p> <p> It's most software developers (including me) dream to work on big and challenging projects, especially in <a href=\"https://vested.co.in/blog/what-is-fang-or-is-it-faang-or-faamg/\" target=\"_blank\" rel=\"noopener noreferrer\">FAANG</a> companies. </p> <p> I still remember that I got an email from Amazon with a <span class=\"blog-content-bold blog-content-italic\">\"Software Development Engineer\"</span> job position offer letter on <span class=\"blog-content-bold\">March 2, 2021.</span> It was one of the happiest day of my life.<div class=\"custinfobox custinfobox-1\"> <p>My parents would be so happy</p> </div> this was the thought I was constantly getting in my mind after reading the email. </p> <div class=\"blog-image\"><img src=\"/images/blog/new-adventure-in-my-life-day-1-at-amazon-logo.png\" alt=\"\" class=\"img-fluid\"></div> <p> The above picture I clicked in Amazon Seattle Campus. I've waited almost 7 years to see this day. </p> <p> I've used Amazon products in many ways \"Shopping items to integrating different cloud services in past projects\". At that time, I was the only customer of Amazon. <span class=\"blog-content-highlight\"> Now, I'm an Amazonian and Customer.</span> </p> <p class=\"mb-3 mt-5 blog-desc-title\">Day 1</p> <p> There's a sign of Day 1 in the below picture. Amazon's <a href=\"https://aws.amazon.com/executive-insights/content/how-amazon-defines-and-operationalizes-a-day-1-culture/\" target=\"_blank\" rel=\"noopener noreferrer\">\"Day 1\"</a> mentality is a culture and an operating model that puts customers at the center of everything Amazon does. Putting \"Day 1\" into practice relies on maintaining a long-term focus, obsessing over customers, and bold innovation. </p> <div class=\"blog-image\"><img src=\"/images/blog/new-adventure-in-my-life-day-1-at-amazon-2.png\" alt=\"\" class=\"img-fluid\"></div> <p> All of this started from getting Bachelor's degree -> Travelling to the US for Masters. It has been a great journey with ups and downs. None of this could’ve been possible without my friends and family, especially Mom and Dad, for the continuous support they have given me throughout. </p> <p class=\"summary-text summary-text-uppercase\">I'm so happy to be an Amazonian and look forward to furthering my skills and contributing to AWS services that will impact on millions of customers.</p> </div>",
+         "published": true,
+         "created": "2021-06-26T12:22:16.907Z",
+         "updated": "2021-06-26T12:22:16.907Z"
       }
    ]
 }

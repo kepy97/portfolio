@@ -51,7 +51,7 @@ export default class Footer extends React.Component {
                 <h2 className="ftco-heading-2">Have a Questions?</h2>
                 <div className="block-23 mb-3">
                   <ul>
-                    <li><a href="mailto:kvpatel@uwm.edu" target="_blank" rel="noopener noreferrer"><span className="icon icon-envelope" /><span className="text">kvpatel@uwm.edu</span></a></li>
+                    <li><a href="mailto:keyulvpatel97@gmail.com" target="_blank" rel="noopener noreferrer"><span className="icon icon-envelope" /><span className="text">keyulvpatel97@gmail.com</span></a></li>
                     <li><a href="https://www.linkedin.com/in/kepy97/" target="_blank" rel="noopener noreferrer"><span className="icon icon-linkedin" /><span className="text">Linkedin</span></a></li>
                     <li><a href="https://twitter.com/Keyul_kepy" target="_blank" rel="noopener noreferrer"><span className="icon icon-twitter" /><span className="text">Twitter</span></a></li>
                     {/* <li><a href="https://goo.gl/maps/55aMtzvdzejrsRmKA" target="_blank" rel="noopener noreferrer"><span className="icon icon-map-marker" /><span className="text">USA</span></a></li> */}

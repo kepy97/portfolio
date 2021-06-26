@@ -64,7 +64,7 @@ export default class BlogBody extends React.Component {
                                     </div>
                                     <div className="desc"> 
                                         <h3><a href="https://kepy.online" target="_blank" rel="noopener noreferrer">Keyul Patel</a></h3>
-                                        <p>Keyul Patel is a 22-year-old computing student who enjoys eating out, relaxing and outdoor activities. He is helpful and loveable. He is currently at college studying computing. He is obsessed with programming.</p>
+                                        <p>Keyul Patel is a 23-year-old computing student who enjoys eating out, relaxing and outdoor activities. He is helpful and loveable. He is currently at college studying computing. He is obsessed with programming.</p>
                                     </div>
                                 </div>
                             </div>

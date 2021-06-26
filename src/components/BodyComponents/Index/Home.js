@@ -11,7 +11,7 @@ export default class Home extends React.Component {
 			            <div className="text text-center">
 			               <span className="subheading">Hey! I am</span>
 			               <h1>Keyul Patel</h1>
-			               <h2>I'm a <span className="txt-rotate" data-period="2000" data-rotate='[ "Programmer.", "Student.", "Blogger." ]'>Programmer.</span>
+			               <h2>I'm <span className="txt-rotate" data-period="2000" data-rotate='[ "an Amazonian.", "a Programmer.", "a Blogger." ]'>Amazonian.</span>
 			               </h2>
 			               <br /><br />
 			                <span className="mouse-icon">

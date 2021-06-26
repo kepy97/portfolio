@@ -27,7 +27,7 @@ export default class Resume extends React.Component {
                                  <span className="date">Sep 2019 - May 2021</span>
                                  <h2>Master in Computer Science</h2>
                                  <span className="position">University of Wisconsin-Milwaukee</span>
-                                 <p>Currently, I am doing my <a href="https://uwm.edu" target="_blank" rel="noopener noreferrer">masters</a> in computer science. I want to grow and sharpen my skills through this degree. My cumulative GPA is <b>3.7 out of 4.0.</b> Starting my education off in Fall 2019, my expected graduation is May 2021.</p>
+                                 <p>I have <a href="https://uwm.edu" target="_blank" rel="noopener noreferrer">masters</a> degree in computer science. I've grown and sharpen my skills through this degree. My GPA is <b>3.7 out of 4.0.</b> I started my education in September 2019 and graduated in May 2021.</p>
                               </div>
                            </div>
                            <div className="resume-wrap d-flex ftco-animate">
@@ -49,10 +49,21 @@ export default class Resume extends React.Component {
                                  <span className="flaticon-ideas"></span>
                               </div>
                               <div className="text pl-3">
-                                 <span className="date">May 2020 - Present</span>
+                                 <span className="date">June 2021 - Present</span>
+                                 <h2>Software Development Engineer</h2>
+                                 <span className="position">Amazon</span>
+                                 <p>I'm working at Amazon HQ (Seattle, Washington) and specifically Amazon Web Services (AWS) organization. I think this is enought for now. Come back later for project details.</p>
+                              </div>
+                           </div>
+                           <div className="resume-wrap d-flex ftco-animate">
+                              <div className="icon d-flex align-items-center justify-content-center">
+                                 <span className="flaticon-ideas"></span>
+                              </div>
+                              <div className="text pl-3">
+                                 <span className="date">May 2020 - April 2021</span>
                                  <h2>LEAD R&D Intern</h2>
                                  <span className="position">ABB</span>
-                                 <p>I'm working on a new web application portal for internal usage at <a href="https://global.abb/group/en" target="_blank" rel="noopener noreferrer">ABB.</a> This is the first project of my life where I'm developing it from <a href="https://kepy.online/blog/building-web-application-from-scratch" target="_blank" rel="noopener noreferrer">scratch by myself.</a> I cherished having complete ownership of the project - being able to work with end-users to gather requirements, incorporate feedback, propose new stretch goals, and work on additional features.</p>
+                                 <p>I've created a new web application portal for internal usage at <a href="https://global.abb/group/en" target="_blank" rel="noopener noreferrer">ABB.</a> This is the first project of my life where I've developed it from <a href="https://kepy.online/blog/building-web-application-from-scratch" target="_blank" rel="noopener noreferrer">scratch BY MYSELF.</a> I cherished having complete ownership of the project - being able to work with end-users to gather requirements, incorporate feedback, propose new stretch goals, and work on additional features.</p>
                               </div>
                            </div>
                            <div className="resume-wrap d-flex ftco-animate">
