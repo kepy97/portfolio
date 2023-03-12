@@ -60,8 +60,24 @@
          "id":8,
          "name":"Task Management System",
          "url":"task-management-system-2020",
-         "languages":["python", "react"],
+         "languages":["python", "javascript", "react"],
          "image":"taskManagementSystem.jpg",
+         "featured":true
+      },
+      {
+         "id":9,
+         "name":"AWS Supply Chain",
+         "url":"aws-supply-chain-launch-2021",
+         "languages":["kotlin", "typescript"],
+         "image":"awsSupplyChainLaunch.jpg",
+         "featured":true
+      },
+      {
+         "id":10,
+         "name":"FC Games",
+         "url":"fc-games-2022",
+         "languages":["java", "typescript", "unity", "c#"],
+         "image":"fcGames.jpg",
          "featured":true
       }
    ]

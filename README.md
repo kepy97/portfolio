@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+### `npm install` 
+
 In the project directory, you can run:
 
 ### `npm start`
@@ -20,10 +22,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+See the section about [deployment](https://www.netlify.com/blog/2016/07/22/deploy-react-apps-in-less-than-30-seconds/) for more information.
 
-### `npm run deploy` 
+### `netlify deploy` 
 
-The portfolio hosted on Github Pages.
+The portfolio hosted on Netlify.
 
-So, this command deploys the current changes to github pages. You can access demo [here](https://kepy.online/).
+So, this command deploys the current changes to Netlify. You can access demo [here](https://keyulpatel.com/).
