@@ -24,8 +24,11 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://www.netlify.com/blog/2016/07/22/deploy-react-apps-in-less-than-30-seconds/) for more information.
 
-### `netlify deploy` 
+### Netlify Deployment 
 
-The portfolio hosted on Netlify.
+The portfolio hosted on Netlify. Go to build folder
+- `netlify deploy` 
+- Test the deployment
+- If all looks good, netlify deploy --prod
 
-So, this command deploys the current changes to Netlify. You can access demo [here](https://keyulpatel.com/).
+So, above commands deploy the current changes to Netlify. You can access demo [here](https://keyulpatel.com/).
