@@ -52,7 +52,7 @@ export default class Resume extends React.Component {
                                  <span className="date">June 2021 - Present</span>
                                  <h2>Software Development Engineer II</h2>
                                  <span className="position">Amazon</span>
-                                 <p>During my time at Amazon, I began my journey in the AWS Supply Chain organization in June 2021. As my career progressed, I transitioned to the retail organization and was fortunate enough to receive a promotion from SDE 1 to SDE 2. My experience at Amazon has been a dynamic and rewarding one, allowing me to grow both professionally and personally.</p>
+                                 <p>I began my journey at Amazon in the AWS Supply Chain organization in June 2021. As my career progressed, I transitioned to the retail organization and was fortunate enough to receive a promotion from SDE 1 to SDE 2. My experience at Amazon has been a dynamic and rewarding one, allowing me to grow both professionally and personally.</p>
                               </div>
                            </div>
                            <div className="resume-wrap d-flex ftco-animate">
