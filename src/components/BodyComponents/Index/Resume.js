@@ -50,9 +50,9 @@ export default class Resume extends React.Component {
                               </div>
                               <div className="text pl-3">
                                  <span className="date">June 2021 - Present</span>
-                                 <h2>Software Development Engineer</h2>
+                                 <h2>Software Development Engineer II</h2>
                                  <span className="position">Amazon</span>
-                                 <p>I'm working at Amazon HQ (Seattle, Washington) and specifically Amazon Web Services (AWS) organization. I think this is enought for now. Come back later for project details.</p>
+                                 <p>During my time at Amazon, I began my journey in the AWS Supply Chain organization in June 2021. As my career progressed, I transitioned to the retail organization and was fortunate enough to receive a promotion from SDE 1 to SDE 2. My experience at Amazon has been a dynamic and rewarding one, allowing me to grow both professionally and personally.</p>
                               </div>
                            </div>
                            <div className="resume-wrap d-flex ftco-animate">
