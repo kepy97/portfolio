@@ -2,6 +2,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+### Setup NodeJS
+For this project use Node version 10. [Steps](https://sukiphan.medium.com/how-to-install-nvm-node-version-manager-on-macos-d9fe432cc7db) - 
+- `nvm install 10`
+- `nvm use 10`
+- `nvm -v && npm -v`
+
 ### `npm install` 
 
 In the project directory, you can run:
