@@ -6,7 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 For this project use Node version 10. [Steps](https://sukiphan.medium.com/how-to-install-nvm-node-version-manager-on-macos-d9fe432cc7db) - 
 - `nvm install 10`
 - `nvm use 10`
-- `nvm -v && npm -v`
+- `nvm -v && npm -v` - (0.40.1 | 6.14.12)
+- `nvm ls` - (v10.24.1)
 
 ### `npm install` 
 
@@ -32,7 +33,9 @@ See the section about [deployment](https://www.netlify.com/blog/2016/07/22/deplo
 
 ### Netlify Deployment 
 
-The portfolio hosted on Netlify. Go to build folder
+The portfolio hosted on Netlify. Go to `build` folder
+> - `nvm use 20` - Now using node v20.17.0 (npm v10.8.2)
+> - `npm install netlify-cli -g`
 - `netlify deploy` 
 - Test the deployment
 - If all looks good, netlify deploy --prod
