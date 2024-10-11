@@ -10,7 +10,7 @@ For this project use Node version 10. [Steps](https://sukiphan.medium.com/how-to
 
 ### `npm install` 
 
-In the project directory, you can run:
+In the project directory, you can run: 
 
 ### `npm start`
 
